@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Stigma</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Stigma</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_login">Sign in</string>
@@ -12,4 +12,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="frase_mensagem">Diga como está se sentindo e receba uma mensagem motivadora!</string>
+    <string name="frase_mensagem_1">Como está se sentindo agora?</string>
+    <string name="titulo_mensagem">Mensagens Diárias</string>
+    <string name="checkbox">Adicionar a máquina do tempo</string>
 </resources>
