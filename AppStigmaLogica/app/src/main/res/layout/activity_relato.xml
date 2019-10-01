@@ -85,7 +85,7 @@
 
 
             <ImageButton
-                android:id="@+id/btn_humor_1"
+                android:id="@+id/btn_muitofeliz"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="60dp"
@@ -95,33 +95,35 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
-
+                android:id="@+id/btn_feliz"
                 android:background="@drawable/happy" />
 
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
-
+                android:id="@+id/btn_neutro"
                 android:background="@drawable/shocked" />
 
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
+                android:id="@+id/btn_triste"
                 android:background="@drawable/sad" />
 
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
-
+                android:id="@+id/btn_muitotriste"
                 android:background="@drawable/sad2" />
 
             <ImageButton
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
+                android:id="@+id/btn_cansado"
                 android:background="@drawable/bad" />
 
 
@@ -130,14 +132,14 @@
 
 
     <EditText
-        android:id="@+id/editText6"
-        android:layout_width="361dp"
-        android:layout_height="239dp"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/txt_relato"
+        android:layout_width="363dp"
+        android:layout_height="123dp"
+        android:layout_gravity="center"
         android:background="@drawable/caixatext"
         android:gravity="top"
-        android:hint="Escreva aqui..."
         android:padding="20dp"
+        android:hint="Escreva aqui..."
         android:textSize="18sp" />
 
 
@@ -173,7 +175,7 @@
             android:textColor="@color/azul" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_salvar"
             android:layout_width="133dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
