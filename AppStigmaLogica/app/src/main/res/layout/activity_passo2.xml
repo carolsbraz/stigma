@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    tools:context="com.projeto.appstigma.Passo2Activity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="208dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logotipo" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="369dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="270dp"
+            android:src="@drawable/relate3" />
+
+        <ImageView
+            android:id="@+id/relate2"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/stigma_3" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+
+            android:id="@+id/barra2"
+            android:layout_width="430dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/barra2" />
+
+        <ImageButton
+            android:id="@+id/btn_left_passo2"
+            android:layout_width="56dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/setaleft"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/btn_right_passo2"
+            android:layout_width="65dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/image"
+            android:enabled="false"
+            android:textSize="100px" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

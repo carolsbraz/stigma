@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.projeto.appstigma.RelatoActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="61dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
+            android:background="@drawable/voltar" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="114dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logorosa" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Relate seu dia"
+        android:layout_gravity="center"
+        android:textColor="#BB5D5E"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_logado"
+        android:layout_width="149dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginRight="131dp"
+        android:gravity="center"
+        android:text="14 set 2019, Sábado"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/painel" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="433dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="400dp"
+            android:gravity="center"
+            android:text="Como está se sentido?"
+            android:textColor="#357989"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp">
+
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="60dp"
+
+                android:background="@drawable/happy2" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+
+                android:background="@drawable/happy" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+
+                android:background="@drawable/shocked" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/sad" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+
+                android:background="@drawable/sad2" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bad" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="380dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@drawable/caixatext"
+        android:gravity="top"
+        android:hint="Escreva aqui..." />
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bttsalvar"
+        android:text="Salvar"
+        android:textColor="@android:color/background_light"
+        />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="410dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edbarra"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+</LinearLayout>
