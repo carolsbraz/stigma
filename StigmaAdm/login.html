@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Stigma</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img alt="logo" src="src/logo-topo.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    
+    <div class="modal" tabindex="-1" role="dialog" id="login-invalida">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">TEnte novamente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Senha ou login inválidos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="nao-aprovado">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aguarde</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Sua conta ainda não foi efetivado pelos administradores.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="src/esq.png" alt="foto" class="foto-esq">
+
+    <img src="src/dir.png" alt="foto" class="foto-dir">
+    <br>
+
+    <div class="baixo">
+        <img src="src/logo.png" alt="logotipo" class="logotipo">
+        <br>
+        <h3 class="bem-vindo">Bem vindo à sessão administrativa do Stigma!</h3>
+        <br>
+
+       
+        <form class="login" action="javascript:login()">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
+                <small id="emailHelp" class="form-text text-muted">Exemplo: stigmaapp@gmail.com</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Insira sua senha">
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+
+</body></html>
