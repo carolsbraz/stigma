@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp">
+
+        <ImageView
+            android:id="@+id/logotipo"
+            android:layout_width="322dp"
+            android:layout_height="255dp"
+
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logotipo" />
+
+        <ImageView
+            android:id="@+id/barrinha"
+            android:layout_width="468dp"
+            android:layout_height="228dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="320dp"
+            android:src="@drawable/base2" />
+
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="337dp"
+            android:background="@drawable/setaleft"
+            android:enabled="false"
+            android:layout_marginLeft="130dp"
+            android:textSize="100px"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="414dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="460dp"
+            android:drawableStart="@drawable/senha"
+            android:drawableLeft="@drawable/senha"
+            android:drawablePadding="5dp"
+            android:hint="Senha"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="252dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
