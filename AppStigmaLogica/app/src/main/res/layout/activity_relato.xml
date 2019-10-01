@@ -132,7 +132,7 @@
 
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/txt_relato"
         android:layout_width="363dp"
         android:layout_height="123dp"
         android:layout_gravity="center"
@@ -175,7 +175,7 @@
             android:textColor="@color/azul" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_salvar"
             android:layout_width="133dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
