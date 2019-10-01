@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.stigma.R
-import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_passo1.*
 import kotlinx.android.synthetic.main.activity_passo2.*
 
 class Passo2Activity : AppCompatActivity() {
@@ -18,11 +16,13 @@ class Passo2Activity : AppCompatActivity() {
         btn_right_passo2.setOnClickListener{
             val intent = Intent(this,Passo1Activity::class.java)
             startActivity(intent)
+            this.finish()
         }
 
         btn_left_passo2.setOnClickListener {
             val intent = Intent(this, Passo3Activity::class.java)
             startActivity(intent)
+            this.finish()
         }
 
     }

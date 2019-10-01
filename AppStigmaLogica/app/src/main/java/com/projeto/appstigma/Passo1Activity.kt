@@ -16,6 +16,7 @@ class Passo1Activity : AppCompatActivity() {
         btn_left_passo1.setOnClickListener {
             val intent= Intent(this, Passo2Activity::class.java)
             startActivity(intent)
+            this.finish()
         }
 
     }

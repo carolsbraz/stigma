@@ -4,12 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 import com.projeto.appstigma.AvatarActivity
 import com.projeto.appstigma.Passo1Activity
 import com.projeto.appstigma.usuarios
@@ -38,31 +33,34 @@ class CadastroActivity : AppCompatActivity() {
                 txt_senha.error = "As senhas não coincidem"
             } else {
 
-                auth.createUserWithEmailAndPassword(email, senha)
-                    .addOnCompleteListener(this) { task ->
-                        if (task.isSuccessful) {
-                            val user = Usuario(nome, email, dataNasc, senha)
-                            usuarios.push().setValue(user)
-                            auth.signInWithEmailAndPassword(email, senha)
-                                .addOnCompleteListener(this) { task ->
-                                    if (task.isSuccessful) {
-                                        val intent = Intent(this, Passo1Activity::class.java)
-                                        startActivity(intent)
-                                    } else {
-                                        Toast.makeText(
-                                            baseContext, "Authentication failed.",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-                                    }
-                                }
-                        } else {
-                            Toast.makeText(
-                                baseContext, "Falhou.",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                        }
-                    }
+                if (nome.isNotEmpty() && email.isNotEmpty() && dataNasc.isNotEmpty() && senha.isNotEmpty() && confSenha.isNotEmpty()) {
 
+                    auth.createUserWithEmailAndPassword(email, senha)
+                        .addOnCompleteListener(this) { task ->
+                            if (task.isSuccessful) {
+                                val user = Usuario(nome, email, dataNasc, senha)
+                                usuarios.push().setValue(user)
+                                auth.signInWithEmailAndPassword(email, senha)
+                                    .addOnCompleteListener(this) { task ->
+                                        if (task.isSuccessful) {
+                                            val intent = Intent(this, Passo1Activity::class.java)
+                                            startActivity(intent)
+                                            this.finish()
+                                        } else {
+                                            Toast.makeText(
+                                                baseContext, "Authentication failed.",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+                                        }
+                                    }
+                            } else {
+                                Toast.makeText(
+                                    baseContext, "Falhou.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            }
+                        }
+                }
 
             }
 
