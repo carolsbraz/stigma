@@ -5,15 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.projeto.appstigma.Passo1Activity
 
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
-
-    var database = FirebaseDatabase.getInstance().getReference()
 
     var auth = FirebaseAuth.getInstance()
 
@@ -32,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         val intent = Intent(this, PrincipalActivity::class.java)
                         startActivity(intent)
+                        this.finish()
                     } else {
                         Toast.makeText(
                             baseContext, "Authentication failed.",
@@ -40,8 +36,6 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
 
-            val intent = Intent(this, PrincipalActivity::class.java)
-            startActivity(intent)
         }
 
 

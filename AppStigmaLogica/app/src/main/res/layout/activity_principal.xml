@@ -7,8 +7,92 @@
     android:orientation="vertical"
     tools:context=".PrincipalActivity">
 
-    <ListView
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/list_view_usuarios"></ListView>
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="114dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logorosa" />
+
+        <ImageButton
+            android:id="@+id/btn_config"
+            android:layout_width="57dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/config" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="424dp"
+            android:layout_height="278dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/base6" />
+
+        <TextView
+            android:id="@+id/txt_nome_logado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="90dp"
+            android:text="Null"
+            android:textColor="@color/azul"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/grafico" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_tela_mensagem"
+            android:layout_width="132dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/mensagensdiarias"
+            android:drawableTop="#F5F5F5" />
+
+        <Button
+            android:id="@+id/btn_tela_relato"
+            android:layout_width="132dp"
+            android:layout_height="157dp"
+            android:layout_marginLeft="220dp"
+            android:background="@drawable/relatosdiarios"
+            android:drawableTop="#F5F5F5" />
+
+        <Button
+            android:id="@+id/btn_maquina"
+            android:layout_width="312dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            android:background="@drawable/maquinadotempo"
+            android:drawableTop="#F5F5F5" />
+
+    </FrameLayout>
 </LinearLayout>
