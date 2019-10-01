@@ -36,7 +36,7 @@
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="337dp"
-            android:background="@drawable/setaleft"
+            android:background="@drawable/btn_avancar"
             android:enabled="false"
             android:layout_marginLeft="130dp"
             android:textSize="100px"/>

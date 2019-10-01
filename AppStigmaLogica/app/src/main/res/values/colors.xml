@@ -2,10 +2,11 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#272525</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#5BB0C4</color>
 
     <color name="rosa">#BB5D5E</color>
     <color name="azul">#357989</color>
+    <color name="modal">#5BB0C4</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>

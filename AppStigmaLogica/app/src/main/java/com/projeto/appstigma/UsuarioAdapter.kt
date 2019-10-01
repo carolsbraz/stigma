@@ -20,7 +20,7 @@ class UsuarioAdapter (contexto : Context) : ArrayAdapter<Usuario>(contexto, 0){
         if(convertView != null){
             v = convertView
         }else{
-            v = LayoutInflater.from(context).inflate(R.layout.list_view_item, parent, false)
+            v = LayoutInflater.from(context).inflate(R.layout.list_item_view, parent, false)
         }
 
         val item = getItem(position)

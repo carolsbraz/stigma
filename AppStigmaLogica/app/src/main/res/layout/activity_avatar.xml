@@ -39,7 +39,7 @@
             android:layout_width="334dp"
             android:layout_height="478dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/base4"></ImageView>
+            android:background="@drawable/base4"/>
 
         <ImageButton
             android:id="@+id/btn2"

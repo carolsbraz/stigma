@@ -58,23 +58,23 @@
 
             <ImageButton
                 android:id="@+id/btn_left_passo1"
-                android:layout_width="56dp"
-                android:layout_height="55dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginLeft="130dp"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/setaleft"
+                android:background="@drawable/btn_avancar"
                 android:enabled="false"
                 android:textSize="100px" />
 
             <Button
                 android:id="@+id/btn_right_passo1"
-                android:layout_width="65dp"
-                android:layout_height="55dp"
+                android:layout_width="70dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="130dp"
-                android:background="@drawable/image"
+                android:background="@drawable/btn_voltar"
                 android:enabled="false"
                 android:textSize="100px" />
 
