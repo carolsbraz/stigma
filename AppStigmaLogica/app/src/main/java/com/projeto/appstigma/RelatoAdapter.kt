@@ -7,11 +7,9 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.example.stigma.R
-
 import com.example.stigma.Usuario
-import kotlinx.android.synthetic.main.activity_principal.view.*
 
-class UsuarioAdapter (contexto : Context) : ArrayAdapter<Usuario>(contexto, 0){
+class RelatoAdapter (contexto : Context) : ArrayAdapter<Usuario>(contexto, 0){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
