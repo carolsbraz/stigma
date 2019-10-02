@@ -37,10 +37,10 @@ class PrincipalActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btn_tela_mensagem.setOnClickListener{
-            val intent = Intent(this, MensagemActivity::class.java)
-            startActivity(intent)
-        }
+       btn_tela_mensagem.setOnClickListener {
+           val intent = Intent(this, MensagemActivity::class.java)
+           startActivity(intent)
+       }
 
     }
 }

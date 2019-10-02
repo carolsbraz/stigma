@@ -63,10 +63,8 @@ class RelatoActivity : AppCompatActivity() {
             }
         }
 
-//        btn_ver.setOnClickListener{
-//            val intent = Intent(this, RelatosDiariosActivity::class.java)
-//            startActivity(intent)
-//            this.finish()
-//        }
+        btn_voltar_1.setOnClickListener{
+            finish()
+        }
     }
 }
