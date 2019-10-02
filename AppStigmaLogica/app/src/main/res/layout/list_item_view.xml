@@ -17,22 +17,22 @@
             android:src="@drawable/base11" />
 
         <TextView
+            android:id="@+id/txt_relato_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:hint="TextView"
+            android:hint="Null"
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/txt_emocao_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:text="TextView"
+            android:text="Null"
             android:textColor="@color/rosa"
             android:textSize="18sp" />
-
-
 
         <ImageButton
             android:layout_width="wrap_content"
