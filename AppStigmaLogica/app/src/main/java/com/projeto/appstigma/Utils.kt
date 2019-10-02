@@ -56,7 +56,10 @@ val b = relatos.addChildEventListener(object : ChildEventListener {
     }
 
     override fun onChildRemoved(p0: DataSnapshot) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        var relato: Relato?
+        relato = p0.getValue(Relato::class.java)
+        if (relato !in relatosList)
+            relatosList.remove(relato!!)
     }
 
     override fun onCancelled(p0: DatabaseError) {

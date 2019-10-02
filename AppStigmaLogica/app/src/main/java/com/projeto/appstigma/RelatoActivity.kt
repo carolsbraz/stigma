@@ -4,9 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.stigma.R
-import com.example.stigma.Relato
-import com.example.stigma.Usuario
+import com.example.stigma.*
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_relato.*
 
@@ -63,8 +61,6 @@ class RelatoActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
-
-
         }
 
         btn_voltar_1.setOnClickListener{

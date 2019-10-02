@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.projeto.appstigma.ConfiguracoesActivity"></activity>
+        <activity android:name="com.projeto.appstigma.RelatosDiariosActivity"></activity>
         <activity android:name="com.projeto.appstigma.AvatarActivity" />
         <activity android:name="com.projeto.appstigma.Passo3Activity" />
         <activity android:name="com.projeto.appstigma.Passo2Activity" />
