@@ -41,8 +41,5 @@ class ListarRelatosActivity : AppCompatActivity() {
             }
         }
 
-
-
-
     }
 }
