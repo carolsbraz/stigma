@@ -31,9 +31,6 @@ class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
         txt_emocao.text = item?.emocao.toString()
         txt_relato.text = item?.relato.toString()
 
-        btn_salvar.setOnClickListener {
-            relatos.removeValue()
-        }
 
         return v;
 
