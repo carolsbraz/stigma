@@ -17,8 +17,5 @@ class RelatosDiariosActivity : AppCompatActivity() {
             finish()
         }
 
-
-
-
     }
 }
