@@ -15,6 +15,7 @@
         <activity android:name="com.projeto.appstigma.Passo2Activity" />
         <activity android:name="com.projeto.appstigma.Passo1Activity" />
         <activity android:name="com.projeto.appstigma.RelatoActivity" />
+        <activity android:name="com.projeto.appstigma.MensagemActivity" />
         <activity android:name=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

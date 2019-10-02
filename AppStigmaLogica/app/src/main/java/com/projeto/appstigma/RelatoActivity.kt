@@ -65,5 +65,9 @@ class RelatoActivity : AppCompatActivity() {
 
 
         }
+
+        btn_voltar_1.setOnClickListener{
+            finish()
+        }
     }
 }
