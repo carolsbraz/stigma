@@ -15,7 +15,7 @@
             android:id="@+id/btn_voltar_1"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/voltar" />
 
@@ -29,160 +29,160 @@
 
     </FrameLayout>
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:text="Relate seu dia"
-            android:textColor="@color/rosa"
-            android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="586dp">
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="149dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="131dp"
-            android:layout_marginLeft="131dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="131dp"
-            android:layout_marginRight="131dp"
-            android:gravity="center"
-            android:text="14 set 2019, Sábado"
-            android:textStyle="bold" />
-
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="80dp"
-            android:src="@drawable/painel" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="433dp"
-            android:layout_height="65dp"
-            android:layout_marginTop="140dp"
-            android:gravity="center"
-            android:text="Como está se sentindo?"
-            android:textColor="#357989"
-            android:textSize="18sp" />
-
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="100dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Relate seu dia"
+                android:textColor="@color/rosa"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="14 set 2019, Sábado"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="392dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/painel" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="85dp"
+                android:text="Como está se sentindo?"
+                android:textColor="#357989"
+                android:textSize="18sp" />
 
             <ImageButton
                 android:id="@+id/btn_muitofeliz"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="145dp"
                 android:background="@drawable/happy2" />
 
             <ImageButton
                 android:id="@+id/btn_feliz"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="145dp"
                 android:background="@drawable/happy" />
 
             <ImageButton
                 android:id="@+id/btn_neutro"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="145dp"
                 android:background="@drawable/shocked" />
 
             <ImageButton
                 android:id="@+id/btn_triste"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="145dp"
                 android:background="@drawable/sad" />
 
             <ImageButton
                 android:id="@+id/btn_muitotriste"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="145dp"
                 android:background="@drawable/sad2" />
 
             <ImageButton
                 android:id="@+id/btn_cansado"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="145dp"
                 android:background="@drawable/bad" />
 
 
-        </LinearLayout>
-    </FrameLayout>
+            <EditText
+                android:id="@+id/txt_relato"
+                android:layout_width="387dp"
+                android:layout_height="279dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/caixatext"
+                android:gravity="top"
+                android:hint="Escreva aqui..."
+                android:padding="20dp"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="133dp"
+                android:layout_height="33dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="510dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/caixaview" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="515dp"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/camera" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="510dp"
+                android:text="@string/checkbox"
+                android:textColor="@color/azul" />
 
 
-    <EditText
-        android:id="@+id/txt_relato"
-        android:layout_width="363dp"
-        android:layout_height="123dp"
-        android:layout_gravity="center"
-        android:background="@drawable/caixatext"
-        android:gravity="top"
-        android:hint="Escreva aqui..."
-        android:padding="20dp"
-        android:textSize="18sp" />
+            <Button
+                android:id="@+id/btn_salvar"
+                android:layout_width="133dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="570dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/btn_color"
+                android:text="Salvar"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
 
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_marginTop="13dp"
-        android:orientation="horizontal">
+        </FrameLayout>
+    </ScrollView>
 
-        <View
-            android:layout_width="133dp"
-            android:layout_height="35dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="23dp"
-            android:background="@drawable/caixaview" />
-
-        <ImageButton
-            android:layout_width="20dp"
-            android:layout_height="22dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="14dp"
-            android:layout_marginRight="80dp"
-            android:src="@drawable/images" />
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/checkbox"
-            android:textColor="@color/azul" />
-
-        <Button
-            android:id="@+id/btn_salvar"
-            android:layout_width="133dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/btn_color"
-            android:gravity="center"
-            android:text="Salvar"
-            android:textColor="@android:color/background_light"
-            android:textSize="12sp" />
-    </FrameLayout>
 </LinearLayout>
+
 
