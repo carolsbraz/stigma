@@ -181,7 +181,7 @@
                 android:layout_width="133dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="630dp"
+                android:layout_marginTop="620dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/btn_color"
                 android:text="Salvar"

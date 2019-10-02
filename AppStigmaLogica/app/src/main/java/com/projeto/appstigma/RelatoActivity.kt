@@ -68,7 +68,7 @@ class RelatoActivity : AppCompatActivity() {
         }
 
         btn_listar_relatos.setOnClickListener {
-            val intent = Intent(this, RelatosDiariosActivity::class.java)
+            val intent = Intent(this, ListarRelatosActivity::class.java)
             startActivity(intent)
         }
     }
