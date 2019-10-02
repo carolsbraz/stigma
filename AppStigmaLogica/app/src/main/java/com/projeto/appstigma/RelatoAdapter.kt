@@ -4,9 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.TextView
+import android.widget.*
 import com.example.stigma.R
 import com.example.stigma.Relato
 
@@ -26,11 +24,15 @@ class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
 
         val txt_emocao = v.findViewById<TextView>(R.id.txt_emocao_item)
         val txt_relato = v.findViewById<TextView>(R.id.txt_relato_item)
-        val btn_salvar = v.findViewById<Button>(R.id.btn_salvar)
+        val btn_apagar = v.findViewById<ImageButton>(R.id.btn_apagar)
 
         txt_emocao.text = item?.emocao.toString()
         txt_relato.text = item?.relato.toString()
 
+        btn_apagar.setOnClickListener {
+//            relatosList.remove(item)
+//            notifyDataSetChanged()
+        }
 
         return v;
 
