@@ -13,13 +13,10 @@
 
         <ImageButton
             android:id="@+id/btn_voltar_3"
-            android:layout_width="61dp"
-            android:layout_height="68dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="71dp"
-            android:layout_marginRight="71dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/voltar" />
 
         <ImageView
@@ -56,14 +53,10 @@
 
     </FrameLayout>
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/edbarra"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:layout_height="match_parent"/>
+
+
 
 </LinearLayout>

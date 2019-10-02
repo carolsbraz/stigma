@@ -46,7 +46,7 @@ class RelatoActivity : AppCompatActivity() {
             if (user != null) {
 
                 var rel = txt_relato.text.toString()
-                val relato = Relato(rel, emocao,   user!!.email.toString())
+                val relato = Relato(rel, emocao,user.email.toString())
                 relatos.push().setValue(relato)
 
                 emocao = ""
