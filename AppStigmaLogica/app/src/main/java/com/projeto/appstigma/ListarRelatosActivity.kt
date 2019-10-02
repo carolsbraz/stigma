@@ -7,7 +7,7 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.activity_relatos_diarios.*
 
-class RelatosDiariosActivity : AppCompatActivity() {
+class ListarRelatosActivity : AppCompatActivity() {
 
     var emailLogado = ""
 
