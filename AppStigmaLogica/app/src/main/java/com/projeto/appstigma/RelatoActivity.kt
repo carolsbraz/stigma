@@ -1,5 +1,6 @@
 package com.projeto.appstigma
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -68,6 +69,11 @@ class RelatoActivity : AppCompatActivity() {
 
         btn_voltar_1.setOnClickListener{
             finish()
+        }
+
+        btn_listar_relatos.setOnClickListener {
+            val intent = Intent(this, RelatosDiariosActivity::class.java)
+            startActivity(intent)
         }
     }
 }
