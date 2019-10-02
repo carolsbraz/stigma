@@ -4,10 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.stigma.R
 
-class PerguntasMotivadorasActivity : AppCompatActivity() {
+class QuestoesMotivadorasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_perguntasmotivadoras)
+        setContentView(R.layout.activity_questoesmotivadoras)
     }
+
 }

@@ -76,6 +76,16 @@
             android:enabled="false"
             android:textSize="100px" />
 
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:stateListAnimator="@null"
+            android:textSize="9dp"
+            android:id="@+id/btn_pular2"
+            android:background="@null"/>
+
 
     </FrameLayout>
 
