@@ -30,8 +30,10 @@ class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
         txt_relato.text = item?.relato.toString()
 
         btn_apagar.setOnClickListener {
-//            relatosList.remove(item)
-//            notifyDataSetChanged()
+            relatos.child(item!!.id).removeValue()
+            this.remove(item)
+            relatosList.remove(item)
+            relatosListReverse.remove(item)
         }
 
         return v;

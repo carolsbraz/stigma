@@ -45,7 +45,7 @@ function carregar() {
 
             td1.append(item.val().emocao);
 
-            td2.append(item.val().mensagem);
+            td2.append(item.val().questao);
 
 
             tr.appendChild(td1);
@@ -64,12 +64,12 @@ function cadastroEvento() {
 
     var mensagem = {
         emocao: $('#emocao').val(),
-        mensagem: $('#mensagem').val()
+        questao: $('#mensagem').val()
     };
 
     let dados = {
         emocao: mensagem.emocao,
-        mensagem: mensagem.mensagem
+        questao: mensagem.questao
     };
 
     db.child("questoes").push().set(dados);

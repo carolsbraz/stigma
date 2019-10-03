@@ -51,8 +51,8 @@ class RelatoActivity : AppCompatActivity() {
             if (user != null) {
 
                 var rel = txt_relato.text.toString()
-                val relato = Relato(rel, emocao,user.email.toString(), dateInString)
-                relatos.push().setValue(relato)
+                val relato = Relato(relatos.push().key!!,rel, emocao,user.email.toString(), dateInString)
+                relatos.child(relato.id).setValue(relato)
 
                 emocao = ""
                 txt_relato.text.clear()
