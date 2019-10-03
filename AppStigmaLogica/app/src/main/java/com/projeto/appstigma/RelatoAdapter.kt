@@ -26,7 +26,7 @@ class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
         val txt_relato = v.findViewById<TextView>(R.id.txt_relato_item)
         val btn_apagar = v.findViewById<ImageButton>(R.id.btn_apagar)
 
-        txt_emocao.text = item?.emocao.toString()
+        txt_emocao.text = item?.data.toString()
         txt_relato.text = item?.relato.toString()
 
         btn_apagar.setOnClickListener {

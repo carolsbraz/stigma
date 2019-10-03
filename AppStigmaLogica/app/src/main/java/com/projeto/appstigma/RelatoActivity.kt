@@ -7,6 +7,9 @@ import android.widget.Toast
 import com.example.stigma.*
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_relato.*
+import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.util.*
 
 class RelatoActivity : AppCompatActivity() {
 
@@ -40,12 +43,15 @@ class RelatoActivity : AppCompatActivity() {
 
         val user = FirebaseAuth.getInstance().currentUser
 
+        val date = getCurrentDateTime()
+        val dateInString = date.toString("dd/MM/yyyy")
+
         btn_salvar.setOnClickListener {
 
             if (user != null) {
 
                 var rel = txt_relato.text.toString()
-                val relato = Relato(rel, emocao,user.email.toString())
+                val relato = Relato(rel, emocao,user.email.toString(), dateInString)
                 relatos.push().setValue(relato)
 
                 emocao = ""
@@ -71,5 +77,14 @@ class RelatoActivity : AppCompatActivity() {
             val intent = Intent(this, ListarRelatosActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    fun Date.toString(format: String, locale: Locale = Locale.getDefault()): String {
+        val formatter = SimpleDateFormat(format, locale)
+        return formatter.format(this)
+    }
+
+    fun getCurrentDateTime(): Date {
+        return Calendar.getInstance().time
     }
 }

@@ -1,18 +1,16 @@
 package com.example.stigma
 
-class Relato{
+class Questao{
     var relato : String = ""
     var emocao : String = ""
     var usuario : String = ""
-    var data : String = ""
 
     constructor(){
     }
 
-    constructor(relato : String, emocao : String, usuario : String, data : String){
+    constructor(relato : String, emocao : String, usuario : String){
         this.relato = relato
         this.emocao = emocao
         this.usuario = usuario
-        this.data = data
     }
 }

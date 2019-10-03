@@ -34,7 +34,7 @@ class ListarRelatosActivity : AppCompatActivity() {
 
         list_view_relatos.adapter = relatoAdapter
 
-        for (r in relatosList){
+        for (r in relatosListReverse){
             if(r.usuario == emailLogado){
 
                 relatoAdapter.addAll(r)

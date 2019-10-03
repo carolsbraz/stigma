@@ -9,6 +9,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 var usuariosList = mutableListOf<Usuario>()
 var relatosList = mutableListOf<Relato>()
+val relatosListReverse = relatosList.asReversed()
 
 var referencia = FirebaseDatabase.getInstance().getReference()
 var usuarios = referencia.child("usuarios")
