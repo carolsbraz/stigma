@@ -3,6 +3,7 @@ package com.projeto.appstigma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import kotlinx.android.synthetic.main.activity_passo2.*
 
@@ -23,6 +24,11 @@ class Passo2Activity : AppCompatActivity() {
             val intent = Intent(this, Passo3Activity::class.java)
             startActivity(intent)
             this.finish()
+        }
+
+        btn_pular_tutorial_2.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
         }
 
     }

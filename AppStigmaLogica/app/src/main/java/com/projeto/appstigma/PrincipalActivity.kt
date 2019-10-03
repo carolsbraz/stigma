@@ -6,9 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.projeto.appstigma.MensagemActivity
-import com.projeto.appstigma.RelatoActivity
-import com.projeto.appstigma.usuariosList
+import com.projeto.appstigma.*
 import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_principal.*
 
@@ -41,6 +39,16 @@ class PrincipalActivity : AppCompatActivity() {
            val intent = Intent(this, MensagemActivity::class.java)
            startActivity(intent)
        }
+
+        btn_tela_questao.setOnClickListener {
+            val intent = Intent(this, QuestoesMotivadorasActivity::class.java)
+            startActivity(intent)
+        }
+
+        btn_tela_desafio.setOnClickListener {
+            val intent = Intent(this, DesafioActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
