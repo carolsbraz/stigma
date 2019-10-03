@@ -11,11 +11,16 @@ class QuestoesMotivadorasActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar!!.hide()
         setContentView(R.layout.activity_questoesmotivadoras)
 
         btn_listar_questoes.setOnClickListener {
             val intent = Intent(this, ListarQuestoesActivity::class.java)
             startActivity(intent)
+        }
+
+        btn_voltar_6.setOnClickListener {
+            finish()
         }
     }
 

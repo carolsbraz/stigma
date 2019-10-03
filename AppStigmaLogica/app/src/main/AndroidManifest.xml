@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.projeto.appstigma.QuestoesMotivadorasActivity"></activity>
+        <activity android:name="com.projeto.appstigma.DesafioActivity"></activity>
+        <activity android:name="com.projeto.appstigma.ListarQuestoesActivity"></activity>
         <activity android:name="com.projeto.appstigma.ConfiguracoesActivity" />
         <activity android:name="com.projeto.appstigma.ListarRelatosActivity" />
         <activity android:name="com.projeto.appstigma.AvatarActivity" />

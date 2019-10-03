@@ -13,6 +13,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="frase_mensagem">Diga como está se sentindo e receba uma mensagem motivadora!</string>
+    <string name="menu_maquina">Adicione itens à sua máquina do tempo e veja tudo juntinho no seu aniversário de cadastro!</string>
     <string name="frase_mensagem_1">Como está se sentindo agora?</string>
     <string name="titulo_mensagem">Mensagens Diárias</string>
     <string name="checkbox">Adicionar a máquina do tempo</string>

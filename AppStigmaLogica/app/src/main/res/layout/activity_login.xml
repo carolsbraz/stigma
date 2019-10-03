@@ -27,8 +27,8 @@
             android:layout_width="468dp"
             android:layout_height="228dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="320dp"
-            android:src="@drawable/base2" />
+            android:layout_marginTop="354dp"
+            android:src="@drawable/base14" />
 
         <ImageButton
             android:id="@+id/btn_login"

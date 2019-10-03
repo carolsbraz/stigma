@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:id="@+id/btn_voltar_1"
+            android:id="@+id/btn_voltar_6"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="20dp"
