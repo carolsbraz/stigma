@@ -84,8 +84,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
                 android:stateListAnimator="@null"
-                android:textSize="9dp"
-                android:id="@+id/btn_pular1"
+                android:text="Pular Tutorial"
+                android:textSize="9sp"
+                android:id="@+id/btn_pular_tutorial_1"
                 android:background="@null"/>
 
         </FrameLayout>
