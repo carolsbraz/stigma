@@ -5,7 +5,7 @@
     <title>Stigma</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/desafios.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
@@ -42,43 +42,27 @@
         <div class="row painel">
 
 
-            <div class="col-md-2 btns">
+            <div class="col-md-12 sol">
                 <center>
 
-                    <a href="mensagens.html">
-                        <img src="src/postbox.png" width="100px" class="func">
-                    </a>
-
-                    <br><br> <br><br>
-
-                    <a href="desafios.html">
-                        <img src="src/mountain-peak.png" width="100px" class="func">
-                        <br>
-
-                    </a>
-
-                    <br><br> <br><br>
-
-                    <a href="questoes.html">
-                        <img src="src/question.png" width="100px" class="func">
-                        <br>
-
-                    </a>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#cad-mensagem">
+                        Novo desafio
+                    </button>
 
                 </center>
             </div>
 
-            <div class="col-md-10 sol">
+            <div class="col-md-12 sol">
                 <center>
-
-                    <h4>Solicitações para administrar</h4>
                     <br>
+                    <h4>Desafios</h4>
+
                     <table class="table">
                         <thead>
                             <tr class="titulo-tabela">
-                                <th scope="col">Nome</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Situação</th>
+                                <th scope="col">Emoção</th>
+                                <th scope="col">Desafio</th>
+
                             </tr>
                         </thead>
                         <tbody id="usersList">
@@ -93,11 +77,11 @@
 
     </div>
 
-    <div class="modal" tabindex="-1" role="dialog" id="informacoes">
+    <div class="modal" tabindex="-1" role="dialog" id="mensagem">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Solicitação para administrar</h5>
+                    <h5 class="modal-title">Desafio</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -106,15 +90,15 @@
 
                     <form>
                         <div class="form-group row">
-                            <label for="staticName" class="col-sm-2 col-form-label">Nome</label>
+                            <label for="staticName" class="col-sm-2 col-form-label">Emoção</label>
                             <div class="col-sm-10">
-                                <input type="text" readonly class="form-control" id="modal-nome" placeholder="Nome" value="1">
+                                <input type="text" readonly class="form-control" id="modal-emocao" placeholder="Nome" value="1">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Desafio</label>
                             <div class="col-sm-10">
-                                <input type="text" readonly class="form-control" id="modal-email" value="2">
+                                <textarea type="text" readonly class="form-control" id="modal-mensagem" value="2" rows="3"></textarea>
                             </div>
                         </div>
                     </form>
@@ -122,11 +106,50 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" onclick="javascript:aprovar();">Aprovar</button>
+                    <button type="button" class="btn btn-primary">Apagar</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="cad-mensagem">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cadastrar desafio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Emoção</label>
+                            <select class="form-control" id="emocao-cad-desafio">
+                                <option>muitofeliz</option>
+                                <option>feliz</option>
+                                <option>neutro</option>
+                                <option>triste</option>
+                                <option>muitotriste</option>
+                                <option>cansado</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Desafio</label>
+                            <textarea class="form-control" id="desafio-cad" rows="3"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="javascript:cadastroEvento();">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
@@ -135,7 +158,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/firebase.js"></script>
-    <script src="js/principal.js"></script>
+    <script src="js/desafios.js"></script>
 
 
 </body>

@@ -30,7 +30,7 @@ $(document).ready(function() {
 function carregar() {
     var userList = document.getElementById('usersList')
 
-    db.child("questoes").on('value', function(snapshot) {
+    db.child("desafios").on('value', function(snapshot) {
 
         usersList.innerHTML = '';
         snapshot.forEach(function(item) {
@@ -45,7 +45,7 @@ function carregar() {
 
             td1.append(item.val().emocao);
 
-            td2.append(item.val().questao);
+            td2.append(item.val().mensagem);
 
 
             tr.appendChild(td1);
@@ -63,18 +63,18 @@ function carregar() {
 function cadastroEvento() {
 
     var mensagem = {
-        emocao: $('#emocao-quest-cad').val(),
-        questao: $('#questao-cad').val()
+        emocao: $('#emocao-cad-desafio').val(),
+        mensagem: $('#desafio-cad').val()
     };
+
+    console.log(mensagem.emocao + mensagem.mensagem)
 
     let dados = {
         emocao: mensagem.emocao,
-        questao: mensagem.questao
+        mensagem: mensagem.mensagem
     };
 
-    db.child("questoes").push().set(dados);
+    db.child("desafios").push().set(dados);
     console.log(dados);
-
-    $('#questao-cad').val("");
 
 }

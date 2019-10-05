@@ -1,11 +1,11 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     console.log("entrou");
 
-    $("table").delegate('tr', 'click', function () {
+    $("table").delegate('tr', 'click', function() {
         console.log("clicou")
 
-        $(this).find('td').each(function (i) {
+        $(this).find('td').each(function(i) {
             $th = $("thead th")[i];
 
             if (jQuery($th).text() == "Emoção") {
@@ -30,10 +30,10 @@ $(document).ready(function () {
 function carregar() {
     var userList = document.getElementById('usersList')
 
-    db.child("mensagens").on('value', function (snapshot) {
+    db.child("mensagens").on('value', function(snapshot) {
 
         usersList.innerHTML = '';
-        snapshot.forEach(function (item) {
+        snapshot.forEach(function(item) {
 
             //var td = document.createElement('td');
             //td.append(document.createTextNode(item.val().nome + item.val().email + item.val().pedido));
@@ -63,9 +63,11 @@ function carregar() {
 function cadastroEvento() {
 
     var mensagem = {
-        emocao: $('#emocao').val(),
-        mensagem: $('#mensagem').val()
+        emocao: $('#emocao-cad').val(),
+        mensagem: $('#mensagem-cad').val()
     };
+
+    console.log(mensagem.emocao + mensagem.mensagem)
 
     let dados = {
         emocao: mensagem.emocao,

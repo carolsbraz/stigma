@@ -1,6 +1,6 @@
 body {
     background-color: #f6f6f6;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .btn-cadastro {
@@ -32,11 +32,9 @@ body {
     position: absolute
 }
 
-
 .logotipo {
     width: 500px;
     margin-left: 0px;
-    
 }
 
 .bem-vindo {
@@ -46,5 +44,4 @@ body {
 
 .baixo {
     margin-left: 3%;
-    
 }
