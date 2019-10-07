@@ -15,6 +15,8 @@ class MensagemActivity : AppCompatActivity() {
 
     val context: Context = this
     var emocao = ""
+    var lastSort = ""
+    var autorSort = ""
     var mensagemSort = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,8 +51,9 @@ class MensagemActivity : AppCompatActivity() {
 
                     var i = (0..mensagensList.size).random()
 
-                    if (mensagensList[i].emocao == emocao) {
+                    if (mensagensList[i].emocao == emocao && mensagensList[i].mensagem != lastSort) {
                         mensagemSort = mensagensList[i].mensagem
+                        autorSort = mensagensList[i].autor
                     } else {
                         mensagemSort == ""
                     }
@@ -62,28 +65,57 @@ class MensagemActivity : AppCompatActivity() {
                 dialog.setContentView(view)
 
                 view.txt_mensagem_modal.text = mensagemSort
+                view.txt_autor_modal.text = autorSort
 
-                if(emocao == "muitofeliz"){
+                if (emocao == "muitofeliz") {
                     view.img_emocao.setImageResource(R.drawable.happy2)
                 }
-                if(emocao == "feliz"){
+                if (emocao == "feliz") {
                     view.img_emocao.setImageResource(R.drawable.happy)
                 }
-                if(emocao == "neutro"){
+                if (emocao == "neutro") {
                     view.img_emocao.setImageResource(R.drawable.shocked)
                 }
-                if(emocao == "triste"){
+                if (emocao == "triste") {
                     view.img_emocao.setImageResource(R.drawable.sad)
                 }
-                if(emocao == "muitotriste"){
+                if (emocao == "muitotriste") {
                     view.img_emocao.setImageResource(R.drawable.sad2)
                 }
-                if(emocao == "cansado"){
+                if (emocao == "cansado") {
                     view.img_emocao.setImageResource(R.drawable.bad)
                 }
 
                 dialog.show()
 
+                lastSort = mensagemSort
+
+                mensagemSort = ""
+
+                view.btn_random.setOnClickListener {
+
+                    do {
+
+                        var i = (0..mensagensList.size).random()
+
+                        if (mensagensList[i].emocao == emocao && mensagensList[i].mensagem != lastSort) {
+                            mensagemSort = mensagensList[i].mensagem
+                            autorSort = mensagensList[i].autor
+                        } else {
+                            mensagemSort == ""
+                        }
+
+                    } while (mensagemSort == "")
+
+                    view.txt_mensagem_modal.text = mensagemSort
+                    view.txt_autor_modal.text = autorSort
+
+
+                    lastSort = mensagemSort
+
+                    mensagemSort = ""
+
+                }
 
             } else {
                 Toast.makeText(
@@ -97,6 +129,8 @@ class MensagemActivity : AppCompatActivity() {
         btn_voltar_2.setOnClickListener {
             finish()
         }
+
+
     }
 
     fun ClosedRange<Int>.random() =

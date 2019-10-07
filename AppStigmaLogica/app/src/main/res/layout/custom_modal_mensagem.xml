@@ -29,24 +29,27 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="90dp"
             android:text="TextView"
-            android:textColor="@color/rosa"
-            android:textSize="18sp" />
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/txt_autor_modal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="130dp"
             android:text="TextView"
-            android:textColor="@color/rosa"
+            android:textColor="#000"
             android:textSize="18sp" />
 
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="170dp"
-            android:background="@drawable/random" />
+            android:layout_marginTop="180dp"
+            android:background="@drawable/random"
+            android:id="@+id/btn_random"/>
 
     </FrameLayout>
 
