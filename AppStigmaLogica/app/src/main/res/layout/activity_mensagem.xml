@@ -57,7 +57,7 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="392dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:src="@drawable/painel" />
@@ -81,43 +81,43 @@
 
             <ImageButton
                 android:id="@+id/btn_muitofeliz2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginLeft="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
                 android:background="@drawable/happy2" />
 
             <ImageButton
                 android:id="@+id/btn_feliz2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/happy" />
 
             <ImageButton
                 android:id="@+id/btn_neutro2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/shocked" />
 
             <ImageButton
                 android:id="@+id/btn_triste2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/sad" />
 
             <ImageButton
                 android:id="@+id/btn_muitotriste2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/sad2" />
 
             <ImageButton
                 android:id="@+id/btn_cansado2"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/bad" />
 

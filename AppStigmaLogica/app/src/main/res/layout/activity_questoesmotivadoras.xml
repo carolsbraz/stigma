@@ -61,7 +61,7 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="392dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:src="@drawable/painel" />
@@ -85,43 +85,43 @@
 
                 <ImageButton
                     android:id="@+id/btn_muitofeliz1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
                     android:background="@drawable/happy2" />
 
                 <ImageButton
                     android:id="@+id/btn_feliz1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/happy" />
 
                 <ImageButton
                     android:id="@+id/btn_neutro1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/shocked" />
 
                 <ImageButton
                     android:id="@+id/btn_triste1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sad" />
 
                 <ImageButton
                     android:id="@+id/btn_muitotriste1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/sad2" />
 
                 <ImageButton
                     android:id="@+id/btn_cansado1"
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/bad" />
 
@@ -132,8 +132,8 @@
 
         <EditText
             android:id="@+id/txt_resposta"
-            android:layout_width="387dp"
-            android:layout_height="104dp"
+            android:layout_width="389dp"
+            android:layout_height="120dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="250dp"
             android:background="@drawable/caixatext"
