@@ -42,14 +42,18 @@ function carregar() {
             var tr = document.createElement('tr');
             var td1 = document.createElement('td');
             var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
 
             td1.append(item.val().emocao);
 
             td2.append(item.val().mensagem);
 
+            td3.append(item.val().autor);
+
 
             tr.appendChild(td1);
             tr.appendChild(td2);
+            tr.appendChild(td3);
 
 
             userList.appendChild(tr);
@@ -64,14 +68,16 @@ function cadastroEvento() {
 
     var mensagem = {
         emocao: $('#emocao-cad').val(),
-        mensagem: $('#mensagem-cad').val()
+        mensagem: $('#mensagem-cad').val(),
+        autor: $('#autor-cad').val()
     };
 
     console.log(mensagem.emocao + mensagem.mensagem)
 
     let dados = {
         emocao: mensagem.emocao,
-        mensagem: mensagem.mensagem
+        mensagem: mensagem.mensagem,
+        autor: mensagem.autor
     };
 
     db.child("mensagens").push().set(dados);
