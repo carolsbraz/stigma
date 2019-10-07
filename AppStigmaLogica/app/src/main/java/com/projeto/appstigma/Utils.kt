@@ -15,9 +15,10 @@ val relatosListReverse = relatosList.asReversed()
 
 var respostasList = mutableListOf<Resposta>()
 var respostasListReverse = respostasList.asReversed()
-
-
 var mensagensList = mutableListOf<Mensagem>()
+
+var desafiosList = mutableListOf<Desafio>()
+var desafiosListReverse = desafiosList.asReversed()
 
 var referencia = FirebaseDatabase.getInstance().getReference()
 var usuarios = referencia.child("usuarios")
@@ -25,6 +26,7 @@ var relatos = referencia.child("relatos")
 var questoes = referencia.child("questoes")
 var respostas = referencia.child("respostas")
 var mensagens = referencia.child("mensagens")
+var desafios = referencia.child("desafios")
 
 val a = usuarios.addChildEventListener(object : ChildEventListener {
     override fun onChildAdded(p0: DataSnapshot, p1: String?) {
@@ -134,6 +136,30 @@ val m = mensagens.addChildEventListener(object : ChildEventListener {
         val mens: Mensagem? = p0.getValue(Mensagem::class.java)
         if (mens !in mensagensList)
             mensagensList.add(mens!!)
+    }
+
+    override fun onChildChanged(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildMoved(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildRemoved(p0: DataSnapshot) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onCancelled(p0: DatabaseError) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+})
+
+val d = desafios.addChildEventListener(object : ChildEventListener {
+    override fun onChildAdded(p0: DataSnapshot, p1: String?) {
+        val des: Desafio? = p0.getValue(Desafio::class.java)
+        if(des !in desafiosList)
+            desafiosList.add(des!!)
     }
 
     override fun onChildChanged(p0: DataSnapshot, p1: String?) {
