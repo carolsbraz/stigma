@@ -141,7 +141,7 @@
             <EditText
                 android:id="@+id/txt_relato"
                 android:layout_width="387dp"
-                android:layout_height="343dp"
+                android:layout_height="258dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="220dp"
                 android:background="@drawable/caixatext"
@@ -154,7 +154,7 @@
                 android:layout_width="133dp"
                 android:layout_height="33dp"
                 android:layout_gravity="right"
-                android:layout_marginTop="570dp"
+                android:layout_marginTop="495dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/caixaview" />
 
@@ -162,7 +162,7 @@
                 android:layout_width="20dp"
                 android:layout_height="22dp"
                 android:layout_gravity="right"
-                android:layout_marginTop="575dp"
+                android:layout_marginTop="500dp"
                 android:layout_marginRight="80dp"
                 android:src="@drawable/camera" />
 
@@ -171,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
-                android:layout_marginTop="570dp"
+                android:layout_marginTop="495dp"
                 android:text="@string/checkbox"
                 android:textColor="@color/azul" />
 
@@ -181,7 +181,7 @@
                 android:layout_width="133dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="620dp"
+                android:layout_marginTop="540dp"
                 android:layout_marginBottom="40dp"
                 android:background="@drawable/btn_color"
                 android:text="Salvar"

@@ -86,7 +86,7 @@
                 android:gravity="center"
                 android:text="Mensagens diárias"
                 android:textColor="@color/rosa"
-                android:textSize="13sp" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="45dp"
@@ -99,9 +99,9 @@
 
             <Button
                 android:id="@+id/btn_tela_mensagem"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginLeft="75dp"
+                android:layout_width="121dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="60dp"
                 android:layout_marginTop="465dp"
                 android:layout_marginRight="0dp"
                 android:background="@drawable/btn_color_menu"
@@ -122,11 +122,11 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="43dp"
-                android:layout_marginTop="549dp"
+                android:layout_marginTop="540dp"
                 android:gravity="center"
                 android:text="Desafios"
                 android:textColor="@color/rosa"
-                android:textSize="13sp" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="45dp"
@@ -142,16 +142,16 @@
                 android:layout_marginLeft="65dp"
                 android:layout_marginTop="620dp"
                 android:gravity="center"
-                android:text="Você possui uma mensagem!"
+                android:text="Já se desafiou hoje?"
                 android:textColor="@android:color/black"
                 android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_tela_desafio"
-                android:layout_width="wrap_content"
-                android:layout_height="18.5dp"
-                android:layout_marginLeft="75dp"
-                android:layout_marginTop="650dp"
+                android:layout_width="121dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="655dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Realizar"
                 android:textColor="@android:color/background_light"
@@ -185,7 +185,7 @@
                 android:gravity="center"
                 android:text="Relate seu dia"
                 android:textColor="@color/rosa"
-                android:textSize="13sp" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="45dp"
@@ -207,11 +207,11 @@
 
             <Button
                 android:id="@+id/btn_tela_relato"
-                android:layout_width="wrap_content"
-                android:layout_height="18.5dp"
+                android:layout_width="121dp"
+                android:layout_height="28dp"
                 android:layout_gravity="right"
                 android:layout_marginTop="465dp"
-                android:layout_marginRight="75dp"
+                android:layout_marginRight="60dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Escrever"
                 android:textColor="@android:color/background_light"
@@ -235,13 +235,13 @@
                 android:gravity="center"
                 android:text="Questões motivadoras"
                 android:textColor="@color/rosa"
-                android:textSize="13.5sp" />
+                android:textSize="14sp" />
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="272dp"
-                android:layout_marginTop="569dp"
+                android:layout_marginTop="572dp"
                 android:src="@drawable/questao" />
 
 
@@ -251,18 +251,18 @@
                 android:layout_marginLeft="245dp"
                 android:layout_marginTop="620dp"
                 android:gravity="center"
-                android:text="Você possui uma mensagem!"
+                android:text="Desmotivado para escrever?"
                 android:textColor="@android:color/black"
                 android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_tela_questao"
-                android:layout_width="wrap_content"
-                android:layout_height="18.5dp"
+                android:layout_width="121dp"
+                android:layout_height="28dp"
                 android:layout_gravity="right"
                 android:layout_marginLeft="260dp"
-                android:layout_marginTop="650dp"
-                android:layout_marginRight="75dp"
+                android:layout_marginTop="655dp"
+                android:layout_marginRight="60dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Responder"
                 android:textColor="@android:color/background_light"
@@ -281,7 +281,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:layout_marginTop="760dp"
+                android:layout_marginTop="750dp"
                 android:layout_marginRight="80dp"
                 android:gravity="center"
                 android:text="Máquina do tempo"
@@ -308,9 +308,9 @@
 
             <Button
                 android:id="@+id/btn_tela_mauqinadotempo"
-                android:layout_width="match_parent"
-                android:layout_height="18.5dp"
-                android:layout_marginLeft="230dp"
+                android:layout_width="121dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="210dp"
                 android:layout_marginTop="830dp"
                 android:background="@drawable/btn_color_menu_2"
                 android:text="Abrir"
