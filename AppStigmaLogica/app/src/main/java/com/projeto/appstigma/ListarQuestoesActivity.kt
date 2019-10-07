@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_desafio.*
 import kotlinx.android.synthetic.main.activity_listar_questoes.*
 import kotlinx.android.synthetic.main.activity_listar_questoes.txt_nome_usuario
 import kotlinx.android.synthetic.main.activity_relatos_diarios.*
