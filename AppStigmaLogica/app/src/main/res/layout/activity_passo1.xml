@@ -56,6 +56,7 @@
                 android:src="@drawable/barra1" />
 
 
+
             <ImageButton
                 android:id="@+id/btn_left_passo1"
                 android:layout_width="70dp"
