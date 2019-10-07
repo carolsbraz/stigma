@@ -42,14 +42,16 @@
 
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_width="424dp"
-                android:layout_height="278dp"
+                android:layout_width="514dp"
+                android:layout_height="312dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="15dp"
+                android:foregroundGravity="clip_horizontal"
                 android:src="@drawable/base6" />
 
             <ImageView
-                android:layout_width="250dp"
-                android:layout_height="140dp"
+                android:layout_width="275dp"
+                android:layout_height="172dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="130dp"
                 android:src="@drawable/grafico" />
@@ -60,7 +62,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="105dp"
+                android:gravity="clip_horizontal|center_vertical"
                 android:text="Null"
                 android:textColor="@color/azul"
                 android:textSize="18sp"
@@ -68,46 +71,39 @@
 
             <View
                 android:id="@+id/view_mensagem"
-                android:layout_width="132dp"
-                android:layout_height="157dp"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
                 android:layout_gravity="left"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="300dp"
-                android:background="@drawable/caixaviewmenu"/>
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="330dp"
+                android:background="@drawable/caixaviewmenu" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="148dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="315dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="355dp"
                 android:gravity="center"
                 android:text="Mensagens diárias"
                 android:textColor="@color/rosa"
-                android:textSize="12sp" />
+                android:textSize="13sp" />
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="94dp"
-                android:layout_marginTop="340dp"
+                android:layout_marginTop="380dp"
+                android:foregroundGravity="center|center_horizontal"
                 android:src="@drawable/correio" />
 
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="390dp"
-                android:gravity="center"
-                android:text="Você possui uma mensagem!"
-                android:textColor="@android:color/black"
-                android:textSize="10sp" />
-
             <Button
-                android:layout_width="70dp"
-                android:layout_height="18.5dp"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="425dp"
+                android:id="@+id/btn_tela_mensagem"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="465dp"
+                android:layout_marginRight="0dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Ver"
                 android:textColor="@android:color/background_light"
@@ -115,28 +111,28 @@
 
             <View
                 android:id="@+id/view_desafio"
-                android:layout_width="132dp"
-                android:layout_height="157dp"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
                 android:layout_gravity="left"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="490dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="524dp"
                 android:background="@drawable/caixaviewmenu" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:layout_marginTop="510dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="549dp"
                 android:gravity="center"
                 android:text="Desafios"
                 android:textColor="@color/rosa"
-                android:textSize="12sp" />
+                android:textSize="13sp" />
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="94dp"
-                android:layout_marginTop="535dp"
+                android:layout_marginTop="569dp"
                 android:src="@drawable/desafio" />
 
 
@@ -144,105 +140,78 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="65dp"
-                android:layout_marginTop="585dp"
+                android:layout_marginTop="620dp"
                 android:gravity="center"
                 android:text="Você possui uma mensagem!"
                 android:textColor="@android:color/black"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_tela_desafio"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="18.5dp"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="620dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="650dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Realizar"
                 android:textColor="@android:color/background_light"
                 android:textSize="10sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="315dp"
-                android:gravity="center"
-                android:text="Mensagens diárias"
-                android:textColor="@color/rosa"
-                android:textSize="12sp" />
-
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginLeft="94dp"
-                android:layout_marginTop="340dp"
-                android:src="@drawable/correio" />
 
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="65dp"
-                android:layout_marginTop="390dp"
+                android:layout_marginTop="430dp"
                 android:gravity="center"
                 android:text="Você possui uma mensagem!"
                 android:textColor="@android:color/black"
-                android:textSize="10sp" />
-
-            <Button
-                android:id="@+id/btn_tela_mensagem"
-                android:layout_width="70dp"
-                android:layout_height="18.5dp"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="425dp"
-                android:background="@drawable/btn_color_menu"
-                android:text="Ver"
-                android:textColor="@android:color/background_light"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <View
                 android:id="@+id/view_relato"
-                android:layout_width="132dp"
-                android:layout_height="157dp"
-                android:layout_gravity="left"
-                android:layout_marginLeft="220dp"
-                android:layout_marginTop="300dp"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="330dp"
+                android:layout_marginRight="45dp"
                 android:background="@drawable/caixaviewmenu" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="148dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="315dp"
+                android:layout_marginLeft="216dp"
+                android:layout_marginTop="355dp"
                 android:gravity="center"
                 android:text="Relate seu dia"
                 android:textColor="@color/rosa"
-                android:textSize="12sp" />
+                android:textSize="13sp" />
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="260dp"
-                android:layout_marginTop="340dp"
+                android:layout_marginLeft="272dp"
+                android:layout_marginTop="380dp"
                 android:src="@drawable/relato" />
 
 
             <TextView
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="240dp"
-                android:layout_marginTop="390dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="430dp"
                 android:gravity="center"
                 android:text="Já fez seu relato hoje?"
                 android:textColor="@android:color/black"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_tela_relato"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="18.5dp"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="425dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="465dp"
+                android:layout_marginRight="75dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Escrever"
                 android:textColor="@android:color/background_light"
@@ -251,47 +220,49 @@
 
             <View
                 android:id="@+id/view_questao"
-                android:layout_width="132dp"
-                android:layout_height="157dp"
-                android:layout_gravity="left"
-                android:layout_marginLeft="220dp"
-                android:layout_marginTop="490dp"
+                android:layout_width="150dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="524dp"
+                android:layout_marginRight="43dp"
+                android:layout_gravity="right"
                 android:background="@drawable/caixaviewmenu" />
 
             <TextView
-                android:layout_width="80dp"
+                android:layout_width="132dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="246dp"
-                android:layout_marginTop="500dp"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="534dp"
                 android:gravity="center"
                 android:text="Questões motivadoras"
                 android:textColor="@color/rosa"
-                android:textSize="12sp" />
+                android:textSize="13.5sp" />
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
-                android:layout_marginLeft="265dp"
-                android:layout_marginTop="535dp"
+                android:layout_marginLeft="272dp"
+                android:layout_marginTop="569dp"
                 android:src="@drawable/questao" />
 
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="240dp"
-                android:layout_marginTop="585dp"
+                android:layout_marginLeft="245dp"
+                android:layout_marginTop="620dp"
                 android:gravity="center"
                 android:text="Você possui uma mensagem!"
                 android:textColor="@android:color/black"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_tela_questao"
-                android:layout_width="70dp"
+                android:layout_width="wrap_content"
                 android:layout_height="18.5dp"
-                android:layout_marginLeft="254dp"
-                android:layout_marginTop="620dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="650dp"
+                android:layout_marginRight="75dp"
                 android:background="@drawable/btn_color_menu"
                 android:text="Responder"
                 android:textColor="@android:color/background_light"
@@ -299,10 +270,10 @@
 
             <View
                 android:id="@+id/view_maquina"
-                android:layout_width="313dp"
-                android:layout_height="128dp"
+                android:layout_width="324dp"
+                android:layout_height="175dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="670dp"
+                android:layout_marginTop="718dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/caixaviewmenu" />
 
@@ -310,7 +281,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:layout_marginTop="685dp"
+                android:layout_marginTop="760dp"
                 android:layout_marginRight="80dp"
                 android:gravity="center"
                 android:text="Máquina do tempo"
@@ -320,29 +291,28 @@
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:layout_gravity="left"
                 android:layout_marginLeft="77dp"
-                android:layout_marginTop="685dp"
+                android:layout_marginTop="760dp"
                 android:src="@drawable/maquinadotempo" />
 
 
             <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="195dp"
-                android:layout_marginTop="710dp"
+                android:layout_width="183dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="767dp"
                 android:gravity="center"
                 android:text="@string/menu_maquina"
                 android:textColor="@android:color/black"
-                android:textSize="10sp" />
+                android:textSize="11sp" />
 
             <Button
                 android:id="@+id/btn_tela_mauqinadotempo"
-                android:layout_width="70dp"
+                android:layout_width="match_parent"
                 android:layout_height="18.5dp"
-                android:layout_marginLeft="235dp"
-                android:layout_marginTop="754dp"
-                android:background="@color/azul"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="830dp"
+                android:background="@drawable/btn_color_menu_2"
                 android:text="Abrir"
                 android:textColor="@android:color/background_light"
                 android:textSize="10sp" />

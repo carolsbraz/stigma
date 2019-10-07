@@ -43,8 +43,11 @@
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginRight="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginBottom="9dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="414dp"
             android:drawableStart="@drawable/ic_email_black_24dp"
@@ -52,18 +55,23 @@
             android:drawablePadding="5dp"
             android:hint="@string/prompt_email"
             android:inputType="textEmailAddress"
-            android:selectAllOnFocus="true" />
+            android:selectAllOnFocus="true"
+            style="@style/StyledTilEditText"/>
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="460dp"
+            android:layout_marginRight="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginBottom="9dp"
             android:drawableStart="@drawable/senha"
             android:drawableLeft="@drawable/senha"
             android:drawablePadding="5dp"
             android:hint="Senha"
+            style="@style/StyledTilEditText"
             android:imeActionLabel="@string/action_sign_in_short"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
