@@ -27,6 +27,15 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/logorosa" />
 
+        <ImageButton
+            android:id="@+id/btn_listar_respostas"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/listar" />
+
     </FrameLayout>
 
 
@@ -42,87 +51,87 @@
         android:textStyle="bold" />
 
     <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <FrameLayout
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="392dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/painel" />
+
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/frase_mensagem_1"
+                android:textColor="#357989"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
 
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="392dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:src="@drawable/painel" />
+                <ImageButton
+                    android:id="@+id/btn_muitofeliz1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/happy2" />
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="65dp"
-                    android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:text="@string/frase_mensagem_1"
-                    android:textColor="#357989"
-                    android:textSize="18sp" />
+                <ImageButton
+                    android:id="@+id/btn_feliz1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/happy" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="100dp"
-                    android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_neutro1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shocked" />
 
+                <ImageButton
+                    android:id="@+id/btn_triste1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sad" />
 
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="60dp"
-                        android:id="@+id/btn_muitofeliz1"
-                        android:background="@drawable/happy2" />
+                <ImageButton
+                    android:id="@+id/btn_muitotriste1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sad2" />
 
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="15dp"
-                        android:id="@+id/btn_feliz1"
-                        android:background="@drawable/happy" />
-
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="15dp"
-                        android:id="@+id/btn_neutro1"
-                        android:background="@drawable/shocked" />
-
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="15dp"
-                        android:id="@+id/btn_triste1"
-                        android:background="@drawable/sad" />
-
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="15dp"
-                        android:id="@+id/btn_muitotriste1"
-                        android:background="@drawable/sad2" />
-
-                    <ImageButton
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:layout_marginLeft="15dp"
-                        android:id="@+id/btn_cansado1"
-                        android:background="@drawable/bad" />
+                <ImageButton
+                    android:id="@+id/btn_cansado1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bad" />
 
 
-                </LinearLayout>
+            </LinearLayout>
 
-            </FrameLayout>
+        </FrameLayout>
 
         <EditText
-            android:id="@+id/txt_relato"
+            android:id="@+id/txt_resposta"
             android:layout_width="387dp"
             android:layout_height="104dp"
             android:layout_gravity="center_horizontal"
@@ -133,17 +142,17 @@
             android:padding="20dp"
             android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/btn_salvar"
-                android:layout_width="133dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="380dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/btn_color"
-                android:text="responder"
-                android:textColor="@android:color/background_light"
-                android:textSize="12sp" />
+        <Button
+            android:id="@+id/btn_responder"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="380dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_color"
+            android:text="responder"
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_gerar_questao"
@@ -160,11 +169,11 @@
             android:id="@+id/txt_pergunta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Null"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="230dp"
-            android:textSize="15dp"
-            android:textColor="@color/rosa"/>
+            android:text="Gere uma pergunta acima!"
+            android:textColor="@color/rosa"
+            android:textSize="15dp" />
 
 
     </FrameLayout>

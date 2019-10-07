@@ -13,7 +13,6 @@ class DesafioActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_desafio)
 
-
         btn_voltar_4.setOnClickListener{
           finish()
         }

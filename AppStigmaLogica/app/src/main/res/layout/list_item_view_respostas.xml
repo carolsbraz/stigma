@@ -17,17 +17,17 @@
             android:src="@drawable/base11" />
 
         <TextView
-            android:id="@+id/txt_relato_item"
+            android:id="@+id/txt_resposta_item2"
             android:layout_width="300dp"
-            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="Null"
+            android:gravity="center"
             android:textSize="18sp"
             android:maxLength="50"/>
 
         <TextView
-            android:id="@+id/txt_emocao_item"
+            android:id="@+id/txt_questao_item2"
             android:layout_width="300dp"
             android:gravity="center"
             android:layout_height="wrap_content"
@@ -37,13 +37,13 @@
             android:textColor="@color/rosa"
             android:textSize="18sp" />
 
-        <ImageButton
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:background="@drawable/btn_apagar"
-            android:id="@+id/btn_apagar"/>
+            android:text="Null"
+            android:id="@+id/txt_emocao_item2"/>
     </FrameLayout>
 
 </LinearLayout>

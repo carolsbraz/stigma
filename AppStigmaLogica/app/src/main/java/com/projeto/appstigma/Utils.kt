@@ -1,8 +1,6 @@
 package com.projeto.appstigma
 
-import com.example.stigma.Questao
-import com.example.stigma.Relato
-import com.example.stigma.Usuario
+import com.example.stigma.*
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -15,11 +13,18 @@ var questoesList = mutableListOf<Questao>()
 var relatosList = mutableListOf<Relato>()
 val relatosListReverse = relatosList.asReversed()
 
+var respostasList = mutableListOf<Resposta>()
+var respostasListReverse = respostasList.asReversed()
+
+
+var mensagensList = mutableListOf<Mensagem>()
+
 var referencia = FirebaseDatabase.getInstance().getReference()
 var usuarios = referencia.child("usuarios")
 var relatos = referencia.child("relatos")
 var questoes = referencia.child("questoes")
-
+var respostas = referencia.child("respostas")
+var mensagens = referencia.child("mensagens")
 
 val a = usuarios.addChildEventListener(object : ChildEventListener {
     override fun onChildAdded(p0: DataSnapshot, p1: String?) {
@@ -81,6 +86,54 @@ val q = questoes.addChildEventListener(object : ChildEventListener {
         val quest: Questao? = p0.getValue(Questao::class.java)
         if (quest !in questoesList)
             questoesList.add(quest!!)
+    }
+
+    override fun onChildChanged(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildMoved(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildRemoved(p0: DataSnapshot) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onCancelled(p0: DatabaseError) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+})
+
+val r = respostas.addChildEventListener(object : ChildEventListener {
+    override fun onChildAdded(p0: DataSnapshot, p1: String?) {
+        val resp: Resposta? = p0.getValue(Resposta::class.java)
+        if (resp !in respostasList)
+            respostasList.add(resp!!)
+    }
+
+    override fun onChildChanged(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildMoved(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildRemoved(p0: DataSnapshot) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onCancelled(p0: DatabaseError) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+})
+
+val m = mensagens.addChildEventListener(object : ChildEventListener {
+    override fun onChildAdded(p0: DataSnapshot, p1: String?) {
+        val mens: Mensagem? = p0.getValue(Mensagem::class.java)
+        if (mens !in mensagensList)
+            mensagensList.add(mens!!)
     }
 
     override fun onChildChanged(p0: DataSnapshot, p1: String?) {

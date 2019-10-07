@@ -1,7 +1,9 @@
 package com.projeto.appstigma
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_principal.*
@@ -17,6 +19,9 @@ class ListarRelatosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_relatos_diarios)
 
         btn_voltar_3.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
+
             finish()
         }
 

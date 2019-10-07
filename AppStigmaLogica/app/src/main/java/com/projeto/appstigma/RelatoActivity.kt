@@ -54,8 +54,8 @@ class RelatoActivity : AppCompatActivity() {
                 val relato = Relato(relatos.push().key!!,rel, emocao,user.email.toString(), dateInString)
                 relatos.child(relato.id).setValue(relato)
 
-                emocao = ""
-                txt_relato.text.clear()
+                val intent = Intent(this, ListarRelatosActivity::class.java)
+                startActivity(intent)
 
                 Toast.makeText(
                     baseContext, "Relato realizado com sucesso",

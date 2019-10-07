@@ -1,9 +1,14 @@
 package com.projeto.appstigma
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.stigma.R
+import com.example.stigma.Relato
+import com.example.stigma.Resposta
+import com.example.stigma.Usuario
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_questoesmotivadoras.*
 import kotlinx.android.synthetic.main.activity_relato.*
 import java.util.*
@@ -45,7 +50,7 @@ class QuestoesMotivadorasActivity : AppCompatActivity() {
 
                     var i = (0..questoesList.size).random()
 
-                    if (questoesList[i].emocao == emocao) {
+                    if (questoesList[i].emocao == emocao && questoesList[i].questao != questaoSort) {
                         questaoSort = questoesList[i].questao
 
                         txt_pergunta.text = questaoSort
@@ -64,6 +69,28 @@ class QuestoesMotivadorasActivity : AppCompatActivity() {
 
         }
 
+        btn_responder.setOnClickListener{
+
+            if(txt_pergunta.text != "" && txt_pergunta.text != "Gere uma pergunta acima!" && txt_resposta.text.isNotEmpty()){
+
+                val resp = Resposta(respostas.push().key!!, txt_pergunta.text.toString(), emocao, txt_resposta.text.toString(), FirebaseAuth.getInstance().currentUser!!.email.toString())
+                respostas.child(resp.id).setValue(resp)
+
+                val intent = Intent(this, ListarQuestoesActivity::class.java)
+                startActivity(intent)
+
+                this.finish()
+
+            }else{
+
+            }
+
+        }
+
+        btn_listar_respostas.setOnClickListener {
+            val intent = Intent(this, ListarQuestoesActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 

@@ -80,40 +80,42 @@
 
 
             <ImageButton
+                android:id="@+id/btn_muitofeliz2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="60dp"
-
                 android:background="@drawable/happy2" />
 
             <ImageButton
+                android:id="@+id/btn_feliz2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
-
                 android:background="@drawable/happy" />
 
             <ImageButton
+                android:id="@+id/btn_neutro2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
-
                 android:background="@drawable/shocked" />
 
             <ImageButton
+                android:id="@+id/btn_triste2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
                 android:background="@drawable/sad" />
 
             <ImageButton
+                android:id="@+id/btn_muitotriste2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
-
                 android:background="@drawable/sad2" />
 
             <ImageButton
+                android:id="@+id/btn_cansado2"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
@@ -138,8 +140,8 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_color"
         android:text="Abrir caixa"
-        android:textSize="12sp"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp" />
 
 
 </LinearLayout>
