@@ -67,7 +67,8 @@ class PrincipalActivity : AppCompatActivity() {
 
             view.btn_sair_modal.setOnClickListener {
                 FirebaseAuth.getInstance().signOut()
-                this.finish()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
             }
 
             view.btn_cancelar_modal.setOnClickListener {
