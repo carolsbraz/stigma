@@ -38,8 +38,8 @@ class CadastroActivity : AppCompatActivity() {
                     auth.createUserWithEmailAndPassword(email, senha)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
-                                val user = Usuario(nome, email, dataNasc, senha)
-                                usuarios.push().setValue(user)
+                                val user = Usuario(usuarios.push().key!!, nome, email, dataNasc, senha)
+                                usuarios.child(user.id).setValue(user)
                                 auth.signInWithEmailAndPassword(email, senha)
                                     .addOnCompleteListener(this) { task ->
                                         if (task.isSuccessful) {
