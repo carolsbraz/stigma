@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_desafios.*
 class DesafioActivity : AppCompatActivity() {
 
     var somaValores = 0
-    var jafeito = 0
+    //var jafeito = 0
     var emailLogado = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,13 +31,13 @@ class DesafioActivity : AppCompatActivity() {
             somaValores += r.valor.toInt()
         }
 
-        for (d in desafiosConcluidosList){
-            if(d.usuario == emailLogado){
-                jafeito += d.valor.toInt()
-            }
-        }
+//        for (d in desafiosConcluidosList){
+//            if(d.usuario == emailLogado){
+//                jafeito += d.valor.toInt()
+//            }
+//        }
 
-       txt_pontos.text = "$jafeito/$somaValores"
+       txt_pontos.text = "0/$somaValores"
 
 
         btn_voltar_4.setOnClickListener {
