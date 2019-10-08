@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp">
+
+
+        <View
+            android:id="@+id/base_modal"
+            android:layout_width="458dp"
+            android:layout_height="match_parent"
+            android:background="@color/modal" />
+
+        <TextView
+            android:id="@+id/txt_mensagem_modal"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Tem certeza que você deseja excluir?"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_sim_modal_conta"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn_color_menu"
+            android:text="Sim"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_nao_modal_conta"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/btn_color_menu_2"
+            android:text="Não"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</LinearLayout>

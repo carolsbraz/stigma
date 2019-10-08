@@ -40,7 +40,28 @@ val a = usuarios.addChildEventListener(object : ChildEventListener {
     }
 
     override fun onChildChanged(p0: DataSnapshot, p1: String?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+        var user : Usuario?
+        user = p0.getValue(Usuario::class.java)
+        var i = 0
+
+        while (i < usuariosList.size){
+
+            if(user!!.nome!= usuariosList[i].nome){
+                usuariosList[i].nome = user!!.nome
+            }
+            if(user!!.email!= usuariosList[i].email){
+                usuariosList[i].email = user!!.email
+            }
+            if(user!!.dataNasc!= usuariosList[i].dataNasc){
+                usuariosList[i].dataNasc = user!!.dataNasc
+            }
+            if(user!!.senha!= usuariosList[i].senha){
+                usuariosList[i].senha = user!!.senha
+            }
+
+        }
+
     }
 
     override fun onChildMoved(p0: DataSnapshot, p1: String?) {
