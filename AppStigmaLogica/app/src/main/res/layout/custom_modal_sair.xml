@@ -11,7 +11,7 @@
 
         <View
             android:id="@+id/base_modal"
-            android:layout_width="match_parent"
+            android:layout_width="477dp"
             android:layout_height="match_parent"
             android:background="@color/modal" />
 
@@ -34,20 +34,22 @@
             android:layout_marginTop="70dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/btn_color_menu"
-            android:text="Sim"
+            android:text="Sair"
             android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:id="@+id/btn_sair_modal"/>
 
         <Button
             android:layout_width="104dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="70dp"
-            android:text="Não"
+            android:text="Cancelar"
             android:background="@drawable/btn_color_menu_2"
             android:textColor="@android:color/white"
             android:layout_marginLeft="60dp"
             android:textSize="12sp"
+            android:id="@+id/btn_cancelar_modal"
           />
     </FrameLayout>
 

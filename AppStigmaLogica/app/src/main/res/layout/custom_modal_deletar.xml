@@ -11,7 +11,7 @@
 
         <View
             android:id="@+id/base_modal"
-            android:layout_width="match_parent"
+            android:layout_width="458dp"
             android:layout_height="match_parent"
             android:background="@color/modal" />
 
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="67dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="5dp"
             android:gravity="center"
             android:text="Tem certeza que você deseja excluir?"
             android:textColor="#000"
@@ -28,6 +28,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn_sim_modal"
             android:layout_width="104dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
@@ -39,16 +40,16 @@
             android:textSize="12sp" />
 
         <Button
+            android:id="@+id/btn_nao_modal"
             android:layout_width="104dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"
-            android:text="Não"
-            android:background="@drawable/btn_color_menu_2"
-            android:textColor="@android:color/white"
             android:layout_marginLeft="60dp"
-            android:textSize="12sp"
-            />
+            android:layout_marginTop="70dp"
+            android:background="@drawable/btn_color_menu_2"
+            android:text="Não"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
     </FrameLayout>
 
 </LinearLayout>
