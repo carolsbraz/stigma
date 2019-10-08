@@ -1,5 +1,6 @@
 package com.projeto.appstigma
 
+import android.app.Dialog
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.*
 import com.example.stigma.R
 import com.example.stigma.Relato
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.custom_modal_deletar.view.*
+import kotlinx.android.synthetic.main.custom_modal_sair.view.*
 
 class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
 
@@ -30,10 +34,28 @@ class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
         txt_relato.text = item?.relato.toString()
 
         btn_apagar.setOnClickListener {
-            relatos.child(item!!.id).removeValue()
-            this.remove(item)
-            relatosList.remove(item)
-            relatosListReverse.remove(item)
+
+            val dialog: Dialog = Dialog(context)
+            val view2 = LayoutInflater.from(context).inflate(R.layout.custom_modal_deletar, null)
+            dialog.setContentView(view2)
+            dialog.show()
+
+            view2.btn_sim_modal.setOnClickListener {
+                relatos.child(item!!.id).removeValue()
+                this.remove(item)
+                relatosList.remove(item)
+                relatosListReverse.remove(item)
+                dialog.dismiss()
+                Toast.makeText(
+                    context, "Relato excluido.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+            view2.btn_nao_modal.setOnClickListener {
+                dialog.dismiss()
+            }
+
         }
 
         return v;
