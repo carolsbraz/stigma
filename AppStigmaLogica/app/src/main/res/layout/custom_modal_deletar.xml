@@ -28,26 +28,27 @@
             android:textStyle="bold" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text="Sim"
-            android:background="@drawable/btn_color_menu"
-            android:textColor="@android:color/white"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="50dp"
-            android:textSize="12sp"
-            android:layout_marginTop="90dp"/>
+            android:background="@drawable/btn_color_menu"
+            android:text="Sim"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
             android:text="Não"
             android:background="@drawable/btn_color_menu_2"
             android:textColor="@android:color/white"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="60dp"
             android:textSize="12sp"
-            android:layout_marginTop="90dp"/>
+            />
     </FrameLayout>
 
 </LinearLayout>

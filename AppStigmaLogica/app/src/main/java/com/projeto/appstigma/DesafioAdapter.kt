@@ -31,6 +31,7 @@ class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
 
         val txt_titulo_desafio = v.findViewById<TextView>(R.id.txt_titulo_desafio)
         val txt_desafio = v.findViewById<TextView>(R.id.txt_desafio)
+        val txt_valor = v.findViewById<TextView>(R.id.txt_valor)
 
         val st_concluido = v.findViewById<SwitchCompat>(R.id.st_concluido)
 
@@ -39,23 +40,28 @@ class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
 
         st_concluido.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
             if (st_concluido.isChecked()) {
-                val desafio = DesafioConcluido(item?.desafio.toString(), emailLogado)
-                desafiosConcluido.push().setValue(desafio)
-                st_concluido.isClickable = false
+//                for(d in desafiosConcluidosList){
+//                    if(d.desafio != item?.desafio.toString() && d.usuario != emailLogado){
+                        val desafio = DesafioConcluido(item?.desafio.toString(), emailLogado, item?.valor.toString())
+                        desafiosConcluido.push().setValue(desafio)
+                        st_concluido.isClickable = false
+//                    }
+//                }
             }
         })
 
         for (d in desafiosConcluidosList){
             if(d.usuario == emailLogado && item?.desafio.toString() == d.desafio){
-
                 st_concluido.isChecked = true
                 st_concluido.isClickable = false
-
             }
         }
 
+        val x = item?.valor.toString()
+
         txt_titulo_desafio.text = item?.titulo.toString()
         txt_desafio.text = item?.desafio.toString()
+        txt_valor.text = "Complete e consiga: $x pontos"
 
         return v;
 
