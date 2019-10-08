@@ -23,11 +23,21 @@
 
         <ImageButton
             android:id="@+id/btn_config"
-            android:layout_width="37dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="350dp"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="47dp"
             android:layout_marginTop="26dp"
             android:background="@drawable/config" />
+
+
+        <ImageButton
+            android:id="@+id/btn_sair"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="26dp"
+            android:layout_gravity="right"
+            android:background="@drawable/exit" />
 
     </FrameLayout>
 

@@ -5,6 +5,7 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_login">Sign in</string>
     <string name="prompt_email">Email</string>
+    <string name="text_apagar_conta">Se excluir sua conta, isso não poderá ser desfeito.Tenha certeza antes de continuar.</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>

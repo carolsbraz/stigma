@@ -9,4 +9,8 @@
     <color name="modal">#F5F5F5</color>
 
     <color name="black_overlay">#66000000</color>
+
+    <color name="disable_forground_grey">#42221f1f</color>
+    <color name="disable_thumb_grey">#1c000000</color>
+    <color name="enable_thumb_green">#46bdbf</color>
 </resources>

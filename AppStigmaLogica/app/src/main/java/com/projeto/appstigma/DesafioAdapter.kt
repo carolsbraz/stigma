@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.appcompat.widget.SwitchCompat
 import com.example.stigma.Desafio
 import com.example.stigma.DesafioConcluido
 import com.example.stigma.R
@@ -31,7 +32,7 @@ class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
         val txt_titulo_desafio = v.findViewById<TextView>(R.id.txt_titulo_desafio)
         val txt_desafio = v.findViewById<TextView>(R.id.txt_desafio)
 
-        val st_concluido = v.findViewById<Switch>(R.id.st_concluido)
+        val st_concluido = v.findViewById<SwitchCompat>(R.id.st_concluido)
 
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
