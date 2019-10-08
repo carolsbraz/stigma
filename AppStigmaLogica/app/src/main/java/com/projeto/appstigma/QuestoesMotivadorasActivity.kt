@@ -92,6 +92,10 @@ class QuestoesMotivadorasActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btn_voltar_6.setOnClickListener {
+            finish()
+        }
+
     }
 
     fun ClosedRange<Int>.random() =
