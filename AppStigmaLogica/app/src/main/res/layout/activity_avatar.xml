@@ -36,8 +36,10 @@
         android:layout_marginTop="10dp">
 
         <ImageView
-            android:layout_width="357dp"
+            android:layout_width="wrap_content"
             android:layout_height="459dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/base4"
             android:foregroundGravity="center" />
