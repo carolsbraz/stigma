@@ -38,7 +38,8 @@ class CadastroActivity : AppCompatActivity() {
                     auth.createUserWithEmailAndPassword(email, senha)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
-                                val user = Usuario(usuarios.push().key!!, nome, email, dataNasc, senha)
+                                val user =
+                                    Usuario(usuarios.push().key!!, nome, email, dataNasc, senha)
                                 usuarios.child(user.id).setValue(user)
                                 auth.signInWithEmailAndPassword(email, senha)
                                     .addOnCompleteListener(this) { task ->
@@ -60,6 +61,12 @@ class CadastroActivity : AppCompatActivity() {
                                 ).show()
                             }
                         }
+                } else {
+                    txt_dataNasc.error = if (txt_dataNasc.text.isEmpty()) "Preencha o campo" else null
+                    txt_senha.error = if (txt_senha.text.isEmpty())"Preencha o campo" else null
+                    txt_email.error = if (txt_email.text.isEmpty())"Preencha o campo" else null
+                    txt_nome.error = if (txt_nome.text.isEmpty())"Preencha o campo" else null
+                    txt_confSenha.error = if (txt_confSenha.text.isEmpty())"Preencha o campo" else null
                 }
 
             }

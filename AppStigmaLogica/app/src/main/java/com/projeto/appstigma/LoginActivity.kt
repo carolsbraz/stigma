@@ -22,20 +22,25 @@ class LoginActivity : AppCompatActivity() {
             var email = username.text.toString()
             var senha = password.text.toString()
 
-            auth.signInWithEmailAndPassword(email, senha)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        val intent = Intent(this, PrincipalActivity::class.java)
-                        startActivity(intent)
-                        this.finish()
-                    } else {
-                        Toast.makeText(
-                            baseContext, "Authentication failed.",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                }
+            if(email.isNotEmpty() && senha.isNotEmpty()) {
+                auth.signInWithEmailAndPassword(email, senha)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            val intent = Intent(this, PrincipalActivity::class.java)
+                            startActivity(intent)
+                            this.finish()
+                        } else {
 
+                            Toast.makeText(
+                                baseContext, "Seus dados estão incorretos",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
+            }else{
+                username.error = if (username.text.isEmpty()) "Preencha o campo" else null
+                password.error = if (password.text.isEmpty()) "Preencha o campo" else null
+            }
         }
 
 
