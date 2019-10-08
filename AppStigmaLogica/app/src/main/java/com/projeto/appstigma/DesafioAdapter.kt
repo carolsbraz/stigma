@@ -39,13 +39,13 @@ class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
 
         st_concluido.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
             if (st_concluido.isChecked()) {
-                for(d in desafiosConcluidosList){
-                    if(d.desafio != item?.desafio.toString() && d.usuario != emailLogado){
+//                for(d in desafiosConcluidosList){
+//                    if(d.desafio != item?.desafio.toString() && d.usuario != emailLogado){
                         val desafio = DesafioConcluido(item?.desafio.toString(), emailLogado, item?.valor.toString())
                         desafiosConcluido.push().setValue(desafio)
                         st_concluido.isClickable = false
-                    }
-                }
+//                    }
+//                }
             }
         })
 
