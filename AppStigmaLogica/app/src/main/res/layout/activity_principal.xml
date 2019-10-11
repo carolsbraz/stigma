@@ -91,6 +91,13 @@
                 android:src="@drawable/grafico" />
 
 
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="105dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/avatar" />
+
             <TextView
                 android:id="@+id/txt_nome_logado"
                 android:layout_width="wrap_content"

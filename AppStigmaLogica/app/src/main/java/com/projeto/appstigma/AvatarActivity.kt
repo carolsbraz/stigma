@@ -84,12 +84,6 @@ class AvatarActivity : AppCompatActivity() {
             startActivity(intent)
         }
         avatar_girl3.setOnClickListener {
-            avatar = "avatar_girl2"
-            val intent = Intent(this, CadastroActivity::class.java)
-            intent.putExtra("avatar", avatar)
-            startActivity(intent)
-        }
-        avatar_girl2.setOnClickListener {
             avatar = "avatar_girl3"
             val intent = Intent(this, CadastroActivity::class.java)
             intent.putExtra("avatar", avatar)
