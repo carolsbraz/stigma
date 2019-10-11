@@ -85,8 +85,9 @@
             android:layout_marginTop="500dp"
             android:layout_marginRight="50dp"
             android:stateListAnimator="@null"
-            android:textSize="9sp"
+            android:textSize="12sp"
             android:text="Esquceu a senha?"
+            android:textAllCaps="false"
             android:background="@null"/>
 
 

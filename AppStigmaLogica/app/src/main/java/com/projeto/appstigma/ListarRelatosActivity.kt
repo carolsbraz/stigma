@@ -19,9 +19,6 @@ class ListarRelatosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_relatos_diarios)
 
         btn_voltar_3.setOnClickListener {
-            val intent = Intent(this, PrincipalActivity::class.java)
-            startActivity(intent)
-
             finish()
         }
 
