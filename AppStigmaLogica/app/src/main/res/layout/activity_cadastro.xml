@@ -40,7 +40,7 @@
             android:background="@drawable/avatar"
             android:stateListAnimator="@null" />
 
-<LinearLayout
+        <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
