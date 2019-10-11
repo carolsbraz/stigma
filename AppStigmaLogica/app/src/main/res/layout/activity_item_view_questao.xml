@@ -5,16 +5,16 @@
     android:orientation="vertical">
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-        <ImageView
+        <View
             android:id="@+id/bloco_questao"
-            android:layout_width="match_parent"
+            android:layout_width="400dp"
             android:layout_height="140dp"
-            android:layout_gravity="center"
-            android:src="@drawable/base11" />
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/caixatext" />
 
         <TextView
             android:id="@+id/txt_questao_item"
