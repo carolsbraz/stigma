@@ -35,8 +35,8 @@
 
         <ImageView
             android:id="@+id/painel_usuario"
-            android:layout_width="381dp"
-            android:layout_height="159dp"
+            android:layout_width="385dp"
+            android:layout_height="200dp"
             android:layout_gravity="center"
             android:src="@drawable/base9" />
 
@@ -45,11 +45,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="115dp"
-            android:text="Null"
+            android:layout_marginTop="125dp"
+            android:text="%"
             android:textColor="@color/azul"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
+
+        <ProgressBar
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
 
     </FrameLayout>
 
