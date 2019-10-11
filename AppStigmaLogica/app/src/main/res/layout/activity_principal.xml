@@ -57,12 +57,13 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/caixaviewmenu"/>
 
-            <View
+            <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="@drawable/perfil_redondo"
                 android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
+                android:id="@+id/img_avatar"
                 />
 
             <View
