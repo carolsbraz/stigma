@@ -59,12 +59,19 @@
             android:layout_height="wrap_content">
 
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:src="@drawable/painel" />
+            <View
+                android:layout_width="400dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/caixaviewmenu"/>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="85dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_color_menu_2"/>
+
 
             <TextView
                 android:id="@+id/textView"
