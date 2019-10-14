@@ -80,8 +80,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
 
         btn_apagar_conf.setOnClickListener {
 
-
-
         }
     }
 }
