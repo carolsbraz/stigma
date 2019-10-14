@@ -137,6 +137,7 @@ class PrincipalActivity : AppCompatActivity() {
         btn_config.setOnClickListener {
             val intent = Intent(this, ConfiguracoesActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
 

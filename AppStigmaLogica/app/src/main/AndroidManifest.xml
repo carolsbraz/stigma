@@ -16,6 +16,7 @@
         <activity android:name="com.projeto.appstigma.ConfiguracoesActivity" />
         <activity android:name="com.projeto.appstigma.ListarRelatosActivity" />
         <activity android:name="com.projeto.appstigma.AvatarActivity" />
+        <activity android:name="com.projeto.appstigma.AvatarActivityMudar" />
         <activity android:name="com.projeto.appstigma.Passo3Activity" />
         <activity android:name="com.projeto.appstigma.Passo2Activity" />
         <activity android:name="com.projeto.appstigma.Passo1Activity" />

@@ -47,6 +47,9 @@ val a = usuarios.addChildEventListener(object : ChildEventListener {
 
         while (i < usuariosList.size){
 
+            if(user!!.avatar!= usuariosList[i].avatar){
+                usuariosList[i].avatar = user!!.avatar
+            }
             if(user!!.nome!= usuariosList[i].nome){
                 usuariosList[i].nome = user!!.nome
             }
@@ -60,6 +63,7 @@ val a = usuarios.addChildEventListener(object : ChildEventListener {
                 usuariosList[i].senha = user!!.senha
             }
 
+            i++
         }
 
     }
@@ -69,7 +73,10 @@ val a = usuarios.addChildEventListener(object : ChildEventListener {
     }
 
     override fun onChildRemoved(p0: DataSnapshot) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        var user: Usuario?
+        user = p0.getValue(Usuario::class.java)
+        if (user in usuariosList)
+            usuariosList.remove(user!!)
     }
 
     override fun onCancelled(p0: DatabaseError) {

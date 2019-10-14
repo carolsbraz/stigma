@@ -41,14 +41,23 @@
             android:layout_gravity="center_horizontal"
             android:background="@drawable/caixaviewmenu"/>
 
-        <View
-            android:id="@+id/img_avatar"
+        <Button
+            android:id="@+id/btn_avatar_conf"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/perfil_redondo"
-            android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
-            />
+            android:layout_marginTop="20dp"
+            android:background="@drawable/avatar"
+            android:stateListAnimator="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center_horizontal"
+            android:text="Você também pode mudar seu avatar!"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/txt_editar_nome"
