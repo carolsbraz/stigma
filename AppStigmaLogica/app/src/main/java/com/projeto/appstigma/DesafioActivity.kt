@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.CompoundButton
 import android.widget.ProgressBar
+import androidx.appcompat.widget.SwitchCompat
 import com.example.stigma.Desafio
+import com.example.stigma.DesafioConcluido
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_desafios.*
@@ -24,6 +27,8 @@ class DesafioActivity : AppCompatActivity() {
         val desafioAdapter = DesafioAdapter(this)
 
         list_view_desafios.adapter = desafioAdapter
+
+        val st_concluido = findViewById<SwitchCompat>(R.id.st_concluido)
 
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
@@ -53,7 +58,6 @@ class DesafioActivity : AppCompatActivity() {
             finish()
 
         }
-
 
     }
 }
