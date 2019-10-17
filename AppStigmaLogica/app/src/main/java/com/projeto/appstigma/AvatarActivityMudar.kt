@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.stigma.CadastroActivity
 import com.example.stigma.R
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_avatar.*
+import kotlinx.android.synthetic.main.activity_configuracoes.*
 
 class AvatarActivityMudar : AppCompatActivity() {
 
     var avatar = ""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -109,3 +112,4 @@ class AvatarActivityMudar : AppCompatActivity() {
         }
     }
 }
+

@@ -54,12 +54,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="125dp"
-            android:text="%"
+            android:text=""
             android:textColor="@color/azul"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <ProgressBar
+            android:id="@+id/pb_desafios"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

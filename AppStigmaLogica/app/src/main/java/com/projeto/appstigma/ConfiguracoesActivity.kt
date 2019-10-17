@@ -43,8 +43,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
             }
         }
 
-
-
         val extras = intent.extras
         if (extras != null && avataruser != extras.getString("avatar").toString()) {
             avataruser = extras.getString("avatar").toString()

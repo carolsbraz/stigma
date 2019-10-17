@@ -38,33 +38,28 @@ class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
 
-        st_concluido.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
-            if (st_concluido.isChecked()) {
-//                for(d in desafiosConcluidosList){
-//                    if(d.desafio != item?.desafio.toString() && d.usuario != emailLogado){
-                        val desafio = DesafioConcluido(item?.desafio.toString(), emailLogado, item?.valor.toString())
-                        desafiosConcluido.push().setValue(desafio)
-                        st_concluido.isClickable = false
-//                    }
-//                }
-            }
-        })
-
-        for (d in desafiosConcluidosList){
-            if(d.usuario == emailLogado && item?.desafio.toString() == d.desafio){
+        for (d in desafiosConcluidosList) {
+            if (d.usuario == emailLogado && item?.desafio.toString() == d.desafio) {
                 st_concluido.isChecked = true
                 st_concluido.isClickable = false
             }
         }
+
+        st_concluido.setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener { buttonView, isChecked ->
+            if (st_concluido.isChecked()) {
+                val desafio =
+                    DesafioConcluido(item?.desafio.toString(), emailLogado, item?.valor.toString())
+                desafiosConcluido.push().setValue(desafio)
+                st_concluido.isClickable = false
+            }
+        })
 
         val x = item?.valor.toString()
 
         txt_titulo_desafio.text = item?.titulo.toString()
         txt_desafio.text = item?.desafio.toString()
         txt_valor.text = "Complete e consiga: $x pontos"
-
         return v;
-
     }
 
 }
