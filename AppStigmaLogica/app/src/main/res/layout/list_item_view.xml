@@ -30,7 +30,6 @@
         <TextView
             android:id="@+id/txt_relato_item"
             android:layout_width="300dp"
-            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="Null"
@@ -40,7 +39,6 @@
         <TextView
             android:id="@+id/txt_emocao_item"
             android:layout_width="300dp"
-            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
