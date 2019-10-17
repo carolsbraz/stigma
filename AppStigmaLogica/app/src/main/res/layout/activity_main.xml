@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +8,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
@@ -29,13 +25,8 @@
             android:id="@+id/textView2"
             android:layout_width="379dp"
             android:layout_height="52dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="18dp"
-            android:layout_marginRight="18dp"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
+
+            android:gravity="center_ho"
             android:text="Bem vindo ao Stigma!"
             android:textColor="@android:color/background_light"
             android:textSize="18sp"
@@ -67,21 +58,19 @@
             android:text="Escreva suas marcas com Stigma!"
             android:textColor="@android:color/background_light"
             android:textSize="13sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            android:textStyle="bold"/>
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="269dp"
-                android:layout_marginTop="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="100dp"
                 android:alpha="0.4"
                 android:src="@drawable/base" />
 
@@ -89,9 +78,8 @@
                 android:id="@+id/buttonLogin"
                 android:layout_width="331dp"
                 android:layout_height="40dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginBottom="18dp"
+                android:layout_marginBottom="210dp"
+                android:layout_gravity="center_horizontal|bottom"
                 android:background="@drawable/redondo"
                 android:text="Login"
                 android:textColor="@android:color/background_light" />
@@ -100,9 +88,8 @@
                 android:id="@+id/btn_cadastro"
                 android:layout_width="331dp"
                 android:layout_height="40dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginBottom="18dp"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="160dp"
                 android:background="@drawable/redondo2"
                 android:text="Cadastro"
                 android:textColor="@android:color/background_light"
@@ -110,5 +97,4 @@
                 />
         </FrameLayout>
 
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>
