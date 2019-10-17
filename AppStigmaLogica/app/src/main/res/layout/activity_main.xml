@@ -78,9 +78,12 @@
                 android:id="@+id/buttonLogin"
                 android:layout_width="331dp"
                 android:layout_height="40dp"
+                android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="100dp"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="18dp"
                 android:background="@drawable/redondo"
+                android:textAllCaps="false"
+                android:textSize="18sp"
                 android:text="Login"
                 android:textColor="@android:color/background_light" />
 
@@ -88,12 +91,14 @@
                 android:id="@+id/btn_cadastro"
                 android:layout_width="331dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="150dp"
+                android:layout_marginBottom="18dp"
+                android:textAllCaps="false"
+                android:textSize="18sp"
                 android:background="@drawable/redondo2"
                 android:text="Cadastro"
                 android:textColor="@android:color/background_light"
-
                 />
         </FrameLayout>
 

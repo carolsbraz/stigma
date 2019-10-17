@@ -36,8 +36,9 @@
             android:layout_marginRight="50dp"
             android:background="@drawable/btn_color_menu"
             android:text="Sim"
+            android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/btn_nao_modal"
@@ -48,8 +49,9 @@
             android:layout_marginTop="70dp"
             android:background="@drawable/btn_color_menu_2"
             android:text="Não"
+            android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="12sp" />
+            android:textSize="15sp" />
     </FrameLayout>
 
 </LinearLayout>

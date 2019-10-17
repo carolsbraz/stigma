@@ -126,6 +126,8 @@
             android:layout_marginTop="355dp"
             android:background="@drawable/bttsalvar"
             android:text="Salvar alterações"
+            android:textSize="15sp"
+            android:textAllCaps="false"
             android:textColor="@android:color/white" />
 
 
@@ -145,8 +147,10 @@
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/btn_color_apagar"
         android:text="Apagar conta"
-        android:textColor="@android:color/white" />
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:background="@drawable/btn_color_apagar"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>

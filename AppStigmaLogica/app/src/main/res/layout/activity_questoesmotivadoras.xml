@@ -158,10 +158,10 @@
             android:layout_marginTop="380dp"
             android:layout_marginBottom="40dp"
             android:background="@drawable/btn_color"
-            android:text="responder"
+            android:text="Responder"
+            android:textAllCaps="false"
             android:textColor="@android:color/background_light"
-            android:textSize="12sp" />
-
+            android:textSize="15sp" />
         <Button
             android:id="@+id/btn_gerar_questao"
             android:layout_width="133dp"
@@ -169,9 +169,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="170dp"
             android:background="@drawable/btn_color"
-            android:text="gerar questão"
+            android:text="Gerar questão"
+            android:textAllCaps="false"
             android:textColor="@android:color/background_light"
-            android:textSize="12sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txt_pergunta"

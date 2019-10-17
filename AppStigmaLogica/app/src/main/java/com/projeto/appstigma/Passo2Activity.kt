@@ -26,7 +26,7 @@ class Passo2Activity : AppCompatActivity() {
             this.finish()
         }
 
-        btn_pular_tutorial_2.setOnClickListener {
+        btn_pular_tutorial.setOnClickListener {
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
         }
