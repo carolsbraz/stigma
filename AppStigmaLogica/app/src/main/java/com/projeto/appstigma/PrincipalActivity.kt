@@ -19,7 +19,7 @@ class PrincipalActivity : AppCompatActivity() {
     val context: Context = this
 
     var emailLogado = ""
-    var avatar : String? = ""
+    var avatar: String? = ""
     var nome = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,60 +37,64 @@ class PrincipalActivity : AppCompatActivity() {
             }
         }
 
-        if(user != null){
+        if (user != null) {
             txt_nome_logado.text = nome
 
-            if(avatar == "avatar_boy1"){
+            if (avatar == "avatar_boy1") {
                 img_avatar.setImageResource(R.drawable.boy1)
             }
-            if(avatar == "avatar_boy2"){
+            if (avatar == "avatar_boy2") {
                 img_avatar.setImageResource(R.drawable.boy2)
             }
-            if(avatar == "avatar_boy3"){
+            if (avatar == "avatar_boy3") {
                 img_avatar.setImageResource(R.drawable.boy3)
             }
-            if(avatar == "avatar_boy4"){
+            if (avatar == "avatar_boy4") {
                 img_avatar.setImageResource(R.drawable.boy4)
             }
-            if(avatar == "avatar_boy5"){
+            if (avatar == "avatar_boy5") {
                 img_avatar.setImageResource(R.drawable.boy5)
             }
-            if(avatar == "avatar_boy6"){
+            if (avatar == "avatar_boy6") {
                 img_avatar.setImageResource(R.drawable.boy6)
             }
-            if(avatar == "avatar_boy7"){
+            if (avatar == "avatar_boy7") {
                 img_avatar.setImageResource(R.drawable.boy7)
             }
-            if(avatar == "avatar_boy8"){
+            if (avatar == "avatar_boy8") {
                 img_avatar.setImageResource(R.drawable.boy8)
             }
-            if(avatar == "avatar_boy9"){
+            if (avatar == "avatar_boy9") {
                 img_avatar.setImageResource(R.drawable.boy9)
             }
 
-            if(avatar == "avatar_girl1"){
+            if (avatar == "avatar_girl1") {
                 img_avatar.setImageResource(R.drawable.girl1)
             }
-            if(avatar == "avatar_girl2"){
+            if (avatar == "avatar_girl2") {
                 img_avatar.setImageResource(R.drawable.girl2)
             }
-            if(avatar == "avatar_girl3"){
+            if (avatar == "avatar_girl3") {
                 img_avatar.setImageResource(R.drawable.girl3)
             }
-            if(avatar == "avatar_girl4"){
+            if (avatar == "avatar_girl4") {
                 img_avatar.setImageResource(R.drawable.girl4)
             }
-            if(avatar == "avatar_girl5"){
+            if (avatar == "avatar_girl5") {
                 img_avatar.setImageResource(R.drawable.girl5)
             }
-            if(avatar == "avatar_girl6"){
+            if (avatar == "avatar_girl6") {
                 img_avatar.setImageResource(R.drawable.girl6)
             }
-        }else{
+        } else {
             finish()
         }
 
-
+        if (avatar == "") {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
 
         btn_tela_relato.setOnClickListener {
             val intent = Intent(this, RelatoActivity::class.java)
@@ -139,7 +143,6 @@ class PrincipalActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
 
     }
 
