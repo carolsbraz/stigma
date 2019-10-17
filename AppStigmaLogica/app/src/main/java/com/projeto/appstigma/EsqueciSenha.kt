@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import com.example.stigma.LoginActivity
 import com.example.stigma.R
@@ -17,7 +18,7 @@ class EsqueciSenha : AppCompatActivity() {
     private val TAG = "EsqueciSenha"
 
     private var userName: EditText? = null
-    private var btn_esqueci_senha: Button? = null
+    private var btn_esqueci_senha: ImageButton? = null
 
     private var mAuth: FirebaseAuth? = null
 
@@ -33,7 +34,7 @@ class EsqueciSenha : AppCompatActivity() {
 
     private fun iniciar(){
         userName = findViewById(R.id.username) as EditText
-        btn_esqueci_senha = findViewById(R.id.btn_esqueci_senha) as Button
+        btn_esqueci_senha = findViewById(R.id.btn_esqueci_senha) as ImageButton
 
         mAuth = FirebaseAuth.getInstance()
 
