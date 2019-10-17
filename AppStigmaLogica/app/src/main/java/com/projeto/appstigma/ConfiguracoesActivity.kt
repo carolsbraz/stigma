@@ -43,6 +43,13 @@ class ConfiguracoesActivity : AppCompatActivity() {
             }
         }
 
+
+
+        val extras = intent.extras
+        if (extras != null && avataruser != extras.getString("avatar").toString()) {
+            avataruser = extras.getString("avatar").toString()
+        }
+
         if (avataruser == "avatar_boy1") {
             btn_avatar_conf.setBackgroundResource(R.drawable.boy1)
         }
@@ -101,11 +108,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
         }
 
         btn_alterar.setOnClickListener {
-
-            val extras = intent.extras
-            if (extras != null && avataruser != extras.getString("avatar").toString()) {
-                avataruser = extras.getString("avatar").toString()
-            }
 
             if (txt_editar_senha.text.toString() != senhaLogado) {
 
