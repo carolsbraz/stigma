@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.projeto.appstigma.QuestoesMotivadorasActivity"></activity>
-        <activity android:name="com.projeto.appstigma.DesafioActivity"></activity>
-        <activity android:name="com.projeto.appstigma.EsqueciSenha"></activity>
-        <activity android:name="com.projeto.appstigma.ListarQuestoesActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.projeto.appstigma.QuestoesMotivadorasActivity" />
+        <activity android:name="com.projeto.appstigma.DesafioActivity" />
+        <activity android:name="com.projeto.appstigma.EsqueciSenha" />
+        <activity android:name="com.projeto.appstigma.ListarQuestoesActivity" />
         <activity android:name="com.projeto.appstigma.ConfiguracoesActivity" />
         <activity android:name="com.projeto.appstigma.ListarRelatosActivity" />
         <activity android:name="com.projeto.appstigma.AvatarActivity" />
@@ -34,7 +35,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.projeto.appstigma.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_main"
             android:theme="@style/FullscreenTheme">
