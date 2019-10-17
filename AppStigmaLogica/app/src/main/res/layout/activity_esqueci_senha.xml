@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
@@ -9,66 +9,67 @@
     android:orientation="vertical"
     tools:context="com.projeto.appstigma.EsqueciSenha">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="110dp">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/logotipo"
-            android:layout_width="322dp"
-            android:layout_height="255dp"
-
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logotipo" />
-
-        <ImageView
-            android:id="@+id/barrinha"
-            android:layout_width="468dp"
-            android:layout_height="228dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="354dp"
-            android:src="@drawable/base14" />
-
-
-
-        <EditText
-            android:id="@+id/username"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="47dp"
-            android:layout_marginRight="49dp"
-            android:layout_marginLeft="49dp"
-            android:layout_marginBottom="9dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="414dp"
-            android:drawableStart="@drawable/ic_email_black_24dp"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:drawablePadding="5dp"
-            android:hint="@string/prompt_email"
-            android:inputType="textEmailAddress"
-            android:selectAllOnFocus="true"
-            style="@style/StyledTilEditText"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="110dp">
+
+            <ImageView
+                android:id="@+id/logotipo"
+                android:layout_width="322dp"
+                android:layout_height="255dp"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logotipo" />
+
+            <ImageView
+                android:id="@+id/barrinha"
+                android:layout_width="468dp"
+                android:layout_height="228dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="354dp"
+                android:src="@drawable/base14" />
 
 
-
-        <Button
-            android:id="@+id/btn_esqueci_senha"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="500dp"
-            android:layout_marginRight="50dp"
-            android:stateListAnimator="@null"
-            android:textSize="12sp"
-            android:text="Enviar email de recuperação"
-            android:textAllCaps="false"
-            android:background="@null"/>
-
-
-
-
-
-    </FrameLayout>
+            <EditText
+                android:id="@+id/username"
+                style="@style/StyledTilEditText"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="49dp"
+                android:layout_marginTop="414dp"
+                android:layout_marginRight="49dp"
+                android:layout_marginBottom="9dp"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="5dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="true" />
 
 
-</LinearLayout>
+            <Button
+                android:id="@+id/btn_esqueci_senha"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="500dp"
+                android:layout_marginRight="50dp"
+                android:background="@null"
+                android:stateListAnimator="@null"
+                android:text="Enviar email de recuperação"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
