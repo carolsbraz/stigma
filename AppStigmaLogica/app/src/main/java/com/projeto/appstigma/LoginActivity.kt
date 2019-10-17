@@ -5,13 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.ConfiguracoesActivity
 import com.projeto.appstigma.EsqueciSenha
+import com.projeto.appstigma.usuariosList
 
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
     var auth = FirebaseAuth.getInstance()
+
+    var emailLogado = ""
+    var avatar : String? = ""
+    var nome = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

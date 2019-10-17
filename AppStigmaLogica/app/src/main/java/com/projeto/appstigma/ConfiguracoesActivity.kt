@@ -3,6 +3,7 @@ package com.projeto.appstigma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.widget.Toast
 import com.example.stigma.MainActivity
 import com.example.stigma.PrincipalActivity
@@ -16,9 +17,7 @@ class ConfiguracoesActivity : AppCompatActivity() {
     var emailLogado = ""
     var idLogado = ""
     var senhaLogado = ""
-
     var z = ""
-
     var avataruser = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
