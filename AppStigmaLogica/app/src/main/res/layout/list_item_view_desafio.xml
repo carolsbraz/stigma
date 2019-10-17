@@ -53,6 +53,7 @@
             android:layout_marginLeft="70dp"
             android:layout_marginTop="105dp"
             android:gravity="center"
+            android:maxLength="40"
             android:id="@+id/txt_valor"
             android:text="Complete para aumentar seu nível!" />
 
