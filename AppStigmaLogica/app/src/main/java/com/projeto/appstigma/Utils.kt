@@ -30,6 +30,7 @@ var respostas = referencia.child("respostas")
 var mensagens = referencia.child("mensagens")
 var desafios = referencia.child("desafios")
 var desafiosConcluido = referencia.child("desafiosConcluidos")
+var maquina = referencia.child("maquinadotempo")
 
 val a = usuarios.addChildEventListener(object : ChildEventListener {
     override fun onChildAdded(p0: DataSnapshot, p1: String?) {

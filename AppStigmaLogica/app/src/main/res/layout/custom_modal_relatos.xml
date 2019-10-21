@@ -14,7 +14,7 @@
 
 
         <TextView
-            android:id="@+id/txt_mensagem_modal"
+            android:id="@+id/txt_data_modal"
             android:layout_width="358dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -28,7 +28,7 @@
 
 
         <TextView
-            android:id="@+id/txt_autor_modal"
+            android:id="@+id/txt_relato_modal"
             android:layout_width="143dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -44,6 +44,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="180dp"
             android:src="@drawable/random"
-            android:id="@+id/btn_random"/>
+            android:id="@+id/img_emocao_modal"/>
 </FrameLayout>
 
