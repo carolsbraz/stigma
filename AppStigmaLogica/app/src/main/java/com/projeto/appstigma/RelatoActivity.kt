@@ -1,12 +1,17 @@
 package com.projeto.appstigma
 
+import android.annotation.SuppressLint
+import android.app.ActionBar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import android.text.Layout
+import android.view.View
+import android.widget.*
 import com.example.stigma.*
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_relato.*
+import kotlinx.android.synthetic.main.activity_relato.view.*
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.util.*
@@ -16,16 +21,22 @@ class RelatoActivity : AppCompatActivity() {
     var auth = FirebaseAuth.getInstance()
     var emocao = ""
     var usuLogado = ""
+    val ischecked : Boolean = false
 
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_relato)
 
+
         btn_muitofeliz.setOnClickListener {
+
             emocao = "muitofeliz"
         }
-        btn_feliz.setOnClickListener {
+
+        btn_feliz.setOnClickListener() {
+
             emocao = "feliz"
         }
         btn_neutro.setOnClickListener {
@@ -51,7 +62,8 @@ class RelatoActivity : AppCompatActivity() {
             if (user != null) {
 
                 var rel = txt_relato.text.toString()
-                val relato = Relato(relatos.push().key!!,rel, emocao,user.email.toString(), dateInString)
+                val relato =
+                    Relato(relatos.push().key!!, rel, emocao, user.email.toString(), dateInString)
                 relatos.child(relato.id).setValue(relato)
 
                 val intent = Intent(this, ListarRelatosActivity::class.java)
@@ -69,7 +81,7 @@ class RelatoActivity : AppCompatActivity() {
             }
         }
 
-        btn_voltar_1.setOnClickListener{
+        btn_voltar_1.setOnClickListener {
             finish()
         }
 
@@ -88,3 +100,5 @@ class RelatoActivity : AppCompatActivity() {
         return Calendar.getInstance().time
     }
 }
+
+
