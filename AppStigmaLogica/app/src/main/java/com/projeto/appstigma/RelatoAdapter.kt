@@ -58,6 +58,8 @@ class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {
 
         }
 
+
+
         return v;
 
     }

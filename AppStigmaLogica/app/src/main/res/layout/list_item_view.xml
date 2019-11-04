@@ -21,8 +21,8 @@
             android:id="@+id/linha"
             android:layout_width="330dp"
             android:layout_height="1dp"
-            android:layout_marginTop="100dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
             android:background="#3D000000" />
 
 
@@ -32,17 +32,19 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="50dp"
+            android:ellipsize="end"
             android:hint="Null"
-            android:textSize="18sp"
-            android:maxLength="40"/>
+            android:singleLine="true"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txt_emocao_item"
             android:layout_width="210dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Null"
             android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:ellipsize="end"
+            android:text="Null"
             android:textColor="@color/rosa"
             android:textSize="18sp" />
 
@@ -51,16 +53,16 @@
             android:layout_height="70dp"
             android:layout_gravity="right"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="50dp"/>
+            android:layout_marginRight="50dp" />
 
 
         <ImageButton
+            android:id="@+id/btn_apagar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="110dp"
-            android:background="@drawable/btn_apagar"
-            android:id="@+id/btn_apagar"/>
+            android:background="@drawable/btn_apagar" />
     </FrameLayout>
 
 </LinearLayout>

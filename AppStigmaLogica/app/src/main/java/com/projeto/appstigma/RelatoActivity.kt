@@ -66,6 +66,12 @@ class RelatoActivity : AppCompatActivity() {
                     Relato(relatos.push().key!!, rel, emocao, user.email.toString(), dateInString)
                 relatos.child(relato.id).setValue(relato)
 
+                if(ck_add_maquina.isChecked){
+
+                    maquina.child(relato.id).setValue(relato)
+
+                }
+
                 val intent = Intent(this, ListarRelatosActivity::class.java)
                 startActivity(intent)
 

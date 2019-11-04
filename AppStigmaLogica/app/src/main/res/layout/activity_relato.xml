@@ -175,7 +175,7 @@
                 android:src="@drawable/camera" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/ck_add_maquina"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
