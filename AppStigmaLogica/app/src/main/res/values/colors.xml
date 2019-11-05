@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#BB5D5E</color>
     <color name="colorPrimaryDark">#272525</color>
     <color name="colorAccent">#5BB0C4</color>
 
@@ -14,4 +14,8 @@
     <color name="disable_forground_grey">#42221f1f</color>
     <color name="disable_thumb_grey">#1c000000</color>
     <color name="enable_thumb_green">#46bdbf</color>
+
+    <color name="alegria">#5BB0C4</color>
+
+
 </resources>

@@ -4,20 +4,24 @@ package com.example.stigma
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
+
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.projeto.appstigma.*
-import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
+
 
 class PrincipalActivity : AppCompatActivity() {
 
     private lateinit var database: DatabaseReference
     val context: Context = this
-
     var emailLogado = ""
     var avatar: String? = ""
     var nome = ""
@@ -26,6 +30,9 @@ class PrincipalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_principal)
+
+
+
 
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
@@ -36,6 +43,10 @@ class PrincipalActivity : AppCompatActivity() {
                 avatar = i.avatar
             }
         }
+
+        setUpPieChartData()
+
+
 
         if (user != null) {
             txt_nome_logado.text = nome
@@ -144,6 +155,36 @@ class PrincipalActivity : AppCompatActivity() {
             finish()
         }
 
+
     }
 
+    private fun setUpPieChartData() {
+
+
+
+        val yVals = ArrayList<PieEntry>()
+        yVals.add(PieEntry(25f))
+        yVals.add(PieEntry(25f))
+        yVals.add(PieEntry(50f))
+
+
+        val dataSet = PieDataSet(yVals, "")
+        dataSet.valueTextSize=0f
+        val colors = java.util.ArrayList<Int>()
+        colors.add(Color.rgb(182,182,182))
+        colors.add(Color.rgb(91,176,196))
+        colors.add(Color.rgb(189,120,121))
+
+        dataSet.setColors(colors)
+        val data = PieData(dataSet)
+        grafico.data = data
+        grafico.centerTextRadiusPercent = 0f
+        grafico.isDrawHoleEnabled = false
+        grafico.legend.isEnabled = false
+        grafico.description.isEnabled = false
+    }
+
+
 }
+
+
