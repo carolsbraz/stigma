@@ -4,14 +4,17 @@ package com.example.stigma
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.projeto.appstigma.*
-import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 class PrincipalActivity : AppCompatActivity() {
 
@@ -21,6 +24,7 @@ class PrincipalActivity : AppCompatActivity() {
     var emailLogado = ""
     var avatar: String? = ""
     var nome = ""
+    var datadecriacao = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +38,7 @@ class PrincipalActivity : AppCompatActivity() {
             if (i.email == emailLogado) {
                 nome = i.nome
                 avatar = i.avatar
+                datadecriacao = i.datadecriacao
             }
         }
 
@@ -144,6 +149,43 @@ class PrincipalActivity : AppCompatActivity() {
             finish()
         }
 
+        btn_tela_mauqinadotempo.setOnClickListener {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+                val date = getCurrentDateTime()
+                val dateInString = date.toString("MM/dd")
+
+                var date2 = datadecriacao
+
+
+
+                if( dateInString == date2 ){
+
+                    var intent = Intent(this, MaquinaDoTempoActivity::class.java)
+                    startActivity(intent)
+
+                }else{
+
+                    Toast.makeText(
+                        baseContext, "Você só pode abrir sua máquina do tempo no seu aniversário de cadastro",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                }
+
+            }
+        }
+
     }
 
+}
+
+fun Date.toString(format: String, locale: Locale = Locale.getDefault()): String {
+    val formatter = SimpleDateFormat(format, locale)
+    return formatter.format(this)
+}
+
+fun getCurrentDateTime(): Date {
+    return Calendar.getInstance().time
 }

@@ -22,6 +22,8 @@ var desafiosListReverse = desafiosList.asReversed()
 
 var desafiosConcluidosList = mutableListOf<DesafioConcluido>()
 
+var maquinaDoTempoList = mutableListOf<MaquinaDoTempo>()
+
 var referencia = FirebaseDatabase.getInstance().getReference()
 var usuarios = referencia.child("usuarios")
 var relatos = referencia.child("relatos")
@@ -216,6 +218,30 @@ val dc = desafiosConcluido.addChildEventListener(object : ChildEventListener {
         val des: DesafioConcluido? = p0.getValue(DesafioConcluido::class.java)
         if(des !in desafiosConcluidosList)
             desafiosConcluidosList.add(des!!)
+    }
+
+    override fun onChildChanged(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildMoved(p0: DataSnapshot, p1: String?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onChildRemoved(p0: DataSnapshot) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun onCancelled(p0: DatabaseError) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+})
+
+val mt = maquina.addChildEventListener(object : ChildEventListener {
+    override fun onChildAdded(p0: DataSnapshot, p1: String?) {
+        val maq: MaquinaDoTempo? = p0.getValue(MaquinaDoTempo::class.java)
+        if(maq !in maquinaDoTempoList)
+            maquinaDoTempoList.add(maq!!)
     }
 
     override fun onChildChanged(p0: DataSnapshot, p1: String?) {
