@@ -93,8 +93,10 @@ class CadastroActivity : AppCompatActivity() {
                     auth.createUserWithEmailAndPassword(email, senha)
                         .addOnCompleteListener(this) { task ->
                             if (task.isSuccessful) {
+                                val date = getCurrentDateTime()
+                                val dateInString = date.toString("MM/dd")
                                 val user =
-                                    Usuario(usuarios.push().key!!, nome, email, dataNasc, senha, avatar)
+                                    Usuario(usuarios.push().key!!, nome, email, dataNasc, senha, avatar, dateInString)
                                 usuarios.child(user.id).setValue(user)
                                 auth.signInWithEmailAndPassword(email, senha)
                                     .addOnCompleteListener(this) { task ->

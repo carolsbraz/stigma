@@ -28,7 +28,6 @@ class DesafioActivity : AppCompatActivity() {
 
         list_view_desafios.adapter = desafioAdapter
 
-        val st_concluido = findViewById<SwitchCompat>(R.id.st_concluido)
 
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
@@ -44,9 +43,7 @@ class DesafioActivity : AppCompatActivity() {
             }
         }
 
-        var porcentagem = 0
-
-        porcentagem = (jafeito * 100)/somaValores
+        var porcentagem = (jafeito * 100)/somaValores
 
         txt_pontos.text = "$porcentagem%"
 
@@ -61,3 +58,5 @@ class DesafioActivity : AppCompatActivity() {
 
     }
 }
+
+
