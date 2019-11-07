@@ -15,7 +15,11 @@
     <color name="disable_thumb_grey">#1c000000</color>
     <color name="enable_thumb_green">#46bdbf</color>
 
-    <color name="alegria">#5BB0C4</color>
+
+    //Cores para o gráfico
+    <color name="tristeza">#5BB0C4</color>
+    <color name="alegria">#BD7879</color>
+    <color name="neutro">#B6B6B6</color>
 
 
 </resources>

@@ -40,7 +40,6 @@
             android:background="@drawable/exit" />
 
 
-
     </FrameLayout>
 
 
@@ -78,8 +77,60 @@
                 android:id="@+id/grafico"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="75dp"
                 android:layout_marginTop="165dp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="200dp">
+
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Alegre"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/circle_em_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Triste"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/circle_em_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Cansado"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/txt_nome_logado"
