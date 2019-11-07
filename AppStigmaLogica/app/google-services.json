@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "559523489462-ogn1rd7rr6v784ogpfujhs4gu3svguob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.projeto.appstigma",
+            "certificate_hash": "ef3ff5916e99d1f5218d198d94c370e01799400e"
+          }
+        },
+        {
           "client_id": "559523489462-ph8bethmitnkjs83v53b3imbivrl4hke.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
