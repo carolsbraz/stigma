@@ -20,8 +20,6 @@ class RelatoActivity : AppCompatActivity() {
 
     var auth = FirebaseAuth.getInstance()
     var emocao = ""
-    var usuLogado = ""
-    val ischecked : Boolean = false
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,14 +27,10 @@ class RelatoActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_relato)
 
-
         btn_muitofeliz.setOnClickListener {
-
             emocao = "muitofeliz"
         }
-
         btn_feliz.setOnClickListener() {
-
             emocao = "feliz"
         }
         btn_neutro.setOnClickListener {
@@ -58,23 +52,16 @@ class RelatoActivity : AppCompatActivity() {
         val dateInString = date.toString("dd/MM/yyyy")
 
         btn_salvar.setOnClickListener {
-
             if (user != null) {
-
                 var rel = txt_relato.text.toString()
                 val relato =
                     Relato(relatos.push().key!!, rel, emocao, user.email.toString(), dateInString)
                 relatos.child(relato.id).setValue(relato)
-
-                if(ck_add_maquina.isChecked){
-
+                if (ck_add_maquina.isChecked) {
                     maquina.child(relato.id).setValue(relato)
-
                 }
-
                 val intent = Intent(this, ListarRelatosActivity::class.java)
                 startActivity(intent)
-
                 Toast.makeText(
                     baseContext, "Relato realizado com sucesso",
                     Toast.LENGTH_SHORT

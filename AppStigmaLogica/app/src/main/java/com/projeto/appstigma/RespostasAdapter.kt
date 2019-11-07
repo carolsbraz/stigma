@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import com.example.stigma.R
-import com.example.stigma.Relato
 import com.example.stigma.Resposta
 
 class RespostasAdapter(contexto: Context) : ArrayAdapter<Resposta>(contexto, 0) {
@@ -32,7 +31,5 @@ class RespostasAdapter(contexto: Context) : ArrayAdapter<Resposta>(contexto, 0) 
         txt_emocao.text = item?.emocao.toString()
 
         return v;
-
     }
-
 }

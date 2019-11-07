@@ -36,9 +36,6 @@ class PrincipalActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_principal)
 
-
-
-
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
 
@@ -52,11 +49,8 @@ class PrincipalActivity : AppCompatActivity() {
 
         setUpPieChartData()
 
-
-
         if (user != null) {
             txt_nome_logado.text = nome
-
             if (avatar == "avatar_boy1") {
                 img_avatar.setImageResource(R.drawable.boy1)
             }
@@ -84,7 +78,6 @@ class PrincipalActivity : AppCompatActivity() {
             if (avatar == "avatar_boy9") {
                 img_avatar.setImageResource(R.drawable.boy9)
             }
-
             if (avatar == "avatar_girl1") {
                 img_avatar.setImageResource(R.drawable.girl1)
             }
@@ -143,13 +136,11 @@ class PrincipalActivity : AppCompatActivity() {
             val view = layoutInflater.inflate(R.layout.custom_modal_sair, null)
             dialog.setContentView(view)
             dialog.show()
-
             view.btn_sair_modal.setOnClickListener {
                 FirebaseAuth.getInstance().signOut()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
-
             view.btn_cancelar_modal.setOnClickListener {
                 dialog.dismiss()
             }
@@ -162,51 +153,37 @@ class PrincipalActivity : AppCompatActivity() {
         }
 
         btn_tela_mauqinadotempo.setOnClickListener {
-
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-
                 val date = getCurrentDateTime()
                 val dateInString = date.toString("MM/dd")
-
                 var date2 = datadecriacao
-
-
-
-                if( dateInString == date2 ){
-
+                if (dateInString == date2) {
                     var intent = Intent(this, MaquinaDoTempoActivity::class.java)
                     startActivity(intent)
-
-                }else{
-
+                } else {
                     Toast.makeText(
-                        baseContext, "Você só pode abrir sua máquina do tempo no seu aniversário de cadastro",
+                        baseContext,
+                        "Você só pode abrir sua máquina do tempo no seu aniversário de cadastro",
                         Toast.LENGTH_SHORT
                     ).show()
-
                 }
-
             }
         }
-
     }
 
     private fun setUpPieChartData() {
-
-
 
         val yVals = ArrayList<PieEntry>()
         yVals.add(PieEntry(25f))
         yVals.add(PieEntry(25f))
         yVals.add(PieEntry(50f))
 
-
         val dataSet = PieDataSet(yVals, "")
-        dataSet.valueTextSize=0f
+        dataSet.valueTextSize = 0f
         val colors = java.util.ArrayList<Int>()
-        colors.add(Color.rgb(182,182,182))
-        colors.add(Color.rgb(91,176,196))
-        colors.add(Color.rgb(189,120,121))
+        colors.add(Color.rgb(182, 182, 182))
+        colors.add(Color.rgb(91, 176, 196))
+        colors.add(Color.rgb(189, 120, 121))
 
         dataSet.setColors(colors)
         val data = PieData(dataSet)
@@ -216,8 +193,6 @@ class PrincipalActivity : AppCompatActivity() {
         grafico.legend.isEnabled = false
         grafico.description.isEnabled = false
     }
-
-
 }
 
 fun Date.toString(format: String, locale: Locale = Locale.getDefault()): String {

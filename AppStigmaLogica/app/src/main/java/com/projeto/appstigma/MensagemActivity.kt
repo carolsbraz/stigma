@@ -93,25 +93,19 @@ class MensagemActivity : AppCompatActivity() {
                     view.txt_mensagem_modal.text = mensagemSort
                     view.txt_autor_modal.text = autorSort
                     lastSort = mensagemSort
-
                     mensagemSort = ""
-
                 }
-
             } else {
                 Toast.makeText(
                     baseContext, "Selecione uma emocao.",
                     Toast.LENGTH_SHORT
                 ).show()
             }
-
         }
 
         btn_voltar_2.setOnClickListener {
             finish()
         }
-
-
     }
 
     fun ClosedRange<Int>.random() =
