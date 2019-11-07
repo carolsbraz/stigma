@@ -14,6 +14,7 @@ class Passo1Activity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_passo1)
 
+/*
         btn_left_passo1.setOnClickListener {
             val intent = Intent(this, Passo2Activity::class.java)
             startActivity(intent)
@@ -24,5 +25,7 @@ class Passo1Activity : AppCompatActivity() {
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
         }
+*/
+
     }
 }

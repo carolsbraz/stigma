@@ -107,7 +107,7 @@ class CadastroActivity : AppCompatActivity() {
                                 auth.signInWithEmailAndPassword(email, senha)
                                     .addOnCompleteListener(this) { task ->
                                         if (task.isSuccessful) {
-                                            val intent = Intent(this, Passo1Activity::class.java)
+                                            val intent = Intent(this, ViewPagePassos::class.java)
                                             startActivity(intent)
                                             this.finish()
                                         } else {
