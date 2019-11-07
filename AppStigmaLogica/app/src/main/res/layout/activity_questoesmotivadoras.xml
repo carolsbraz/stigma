@@ -148,7 +148,8 @@
             android:gravity="top"
             android:hint="Escreva aqui..."
             android:padding="20dp"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:maxLength="400"/>
 
         <Button
             android:id="@+id/btn_responder"
@@ -162,6 +163,7 @@
             android:textAllCaps="false"
             android:textColor="@android:color/background_light"
             android:textSize="15sp" />
+
         <Button
             android:id="@+id/btn_gerar_questao"
             android:layout_width="133dp"

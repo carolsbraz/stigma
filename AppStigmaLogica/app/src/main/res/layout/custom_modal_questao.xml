@@ -4,46 +4,36 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/txt_questao_modal"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="@color/rosa"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        <View
-            android:id="@+id/base_modal"
-            android:layout_width="500dp"
-            android:layout_height="236dp"
-            android:layout_gravity="center"
-            android:background="@color/modal" />
+    <TextView
+        android:id="@+id/txt_resposta_modal"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="145dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="18sp" />
 
-
-        <TextView
-            android:id="@+id/txt_mensagem_modal"
-            android:layout_width="358dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:padding="10dp"
-            android:text="TextView"
-            android:textColor="@color/rosa"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
-
-
-        <TextView
-            android:id="@+id/txt_autor_modal"
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:textColor="#000"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="180dp"
-            android:src="@drawable/random"
-            android:id="@+id/btn_random"/>
+    <ImageView
+        android:id="@+id/img_emocao_resposta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
 </FrameLayout>
 

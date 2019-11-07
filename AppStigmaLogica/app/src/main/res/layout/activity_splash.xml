@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/logotipo"
-        android:background="@drawable/fundo"/>
+        android:background="@drawable/fundo"
+        android:src="@drawable/logotipo" />
 
 </LinearLayout>

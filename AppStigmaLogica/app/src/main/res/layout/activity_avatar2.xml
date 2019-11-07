@@ -1,219 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/fundo"
-android:orientation="vertical"
-tools:context="com.projeto.appstigma.Activities.Avatar2Activity">
-
-
-<ImageView
-    android:id="@+id/img"
-    android:layout_width="208dp"
-    android:layout_height="134dp"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginTop="0dp"
-    android:src="@drawable/logotipo" />
-
-<TextView
-    android:id="@+id/textView5"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Escolha seu avatar!"
-    android:textAlignment="center"
-    android:textColor="#fff"
-    android:textSize="18sp"
-    android:textStyle="bold"
-    android:layout_gravity="center_horizontal"
-    tools:layout_editor_absoluteX="126dp"
-    tools:layout_editor_absoluteY="137dp" />
-
-<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="544dp"
-    android:layout_marginTop="10dp">
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    tools:context="com.projeto.appstigma.Activities.Avatar2Activity">
+
 
     <ImageView
+        android:id="@+id/img"
+        android:layout_width="208dp"
+        android:layout_height="134dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logotipo" />
+
+    <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
-        android:layout_height="459dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/base4"
-        android:foregroundGravity="center" />
+        android:text="Escolha seu avatar!"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="137dp" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy14"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/boy14"
-        android:enabled="false"
-        android:textSize="100px" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="544dp"
+        android:layout_marginTop="10dp">
 
-    <ImageButton
-        android:id="@+id/avatar_boy15"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/boy15"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="459dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/base4"
+            android:foregroundGravity="center" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy18"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/boy18"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy14"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy14"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_girll1"
-        android:layout_width="74dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="105dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/girl11"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy15"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/boy15"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_girll2"
-        android:layout_width="78dp"
-        android:layout_height="77dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="105dp"
-        android:background="@drawable/girl12"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy18"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/boy18"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_girl3"
-        android:layout_width="76dp"
-        android:layout_height="74dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="105dp"
-        android:background="@drawable/girl13"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_girll1"
+            android:layout_width="74dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/girl11"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy19"
-        android:layout_width="80dp"
-        android:layout_height="76dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="185dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/boy19"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_girll2"
+            android:layout_width="78dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/girl12"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy20"
-        android:layout_width="79dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="185dp"
-        android:background="@drawable/boy20"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_girl3"
+            android:layout_width="76dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/girl13"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy21"
-        android:layout_width="84dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="99dp"
-        android:layout_marginTop="185dp"
-        android:background="@drawable/boy21"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy19"
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy19"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_girll6"
-        android:layout_width="80dp"
-        android:layout_height="76dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/girl16"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy20"
+            android:layout_width="79dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="185dp"
+            android:background="@drawable/boy20"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_girl17"
-        android:layout_width="80dp"
-        android:layout_height="76dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/girl17"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy21"
+            android:layout_width="84dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="99dp"
+            android:layout_marginTop="185dp"
+            android:background="@drawable/boy21"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_girl18"
-        android:layout_width="74dp"
-        android:layout_height="74dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/girl18"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_girll6"
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/girl16"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy23"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/boy23"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_girl17"
+            android:layout_width="80dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/girl17"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy30"
-        android:layout_width="87dp"
-        android:layout_height="79dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="361dp"
-        android:layout_marginRight="130dp"
-        android:background="@drawable/boy30"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_girl18"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/girl18"
+            android:enabled="false"
+            android:textSize="100px" />
 
-    <ImageButton
-        android:id="@+id/avatar_boy31"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="360dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/boy31"
-        android:enabled="false"
-        android:textSize="100px" />
+        <ImageButton
+            android:id="@+id/avatar_boy23"
+            android:layout_width="86dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy23"
+            android:enabled="false"
+            android:textSize="100px" />
 
-</FrameLayout>
+        <ImageButton
+            android:id="@+id/avatar_boy30"
+            android:layout_width="87dp"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="361dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy30"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy31"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/boy31"
+            android:enabled="false"
+            android:textSize="100px" />
+
+    </FrameLayout>
 </LinearLayout>

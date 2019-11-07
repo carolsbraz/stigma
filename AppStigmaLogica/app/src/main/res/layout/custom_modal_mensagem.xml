@@ -5,50 +5,50 @@
     android:orientation="vertical">
 
 
-        <View
-            android:id="@+id/base_modal"
-            android:layout_width="500dp"
-            android:layout_height="236dp"
-            android:layout_gravity="center"
-            android:background="@color/modal" />
+    <View
+        android:id="@+id/base_modal"
+        android:layout_width="500dp"
+        android:layout_height="236dp"
+        android:layout_gravity="center"
+        android:background="@color/modal" />
 
-        <ImageView
-            android:id="@+id/img_emocao"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/img_emocao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
 
-        <TextView
-            android:id="@+id/txt_mensagem_modal"
-            android:layout_width="358dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
-            android:padding="10dp"
-            android:text="TextView"
-            android:textColor="#000"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:gravity="center"/>
+    <TextView
+        android:id="@+id/txt_mensagem_modal"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/txt_autor_modal"
-            android:layout_width="143dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="140dp"
-            android:text="TextView"
-            android:textColor="#000"
-            android:textSize="18sp"
-            android:gravity="center"/>
+    <TextView
+        android:id="@+id/txt_autor_modal"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="18sp" />
 
-        <ImageButton
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="180dp"
-            android:background="@drawable/random"
-            android:id="@+id/btn_random"/>
+    <ImageButton
+        android:id="@+id/btn_random"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/random" />
 </FrameLayout>
 

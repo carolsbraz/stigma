@@ -8,72 +8,72 @@
     tools:context="com.projeto.appstigma.Activities.ListarRelatosActivity">
 
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/btn_voltar_4"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/voltar" />
+        <ImageButton
+            android:id="@+id/btn_voltar_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/voltar" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="114dp"
-                android:layout_height="69dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/logorosa" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="114dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logorosa" />
 
-        </FrameLayout>
+    </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-            <View
-                android:layout_width="380dp"
-                android:layout_height="122dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="70dp"
-                android:background="@drawable/caixaviewmenu" />
+        <View
+            android:layout_width="380dp"
+            android:layout_height="122dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/caixaviewmenu" />
 
-            <View
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/perfil_redondo" />
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/perfil_redondo" />
 
-            <TextView
-                android:id="@+id/txt_pontos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="125dp"
-                android:text=""
-                android:textColor="@color/azul"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_pontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125dp"
+            android:text=""
+            android:textColor="@color/azul"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <ProgressBar
-                android:id="@+id/pb_desafios"
-                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="155dp" />
+        <ProgressBar
+            android:id="@+id/pb_desafios"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="155dp" />
 
-        </FrameLayout>
+    </FrameLayout>
 
-        <ListView
-            android:id="@+id/list_view_desafios"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="@null" />
+    <ListView
+        android:id="@+id/list_view_desafios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
 
 
 </LinearLayout>

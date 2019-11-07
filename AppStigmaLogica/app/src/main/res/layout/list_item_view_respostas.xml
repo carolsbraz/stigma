@@ -32,8 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="Null"
-            android:maxLines="1"
             android:maxLength="40"
+            android:maxLines="1"
             android:textSize="18sp" />
 
         <com.codesgood.views.JustifiedTextView

@@ -28,6 +28,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn_sair_modal"
             android:layout_width="104dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
@@ -37,22 +38,20 @@
             android:text="Sair"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
-            android:textSize="15sp"
-            android:id="@+id/btn_sair_modal"/>
+            android:textSize="15sp" />
 
         <Button
+            android:id="@+id/btn_cancelar_modal"
             android:layout_width="104dp"
             android:layout_height="30dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"
-            android:text="Cancelar"
-            android:background="@drawable/btn_color_menu_2"
-            android:textColor="@android:color/white"
             android:layout_marginLeft="60dp"
-            android:textSize="15sp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/btn_color_menu_2"
+            android:text="Cancelar"
             android:textAllCaps="false"
-            android:id="@+id/btn_cancelar_modal"
-            />
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
     </FrameLayout>
 
 </LinearLayout>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        >
+        android:layout_marginTop="10dp">
 
         <View
             android:id="@+id/bloco_questao"
@@ -20,8 +20,8 @@
             android:id="@+id/linha"
             android:layout_width="290dp"
             android:layout_height="2dp"
-            android:layout_marginTop="95dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="95dp"
             android:background="#3D000000" />
 
 
@@ -29,13 +29,13 @@
             android:id="@+id/txt_titulo_desafio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:maxLength="20"
             android:text="Null"
-            android:textSize="18sp"
             android:textColor="#000"
-            android:textStyle="bold"
-            android:maxLength="20"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txt_desafio"
@@ -48,13 +48,13 @@
             android:textSize="15sp" />
 
         <TextView
+            android:id="@+id/txt_valor"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="105dp"
             android:gravity="center"
             android:maxLength="40"
-            android:id="@+id/txt_valor"
             android:text="Complete para aumentar seu nível!" />
 
         <androidx.appcompat.widget.SwitchCompat
@@ -64,7 +64,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
             android:layout_marginRight="65dp"
-            android:theme="@style/SCBSwitch"/>
+            android:theme="@style/SCBSwitch" />
 
     </FrameLayout>
 
