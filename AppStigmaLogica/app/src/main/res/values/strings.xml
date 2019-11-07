@@ -19,4 +19,10 @@
     <string name="frase_mensagem_1">Como está se sentindo agora?</string>
     <string name="titulo_mensagem">Mensagens Diárias</string>
     <string name="checkbox">Adicionar a máquina do tempo</string>
+
+    //nome para layout dos Passos
+
+    <string name="passo1">Passo1</string>
+    <string name="passo2">Passo2</string>
+    <string name="passo3">Passo3</string>
 </resources>
