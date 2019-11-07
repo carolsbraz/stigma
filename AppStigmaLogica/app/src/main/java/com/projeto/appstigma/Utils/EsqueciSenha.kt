@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Utils
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

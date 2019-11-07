@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.app.Dialog
 import android.content.Context
@@ -9,6 +9,9 @@ import android.widget.AdapterView
 import android.widget.Toast
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Adapters.RelatoAdapter
+import com.projeto.appstigma.Utils.relatosListReverse
+import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_relatos_diarios.*
 import kotlinx.android.synthetic.main.custom_modal_relatos.view.*
 

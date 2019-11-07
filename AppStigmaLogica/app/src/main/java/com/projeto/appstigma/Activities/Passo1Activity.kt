@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,12 +16,13 @@ class Passo1Activity : AppCompatActivity() {
 
 /*
         btn_left_passo1.setOnClickListener {
-            val intent= Intent(this, Passo2Activity::class.java)
+            val intent = Intent(this, Passo2Activity::class.java)
             startActivity(intent)
             this.finish()
         }
+
         btn_pular_tutorial_1.setOnClickListener {
-            val intent= Intent(this, PrincipalActivity::class.java)
+            val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
         }
 */

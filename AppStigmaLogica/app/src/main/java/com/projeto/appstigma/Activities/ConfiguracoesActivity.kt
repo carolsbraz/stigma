@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,8 @@ import com.example.stigma.MainActivity
 import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Utils.usuarios
+import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_configuracoes.*
 
 class ConfiguracoesActivity : AppCompatActivity() {

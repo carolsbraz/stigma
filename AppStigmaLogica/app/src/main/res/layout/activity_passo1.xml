@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/fundo"
     android:orientation="vertical"
-    tools:context="com.projeto.appstigma.Passo1Activity">
+    tools:context="com.projeto.appstigma.Activities.Passo1Activity">
 
 
     <FrameLayout

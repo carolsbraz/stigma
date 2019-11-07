@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.app.Dialog
 import android.content.Context
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.stigma.R
+import com.projeto.appstigma.Utils.mensagensList
 import kotlinx.android.synthetic.main.activity_mensagem.*
 import kotlinx.android.synthetic.main.custom_modal_mensagem.view.*
 import java.util.*
@@ -93,25 +94,19 @@ class MensagemActivity : AppCompatActivity() {
                     view.txt_mensagem_modal.text = mensagemSort
                     view.txt_autor_modal.text = autorSort
                     lastSort = mensagemSort
-
                     mensagemSort = ""
-
                 }
-
             } else {
                 Toast.makeText(
                     baseContext, "Selecione uma emocao.",
                     Toast.LENGTH_SHORT
                 ).show()
             }
-
         }
 
         btn_voltar_2.setOnClickListener {
             finish()
         }
-
-
     }
 
     fun ClosedRange<Int>.random() =

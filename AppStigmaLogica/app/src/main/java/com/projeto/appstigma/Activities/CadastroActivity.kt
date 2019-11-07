@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.projeto.appstigma.*
+import com.projeto.appstigma.Activities.AvatarActivity
+import com.projeto.appstigma.Activities.Passo1Activity
+import com.projeto.appstigma.Utils.usuarios
 import kotlinx.android.synthetic.main.activity_cadastro.*
 
 class CadastroActivity : AppCompatActivity() {

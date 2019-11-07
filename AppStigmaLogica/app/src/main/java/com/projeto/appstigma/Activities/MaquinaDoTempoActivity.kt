@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.content.Context
 import android.os.Build
@@ -7,6 +7,9 @@ import android.os.Bundle
 import com.example.stigma.R
 import com.example.stigma.toString
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Adapters.MaquinaAdapter
+import com.projeto.appstigma.Utils.maquinaDoTempoList
+import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_maquina_do_tempo.*
 import kotlinx.android.synthetic.main.activity_relatos_diarios.txt_nome_usuario
 import java.text.SimpleDateFormat

@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Utils
 
 import com.example.stigma.*
 import com.google.firebase.database.ChildEventListener
@@ -43,13 +43,10 @@ val a = usuarios.addChildEventListener(object : ChildEventListener {
     }
 
     override fun onChildChanged(p0: DataSnapshot, p1: String?) {
-
         var user : Usuario?
         user = p0.getValue(Usuario::class.java)
         var i = 0
-
         while (i < usuariosList.size){
-
             if(user!!.avatar!= usuariosList[i].avatar){
                 usuariosList[i].avatar = user!!.avatar
             }
@@ -65,10 +62,8 @@ val a = usuarios.addChildEventListener(object : ChildEventListener {
             if(user!!.senha!= usuariosList[i].senha){
                 usuariosList[i].senha = user!!.senha
             }
-
             i++
         }
-
     }
 
     override fun onChildMoved(p0: DataSnapshot, p1: String?) {

@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,10 +15,10 @@ class Passo3Activity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_passo3)
 
-        btn_pular_tutorial.setOnClickListener(View.OnClickListener {
+        btn_pular_tutorial.setOnClickListener{
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
-        })
+        }
 
 
     }
