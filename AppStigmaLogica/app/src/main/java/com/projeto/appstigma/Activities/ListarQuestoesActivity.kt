@@ -1,9 +1,12 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Adapters.RespostasAdapter
+import com.projeto.appstigma.Utils.respostasListReverse
+import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_listar_questoes.*
 import kotlinx.android.synthetic.main.activity_listar_questoes.txt_nome_usuario
 

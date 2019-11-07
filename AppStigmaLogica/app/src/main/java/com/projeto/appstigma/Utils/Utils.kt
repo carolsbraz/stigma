@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Utils
 
 import com.example.stigma.*
 import com.google.firebase.database.ChildEventListener

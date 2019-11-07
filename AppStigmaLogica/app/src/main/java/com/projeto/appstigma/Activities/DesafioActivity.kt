@@ -1,10 +1,13 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Adapters.DesafioAdapter
+import com.projeto.appstigma.Utils.desafiosConcluidosList
+import com.projeto.appstigma.Utils.desafiosListReverse
 import kotlinx.android.synthetic.main.activity_desafios.*
 
 class DesafioActivity : AppCompatActivity() {

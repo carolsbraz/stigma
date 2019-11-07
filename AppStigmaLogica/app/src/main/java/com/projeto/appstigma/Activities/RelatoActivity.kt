@@ -1,19 +1,16 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.annotation.SuppressLint
-import android.app.ActionBar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Layout
-import android.view.View
 import android.widget.*
 import com.example.stigma.*
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Utils.maquina
+import com.projeto.appstigma.Utils.relatos
 import kotlinx.android.synthetic.main.activity_relato.*
-import kotlinx.android.synthetic.main.activity_relato.view.*
 import java.text.SimpleDateFormat
-import java.time.LocalDate
 import java.util.*
 
 class RelatoActivity : AppCompatActivity() {

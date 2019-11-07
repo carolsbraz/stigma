@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.app.Dialog
 import android.content.Context
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.stigma.R
+import com.projeto.appstigma.Utils.mensagensList
 import kotlinx.android.synthetic.main.activity_mensagem.*
 import kotlinx.android.synthetic.main.custom_modal_mensagem.view.*
 import java.util.*

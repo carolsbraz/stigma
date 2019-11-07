@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.widget.Toast
 import com.example.stigma.R
 import com.example.stigma.Resposta
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Utils.questoesList
+import com.projeto.appstigma.Utils.respostas
 import kotlinx.android.synthetic.main.activity_questoesmotivadoras.*
 import java.util.*
 

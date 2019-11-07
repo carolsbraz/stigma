@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater

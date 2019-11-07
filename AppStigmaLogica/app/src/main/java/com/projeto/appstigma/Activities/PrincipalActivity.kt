@@ -15,7 +15,8 @@ import com.github.mikephil.charting.data.PieEntry
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import com.projeto.appstigma.*
+import com.projeto.appstigma.Activities.*
+import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
 import java.text.SimpleDateFormat

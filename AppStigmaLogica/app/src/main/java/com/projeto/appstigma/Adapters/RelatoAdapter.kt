@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Adapters
 
 import android.app.Dialog
 import android.content.Context
@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.*
 import com.example.stigma.R
 import com.example.stigma.Relato
+import com.projeto.appstigma.Utils.relatos
+import com.projeto.appstigma.Utils.relatosList
+import com.projeto.appstigma.Utils.relatosListReverse
 import kotlinx.android.synthetic.main.custom_modal_deletar.view.*
 
 class RelatoAdapter(contexto: Context) : ArrayAdapter<Relato>(contexto, 0) {

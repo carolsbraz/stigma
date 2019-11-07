@@ -1,4 +1,4 @@
-package com.projeto.appstigma
+package com.projeto.appstigma.Adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -10,6 +10,8 @@ import com.example.stigma.Desafio
 import com.example.stigma.DesafioConcluido
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Utils.desafiosConcluido
+import com.projeto.appstigma.Utils.desafiosConcluidosList
 
 class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
 
