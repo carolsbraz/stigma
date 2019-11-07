@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.stigma.R
 import kotlinx.android.synthetic.main.activity_mensagem.*
-import kotlinx.android.synthetic.main.custom_modal_mensagem.*
 import kotlinx.android.synthetic.main.custom_modal_mensagem.view.*
 import java.util.*
 
@@ -44,29 +43,21 @@ class MensagemActivity : AppCompatActivity() {
         }
 
         btn_abrirMensagem.setOnClickListener {
-
             if (emocao != "") {
-
                 do {
-
                     var i = (0..mensagensList.size).random()
-
                     if (mensagensList[i].emocao == emocao && mensagensList[i].mensagem != lastSort) {
                         mensagemSort = mensagensList[i].mensagem
                         autorSort = mensagensList[i].autor
                     } else {
                         mensagemSort == ""
                     }
-
                 } while (mensagemSort == "")
-
                 val dialog: Dialog = Dialog(context)
                 val view = layoutInflater.inflate(R.layout.custom_modal_mensagem, null)
                 dialog.setContentView(view)
-
                 view.txt_mensagem_modal.text = mensagemSort
                 view.txt_autor_modal.text = autorSort
-
                 if (emocao == "muitofeliz") {
                     view.img_emocao.setImageResource(R.drawable.happy2)
                 }
@@ -85,32 +76,22 @@ class MensagemActivity : AppCompatActivity() {
                 if (emocao == "cansado") {
                     view.img_emocao.setImageResource(R.drawable.bad)
                 }
-
                 dialog.show()
-
                 lastSort = mensagemSort
-
                 mensagemSort = ""
-
                 view.btn_random.setOnClickListener {
-
                     do {
-
                         var i = (0..mensagensList.size).random()
-
                         if (mensagensList[i].emocao == emocao && mensagensList[i].mensagem != lastSort) {
                             mensagemSort = mensagensList[i].mensagem
                             autorSort = mensagensList[i].autor
                         } else {
                             mensagemSort == ""
                         }
-
                     } while (mensagemSort == "")
 
                     view.txt_mensagem_modal.text = mensagemSort
                     view.txt_autor_modal.text = autorSort
-
-
                     lastSort = mensagemSort
 
                     mensagemSort = ""

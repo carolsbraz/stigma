@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.*
 import com.example.stigma.MaquinaDoTempo
 import com.example.stigma.R
-import com.example.stigma.Relato
 
 class MaquinaAdapter(contexto: Context) : ArrayAdapter<MaquinaDoTempo>(contexto, 0) {
 
@@ -30,7 +29,5 @@ class MaquinaAdapter(contexto: Context) : ArrayAdapter<MaquinaDoTempo>(contexto,
         txt_relato.text = item?.relato.toString()
 
         return v;
-
     }
-
 }

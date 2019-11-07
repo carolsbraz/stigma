@@ -10,8 +10,6 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_maquina_do_tempo.*
 import kotlinx.android.synthetic.main.activity_relatos_diarios.txt_nome_usuario
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class MaquinaDoTempoActivity : AppCompatActivity() {
@@ -36,7 +34,6 @@ class MaquinaDoTempoActivity : AppCompatActivity() {
         for (i in usuariosList) {
             if (i.email == emailLogado) {
                 txt_nome_usuario.text = i.nome
-
             }
         }
 
@@ -53,17 +50,12 @@ class MaquinaDoTempoActivity : AppCompatActivity() {
 
             for (r in maquinaDoTempoList) {
                 if (r.usuario == emailLogado) {
-
                     var dr = r.data
-
                     var quebrou = dr.split("/")
-
                     anorelato = quebrou[2]
-
                     if (anoatual == anorelato) {
                         maquinaAdapter.addAll(r)
                     }
-
                 }
             }
         }

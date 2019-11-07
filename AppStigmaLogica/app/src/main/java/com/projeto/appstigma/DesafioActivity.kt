@@ -1,14 +1,8 @@
 package com.projeto.appstigma
 
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.CompoundButton
-import android.widget.ProgressBar
-import androidx.appcompat.widget.SwitchCompat
-import com.example.stigma.Desafio
-import com.example.stigma.DesafioConcluido
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_desafios.*
@@ -28,7 +22,6 @@ class DesafioActivity : AppCompatActivity() {
 
         list_view_desafios.adapter = desafioAdapter
 
-
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
 
@@ -43,7 +36,7 @@ class DesafioActivity : AppCompatActivity() {
             }
         }
 
-        var porcentagem = (jafeito * 100)/somaValores
+        var porcentagem = (jafeito * 100) / somaValores
 
         txt_pontos.text = "$porcentagem%"
 
@@ -53,9 +46,7 @@ class DesafioActivity : AppCompatActivity() {
 
         btn_voltar_4.setOnClickListener {
             finish()
-
         }
-
     }
 }
 

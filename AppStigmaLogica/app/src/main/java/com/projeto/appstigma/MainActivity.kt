@@ -11,17 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_main)
-
         buttonLogin.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-
         btn_cadastro.setOnClickListener{
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)
         }
-
     }
-
 }

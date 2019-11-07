@@ -15,7 +15,6 @@ class AvatarActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_avatar)
-
         avatar_boy1.setOnClickListener {
             avatar = "avatar_boy1"
             val intent = Intent(this, CadastroActivity::class.java)
@@ -70,7 +69,6 @@ class AvatarActivity : AppCompatActivity() {
             intent.putExtra("avatar", avatar)
             startActivity(intent)
         }
-
         avatar_girl1.setOnClickListener {
             avatar = "avatar_girl1"
             val intent = Intent(this, CadastroActivity::class.java)

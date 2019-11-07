@@ -3,12 +3,10 @@ package com.projeto.appstigma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.widget.Toast
 import com.example.stigma.MainActivity
 import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
-import com.example.stigma.Usuario
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_configuracoes.*
 
@@ -17,7 +15,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
     var emailLogado = ""
     var idLogado = ""
     var senhaLogado = ""
-    var z = ""
     var avataruser = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +27,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
 
         for (i in usuariosList) {
             if (i.email == emailLogado) {
-
                 avataruser = i.avatar.toString()
                 txt_editar_nome.setText(i.nome)
                 txt_editar_dataNasc.setText(i.dataNasc)
@@ -38,15 +34,14 @@ class ConfiguracoesActivity : AppCompatActivity() {
                 txt_editar_senha.setText(i.senha)
                 idLogado = i.id
                 senhaLogado = i.senha
-
             }
         }
 
         val extras = intent.extras
+
         if (extras != null && avataruser != extras.getString("avatar").toString()) {
             avataruser = extras.getString("avatar").toString()
         }
-
         if (avataruser == "avatar_boy1") {
             btn_avatar_conf.setBackgroundResource(R.drawable.boy1)
         }
@@ -74,7 +69,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
         if (avataruser == "avatar_boy9") {
             btn_avatar_conf.setBackgroundResource(R.drawable.boy9)
         }
-
         if (avataruser == "avatar_girl1") {
             btn_avatar_conf.setBackgroundResource(R.drawable.girl1)
         }
@@ -107,9 +101,7 @@ class ConfiguracoesActivity : AppCompatActivity() {
         btn_alterar.setOnClickListener {
 
             if (txt_editar_senha.text.toString() != senhaLogado) {
-
                 val user = FirebaseAuth.getInstance().currentUser
-
                 user?.updatePassword(txt_editar_senha.text.toString())
                     ?.addOnCompleteListener { task ->
                         if (task.isSuccessful) {
@@ -132,7 +124,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
                             finish()
                         }
                     }
-
             } else {
                 usuarios.child(idLogado).child("avatar").setValue(avataruser)
                 usuarios.child(idLogado).child("nome").setValue(txt_editar_nome.text.toString())
@@ -149,23 +140,16 @@ class ConfiguracoesActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
-
         }
 
         btn_apagar_conf.setOnClickListener {
-
             user.delete().addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-
                     for (i in usuariosList) {
                         if (i.email == emailLogado) {
-
                             usuarios.child(i.id).removeValue()
-                            //usuariosList.remove(i)
-
                         }
                     }
-
                     Toast.makeText(
                         baseContext, "Conta apagada com sucesso.",
                         Toast.LENGTH_SHORT
@@ -173,7 +157,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
-
                 } else {
                     Toast.makeText(
                         baseContext, "Erro ao apagar conta.",
@@ -181,7 +164,6 @@ class ConfiguracoesActivity : AppCompatActivity() {
                     ).show()
                 }
             }
-
         }
     }
 }

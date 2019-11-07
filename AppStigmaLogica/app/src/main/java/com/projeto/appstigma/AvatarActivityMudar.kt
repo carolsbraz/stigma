@@ -3,12 +3,8 @@ package com.projeto.appstigma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.preference.PreferenceManager
-import com.example.stigma.CadastroActivity
 import com.example.stigma.R
-import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_avatar.*
-import kotlinx.android.synthetic.main.activity_configuracoes.*
 
 class AvatarActivityMudar : AppCompatActivity() {
 
@@ -18,7 +14,6 @@ class AvatarActivityMudar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_avatar_mudar)
-
         avatar_boy1.setOnClickListener {
             avatar = "avatar_boy1"
             val intent = Intent(this, ConfiguracoesActivity::class.java)
@@ -73,7 +68,6 @@ class AvatarActivityMudar : AppCompatActivity() {
             intent.putExtra("avatar", avatar)
             startActivity(intent)
         }
-
         avatar_girl1.setOnClickListener {
             avatar = "avatar_girl1"
             val intent = Intent(this, ConfiguracoesActivity::class.java)
