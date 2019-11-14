@@ -175,6 +175,8 @@ class PrincipalActivity : AppCompatActivity() {
     private fun setUpPieChartData() {
 
         val yVals = ArrayList<PieEntry>()
+
+        //Valores do gráfico
         yVals.add(PieEntry(25f))
         yVals.add(PieEntry(25f))
         yVals.add(PieEntry(50f))
@@ -193,6 +195,7 @@ class PrincipalActivity : AppCompatActivity() {
         grafico.isDrawHoleEnabled = false
         grafico.legend.isEnabled = false
         grafico.description.isEnabled = false
+        grafico.isRotationEnabled = false
     }
 }
 
