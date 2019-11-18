@@ -1,6 +1,5 @@
 package com.example.stigma
 
-
 import android.app.Dialog
 import android.content.Context
 import android.content.Intent
@@ -16,6 +15,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.projeto.appstigma.Activities.*
+import com.projeto.appstigma.Utils.relatosListReverse
 import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
@@ -32,6 +32,15 @@ class PrincipalActivity : AppCompatActivity() {
     var nome = ""
     var datadecriacao = ""
 
+    var feliz = 0
+    var triste = 0
+    var cansado = 0
+    var total = 0
+
+    var felizpc = 0
+    var tristepc = 0
+    var cansadopc = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
@@ -47,6 +56,7 @@ class PrincipalActivity : AppCompatActivity() {
                 datadecriacao = i.datadecriacao
             }
         }
+
 
         setUpPieChartData()
 
@@ -175,9 +185,50 @@ class PrincipalActivity : AppCompatActivity() {
     private fun setUpPieChartData() {
 
         val yVals = ArrayList<PieEntry>()
-        yVals.add(PieEntry(25f))
-        yVals.add(PieEntry(25f))
-        yVals.add(PieEntry(50f))
+
+        for (r in relatosListReverse) {
+            if (r.usuario == emailLogado) {
+
+                if(r.emocao == "feliz"){
+                    feliz++
+                }
+                if(r.emocao == "muitofeliz"){
+                    feliz++
+                }
+                if(r.emocao == "triste"){
+                    triste++
+                }
+                if(r.emocao == "muitotriste"){
+                    triste++
+                }
+                if(r.emocao == "cansado"){
+                    cansado++
+                }
+
+            }
+        }
+
+        total = feliz + triste + cansado
+
+        if(total == 0){
+            felizpc = 33
+            tristepc = 33
+            cansadopc = 33
+
+        }else{
+            felizpc = feliz/total
+            tristepc = triste/total
+            cansadopc = cansado/total
+        }
+
+
+
+        yVals.add(PieEntry(felizpc.toFloat()))
+        yVals.add(PieEntry(33f))
+        yVals.add(PieEntry(33f))
+
+        //Valores do gráfico
+
 
         val dataSet = PieDataSet(yVals, "")
         dataSet.valueTextSize = 0f
@@ -193,6 +244,7 @@ class PrincipalActivity : AppCompatActivity() {
         grafico.isDrawHoleEnabled = false
         grafico.legend.isEnabled = false
         grafico.description.isEnabled = false
+        grafico.isRotationEnabled = false
     }
 }
 
