@@ -15,6 +15,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.projeto.appstigma.Activities.*
+import com.projeto.appstigma.Utils.relatosList
 import com.projeto.appstigma.Utils.relatosListReverse
 import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_principal.*
@@ -186,23 +187,23 @@ class PrincipalActivity : AppCompatActivity() {
 
         val yVals = ArrayList<PieEntry>()
 
-        for (r in relatosListReverse) {
+        for (r in relatosList) {
             if (r.usuario == emailLogado) {
 
                 if(r.emocao == "feliz"){
-                    feliz++
+                    feliz = feliz + 1
                 }
                 if(r.emocao == "muitofeliz"){
-                    feliz++
+                    feliz = feliz + 1
                 }
                 if(r.emocao == "triste"){
-                    triste++
+                    triste = triste + 1
                 }
                 if(r.emocao == "muitotriste"){
-                    triste++
+                    triste = triste + 1
                 }
                 if(r.emocao == "cansado"){
-                    cansado++
+                    cansado = cansado + 1
                 }
 
             }
@@ -215,17 +216,28 @@ class PrincipalActivity : AppCompatActivity() {
             tristepc = 33
             cansadopc = 33
 
+            pctg_alegre.text = "33%"
+            pctg_cansado.text = "33%"
+            pctg_triste.text = "33%"
+
         }else{
             felizpc = feliz/total
+
             tristepc = triste/total
+
             cansadopc = cansado/total
+           
+
+            pctg_alegre.text = "${felizpc}%"
+            pctg_cansado.text = "${cansadopc}%"
+            pctg_triste.text = "${tristepc}%"
         }
 
 
 
-        yVals.add(PieEntry(felizpc.toFloat()))
-        yVals.add(PieEntry(33f))
-        yVals.add(PieEntry(33f))
+        yVals.add(PieEntry(felizpc + 0f))
+        yVals.add(PieEntry(tristepc + 0f))
+        yVals.add(PieEntry(cansadopc + 0f))
 
         //Valores do gráfico
 
