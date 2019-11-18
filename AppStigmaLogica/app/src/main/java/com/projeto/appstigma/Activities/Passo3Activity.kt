@@ -15,7 +15,12 @@ class Passo3Activity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_passo3)
 
-        btn_pular_tutorial.setOnClickListener{
+        btn_right.setOnClickListener{
+            val intent = Intent(this, Passo2Activity::class.java)
+            startActivity(intent)
+        }
+
+        btn_left.setOnClickListener{
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
         }

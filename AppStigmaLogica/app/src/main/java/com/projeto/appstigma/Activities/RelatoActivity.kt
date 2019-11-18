@@ -19,7 +19,6 @@ class RelatoActivity : AppCompatActivity() {
 
     var auth = FirebaseAuth.getInstance()
     var emocao = ""
-    var ativo: Boolean = false
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,59 +28,60 @@ class RelatoActivity : AppCompatActivity() {
 
 
         btn_muitofeliz.setOnClickListener {
-             /* btn_feliz.setBackgroundResource(R.drawable.happy)
-             btn_neutro.setBackgroundResource(R.drawable.shocked)
-             btn_triste.setBackgroundResource(R.drawable.sad)
-             btn_muitotriste.setBackgroundResource(R.drawable.sad2)
-             btn_cansado.setBackgroundResource(R.drawable.bad)*/
+            btn_muitofeliz.setBackgroundResource(R.drawable.happy2_2)
+            btn_feliz.setBackgroundResource(R.drawable.happy)
+            btn_neutro.setBackgroundResource(R.drawable.shocked)
+            btn_triste.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2)
+            btn_cansado.setBackgroundResource(R.drawable.bad)
             emocao = "muitofeliz"
         }
 
 
         btn_feliz.setOnClickListener() {
-           /* btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
-            btn_feliz.setBackgroundResource(R.drawable.happy)//trocar background
+            btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy_2)//trocar background
             btn_neutro.setBackgroundResource(R.drawable.shocked)
             btn_triste.setBackgroundResource(R.drawable.sad)
             btn_muitotriste.setBackgroundResource(R.drawable.sad2)
-            btn_cansado.setBackgroundResource(R.drawable.bad)*/
+            btn_cansado.setBackgroundResource(R.drawable.bad)
             emocao = "feliz"
         }
         btn_neutro.setOnClickListener {
             btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
             btn_feliz.setBackgroundResource(R.drawable.happy)
-            btn_neutro.setBackgroundResource(R.drawable.shocked2)
+            btn_neutro.setBackgroundResource(R.drawable.shocked_2)
             btn_triste.setBackgroundResource(R.drawable.sad)
             btn_muitotriste.setBackgroundResource(R.drawable.sad2)
             btn_cansado.setBackgroundResource(R.drawable.bad)
             emocao = "neutro"
         }
         btn_triste.setOnClickListener {
-            /*btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
-            btn_feliz.setBackgroundResource(R.drawable.happy2)
+            btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy)
             btn_neutro.setBackgroundResource(R.drawable.shocked)
-            btn_triste.setBackgroundResource(R.drawable.sad)//trocar background
+            btn_triste.setBackgroundResource(R.drawable.sad_2)//trocar background
             btn_muitotriste.setBackgroundResource(R.drawable.sad2)
-            btn_cansado.setBackgroundResource(R.drawable.bad)*/
+            btn_cansado.setBackgroundResource(R.drawable.bad)
             emocao = "triste"
         }
         btn_muitotriste.setOnClickListener {
-          /*  btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
-            btn_feliz.setBackgroundResource(R.drawable.happy2)
+            btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy)
             btn_neutro.setBackgroundResource(R.drawable.shocked)
             btn_triste.setBackgroundResource(R.drawable.sad)
-            btn_muitotriste.setBackgroundResource(R.drawable.sad2)//trocar background
-            btn_cansado.setBackgroundResource(R.drawable.bad)*/
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2_2)//trocar background
+            btn_cansado.setBackgroundResource(R.drawable.bad)
             emocao = "muitotriste"
 
         }
         btn_cansado.setOnClickListener {
-        /*    btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
-            btn_feliz.setBackgroundResource(R.drawable.happy2)
+            btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy)
             btn_neutro.setBackgroundResource(R.drawable.shocked)
             btn_triste.setBackgroundResource(R.drawable.sad)
             btn_muitotriste.setBackgroundResource(R.drawable.sad2)
-            btn_cansado.setBackgroundResource(R.drawable.bad)//trocar background*/
+            btn_cansado.setBackgroundResource(R.drawable.bad_2)//trocar background*/
             emocao = "cansado"
         }
 

@@ -23,21 +23,57 @@ class QuestoesMotivadorasActivity : AppCompatActivity() {
         setContentView(R.layout.activity_questoesmotivadoras)
 
         btn_muitofeliz1.setOnClickListener {
+            btn_muitofeliz1.setBackgroundResource(R.drawable.happy2_2)
+            btn_feliz1.setBackgroundResource(R.drawable.happy)
+            btn_neutro1.setBackgroundResource(R.drawable.shocked)
+            btn_triste1.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste1.setBackgroundResource(R.drawable.sad2)
+            btn_cansado1.setBackgroundResource(R.drawable.bad)
             emocao = "muitofeliz"
         }
         btn_feliz1.setOnClickListener {
+            btn_muitofeliz1.setBackgroundResource(R.drawable.happy2)
+            btn_feliz1.setBackgroundResource(R.drawable.happy_2)//trocar background
+            btn_neutro1.setBackgroundResource(R.drawable.shocked)
+            btn_triste1.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste1.setBackgroundResource(R.drawable.sad2)
+            btn_cansado1.setBackgroundResource(R.drawable.bad)
             emocao = "feliz"
         }
         btn_neutro1.setOnClickListener {
+            btn_muitofeliz1.setBackgroundResource(R.drawable.happy2)
+            btn_feliz1.setBackgroundResource(R.drawable.happy)
+            btn_neutro1.setBackgroundResource(R.drawable.shocked_2)
+            btn_triste1.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste1.setBackgroundResource(R.drawable.sad2)
+            btn_cansado1.setBackgroundResource(R.drawable.bad)
             emocao = "neutro"
         }
         btn_triste1.setOnClickListener {
+            btn_muitofeliz1.setBackgroundResource(R.drawable.happy2)
+            btn_feliz1.setBackgroundResource(R.drawable.happy)
+            btn_neutro1.setBackgroundResource(R.drawable.shocked)
+            btn_triste1.setBackgroundResource(R.drawable.sad_2)//trocar background
+            btn_muitotriste1.setBackgroundResource(R.drawable.sad2)
+            btn_cansado1.setBackgroundResource(R.drawable.bad)
             emocao = "triste"
         }
         btn_muitotriste1.setOnClickListener {
+            btn_muitofeliz1.setBackgroundResource(R.drawable.happy2)
+            btn_feliz1.setBackgroundResource(R.drawable.happy)
+            btn_neutro1.setBackgroundResource(R.drawable.shocked)
+            btn_triste1.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste1.setBackgroundResource(R.drawable.sad2_2)//trocar background
+            btn_cansado1.setBackgroundResource(R.drawable.bad)
             emocao = "muitotriste"
         }
         btn_cansado1.setOnClickListener {
+            btn_muitofeliz1.setBackgroundResource(R.drawable.happy2)
+            btn_feliz1.setBackgroundResource(R.drawable.happy)
+            btn_neutro1.setBackgroundResource(R.drawable.shocked)
+            btn_triste1.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste1.setBackgroundResource(R.drawable.sad2)
+            btn_cansado1.setBackgroundResource(R.drawable.bad_2)//trocar background*/
             emocao = "cansado"
         }
 

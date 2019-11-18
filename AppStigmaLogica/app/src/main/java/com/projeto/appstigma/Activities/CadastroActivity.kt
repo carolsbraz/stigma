@@ -8,7 +8,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.projeto.appstigma.Activities.AvatarActivity
 import com.projeto.appstigma.Activities.Passo1Activity
 import com.projeto.appstigma.Utils.usuarios
-import com.projeto.appstigma.ViewPagePassos
 import kotlinx.android.synthetic.main.activity_cadastro.*
 
 class CadastroActivity : AppCompatActivity() {
@@ -108,7 +107,7 @@ class CadastroActivity : AppCompatActivity() {
                                 auth.signInWithEmailAndPassword(email, senha)
                                     .addOnCompleteListener(this) { task ->
                                         if (task.isSuccessful) {
-                                            val intent = Intent(this, ViewPagePassos::class.java)
+                                            val intent = Intent(this, Passo1Activity::class.java)
                                             startActivity(intent)
                                             this.finish()
                                         } else {

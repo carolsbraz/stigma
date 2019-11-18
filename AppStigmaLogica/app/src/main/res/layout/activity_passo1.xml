@@ -46,6 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
         <ImageView
             android:id="@+id/barra1"
             android:layout_width="430dp"
@@ -53,6 +54,30 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
             android:src="@drawable/barra1" />
+
+        <ImageButton
+            android:id="@+id/btn_left"
+            android:layout_width="70dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_avancar"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <Button
+            android:id="@+id/btn_pular_tutorial"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:stateListAnimator="@null"
+            android:text="Pular tutorial"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@null"/>
+
 
 
     </FrameLayout>
