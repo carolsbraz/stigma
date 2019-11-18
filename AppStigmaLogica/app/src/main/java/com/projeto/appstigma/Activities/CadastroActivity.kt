@@ -8,6 +8,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.projeto.appstigma.Activities.AvatarActivity
 import com.projeto.appstigma.Activities.Passo1Activity
 import com.projeto.appstigma.Utils.usuarios
+import com.projeto.appstigma.ViewPagePassos
 import kotlinx.android.synthetic.main.activity_cadastro.*
 
 class CadastroActivity : AppCompatActivity() {

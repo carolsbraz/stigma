@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.*
 import com.example.stigma.*
 import com.google.firebase.auth.FirebaseAuth
@@ -12,11 +13,13 @@ import com.projeto.appstigma.Utils.relatos
 import kotlinx.android.synthetic.main.activity_relato.*
 import java.text.SimpleDateFormat
 import java.util.*
+import android.widget.FrameLayout.LayoutParams
 
 class RelatoActivity : AppCompatActivity() {
 
     var auth = FirebaseAuth.getInstance()
     var emocao = ""
+    var ativo: Boolean = false
 
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,22 +27,61 @@ class RelatoActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_relato)
 
+
         btn_muitofeliz.setOnClickListener {
+             /* btn_feliz.setBackgroundResource(R.drawable.happy)
+             btn_neutro.setBackgroundResource(R.drawable.shocked)
+             btn_triste.setBackgroundResource(R.drawable.sad)
+             btn_muitotriste.setBackgroundResource(R.drawable.sad2)
+             btn_cansado.setBackgroundResource(R.drawable.bad)*/
             emocao = "muitofeliz"
         }
+
+
         btn_feliz.setOnClickListener() {
+           /* btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy)//trocar background
+            btn_neutro.setBackgroundResource(R.drawable.shocked)
+            btn_triste.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2)
+            btn_cansado.setBackgroundResource(R.drawable.bad)*/
             emocao = "feliz"
         }
         btn_neutro.setOnClickListener {
+            btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy)
+            btn_neutro.setBackgroundResource(R.drawable.shocked2)
+            btn_triste.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2)
+            btn_cansado.setBackgroundResource(R.drawable.bad)
             emocao = "neutro"
         }
         btn_triste.setOnClickListener {
+            /*btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy2)
+            btn_neutro.setBackgroundResource(R.drawable.shocked)
+            btn_triste.setBackgroundResource(R.drawable.sad)//trocar background
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2)
+            btn_cansado.setBackgroundResource(R.drawable.bad)*/
             emocao = "triste"
         }
         btn_muitotriste.setOnClickListener {
+          /*  btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy2)
+            btn_neutro.setBackgroundResource(R.drawable.shocked)
+            btn_triste.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2)//trocar background
+            btn_cansado.setBackgroundResource(R.drawable.bad)*/
             emocao = "muitotriste"
+
         }
         btn_cansado.setOnClickListener {
+        /*    btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
+            btn_feliz.setBackgroundResource(R.drawable.happy2)
+            btn_neutro.setBackgroundResource(R.drawable.shocked)
+            btn_triste.setBackgroundResource(R.drawable.sad)
+            btn_muitotriste.setBackgroundResource(R.drawable.sad2)
+            btn_cansado.setBackgroundResource(R.drawable.bad)//trocar background*/
             emocao = "cansado"
         }
 
@@ -91,5 +133,7 @@ class RelatoActivity : AppCompatActivity() {
         return Calendar.getInstance().time
     }
 }
+
+
 
 

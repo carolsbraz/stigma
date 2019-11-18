@@ -4,7 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.viewpager.widget.PagerAdapter
+import com.example.stigma.R
+import com.projeto.appstigma.Activities.Passo3Activity
 
 class CustomPagerAdapter(private val mContext: Context) : PagerAdapter() {
 
