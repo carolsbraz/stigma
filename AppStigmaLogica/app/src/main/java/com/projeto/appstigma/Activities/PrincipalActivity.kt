@@ -19,9 +19,16 @@ import com.projeto.appstigma.Utils.relatosList
 import com.projeto.appstigma.Utils.relatosListReverse
 import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_principal.*
+import kotlinx.android.synthetic.main.custom_modal_mensagem.view.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
+import kotlinx.android.synthetic.main.custom_modal_sair.view.txt_mensagem_modal
+import kotlinx.android.synthetic.main.custom_modal_surpresa.view.*
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
+import java.time.LocalDate
+import java.time.Period
+import java.time.ZoneId
+import java.time.format.DateTimeFormatter
 import java.util.*
 
 
@@ -58,7 +65,6 @@ class PrincipalActivity : AppCompatActivity() {
                 datadecriacao = i.datadecriacao
             }
         }
-
 
         setUpPieChartData()
 
@@ -117,6 +123,30 @@ class PrincipalActivity : AppCompatActivity() {
             val intent = Intent(this, PrincipalActivity::class.java)
             finish()
             startActivity(intent)
+        }
+
+        for (i in usuariosList) {
+            if (i.email == emailLogado) {
+
+                var dataNasc = i.dataNasc
+                var dataComp = dataNasc.split("/")
+                var niverMesDia = dataComp[1] + "/" + dataComp[0]
+
+                val date = getCurrentDateTime()
+                val dateInString = date.toString("MM/dd")
+
+                if(niverMesDia == dateInString){
+
+                    val dialog: Dialog = Dialog(context)
+                    val view = layoutInflater.inflate(R.layout.custom_modal_surpresa, null)
+                    dialog.setContentView(view)
+                    view.txt_nome_surpresa.text = i.nome
+
+                    dialog.show()
+
+                }
+
+            }
         }
 
         btn_tela_relato.setOnClickListener {
