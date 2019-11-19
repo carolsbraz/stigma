@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
@@ -210,6 +211,8 @@ class PrincipalActivity : AppCompatActivity() {
         }
 
         total = feliz + triste + cansado
+        Log.i(null, "total: ${total}")
+
 
         if(total == 0){
             felizpc = 33
@@ -226,14 +229,11 @@ class PrincipalActivity : AppCompatActivity() {
             tristepc = triste/total
 
             cansadopc = cansado/total
-           
 
             pctg_alegre.text = "${felizpc}%"
             pctg_cansado.text = "${cansadopc}%"
             pctg_triste.text = "${tristepc}%"
         }
-
-
 
         yVals.add(PieEntry(felizpc + 0f))
         yVals.add(PieEntry(tristepc + 0f))
