@@ -50,7 +50,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="100dp"
         android:padding="10dp"
-        android:text="Desejo muitas felcidades pelos seus"
+        android:text="Desejo muitas felicidades pelos seus"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"/>
 
