@@ -18,6 +18,7 @@ import com.projeto.appstigma.Activities.*
 import com.projeto.appstigma.Utils.relatosList
 import com.projeto.appstigma.Utils.relatosListReverse
 import com.projeto.appstigma.Utils.usuariosList
+import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
 import java.text.SimpleDateFormat
@@ -47,6 +48,8 @@ class PrincipalActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_principal)
 
+        val date = getCurrentDateTime()
+
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
 
@@ -57,7 +60,6 @@ class PrincipalActivity : AppCompatActivity() {
                 datadecriacao = i.datadecriacao
             }
         }
-
 
         setUpPieChartData()
 
