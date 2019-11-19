@@ -228,13 +228,13 @@ class PrincipalActivity : AppCompatActivity() {
                     feliz = feliz + 1
                 }
                 if(r.emocao == "muitofeliz"){
-                    feliz = feliz + 1
+                    feliz = feliz + 2
                 }
                 if(r.emocao == "triste"){
                     triste = triste + 1
                 }
                 if(r.emocao == "muitotriste"){
-                    triste = triste + 1
+                    triste = triste + 2
                 }
                 if(r.emocao == "cansado"){
                     cansado = cansado + 1
