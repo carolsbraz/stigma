@@ -19,6 +19,7 @@ class MensagemActivity : AppCompatActivity() {
     var autorSort = ""
     var mensagemSort = ""
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()

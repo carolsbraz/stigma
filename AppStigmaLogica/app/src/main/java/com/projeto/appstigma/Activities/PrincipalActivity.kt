@@ -18,6 +18,7 @@ import com.projeto.appstigma.Activities.*
 import com.projeto.appstigma.Utils.relatosList
 import com.projeto.appstigma.Utils.relatosListReverse
 import com.projeto.appstigma.Utils.usuariosList
+import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_mensagem.view.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
@@ -54,6 +55,7 @@ class PrincipalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_principal)
+
 
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
@@ -277,9 +279,10 @@ class PrincipalActivity : AppCompatActivity() {
         val dataSet = PieDataSet(yVals, "")
         dataSet.valueTextSize = 0f
         val colors = java.util.ArrayList<Int>()
-        colors.add(Color.rgb(182, 182, 182))
-        colors.add(Color.rgb(91, 176, 196))
         colors.add(Color.rgb(189, 120, 121))
+        colors.add(Color.rgb(91, 176, 196))
+        colors.add(Color.rgb(182, 182, 182))
+
 
         dataSet.setColors(colors)
         val data = PieData(dataSet)

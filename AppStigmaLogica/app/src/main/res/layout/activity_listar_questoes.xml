@@ -42,6 +42,7 @@
             android:background="@drawable/caixaviewmenu" />
 
         <View
+            android:id="@+id/img_avatar_2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
