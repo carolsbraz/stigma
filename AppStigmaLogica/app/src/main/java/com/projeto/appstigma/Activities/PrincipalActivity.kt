@@ -21,6 +21,7 @@ import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_cadastro.*
 import kotlinx.android.synthetic.main.activity_principal.*
 import kotlinx.android.synthetic.main.custom_modal_sair.view.*
+import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -34,14 +35,14 @@ class PrincipalActivity : AppCompatActivity() {
     var nome = ""
     var datadecriacao = ""
 
-    var feliz = 0
-    var triste = 0
-    var cansado = 0
-    var total = 0
+    var feliz :Float= 0f
+    var triste:Float= 0f
+    var cansado :Float= 0f
+    var total :Float= 0f
 
-    var felizpc = 0
-    var tristepc = 0
-    var cansadopc = 0
+    var felizpc :Float = 0.0f
+    var tristepc :Float = 0.0f
+    var cansadopc :Float = 0.0f
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -143,6 +144,7 @@ class PrincipalActivity : AppCompatActivity() {
         btn_config.setOnClickListener {
             val intent = Intent(this, ConfiguracoesActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btn_sair.setOnClickListener {
@@ -213,26 +215,26 @@ class PrincipalActivity : AppCompatActivity() {
 
         total = feliz + triste + cansado
 
-        if(total == 0){
-            felizpc = 33
-            tristepc = 33
-            cansadopc = 33
+        if(total == 0f){
+            felizpc = 33f
+            tristepc = 33f
+            cansadopc = 33f
 
             pctg_alegre.text = "33%"
             pctg_cansado.text = "33%"
             pctg_triste.text = "33%"
 
         }else{
-            felizpc = feliz/total
+            felizpc = (feliz/total)*100
 
-            tristepc = triste/total
+            tristepc = (triste/total)*100
 
-            cansadopc = cansado/total
-           
+            cansadopc = (cansado/total)*100
+            val dec = DecimalFormat("##.0")
 
-            pctg_alegre.text = "${felizpc}%"
-            pctg_cansado.text = "${cansadopc}%"
-            pctg_triste.text = "${tristepc}%"
+            pctg_alegre.text = if(felizpc>0) dec.format(felizpc)+"%" else "0%"
+            pctg_cansado.text = if(cansadopc>0)dec.format(cansadopc)+"%" else "0%"
+            pctg_triste.text = if(tristepc>0)dec.format(tristepc)+"%" else "0%"
         }
 
 
