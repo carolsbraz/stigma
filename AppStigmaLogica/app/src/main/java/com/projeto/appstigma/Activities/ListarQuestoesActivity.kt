@@ -2,6 +2,7 @@ package com.projeto.appstigma.Activities
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -20,11 +21,15 @@ class ListarQuestoesActivity : AppCompatActivity() {
 
     var logado = ""
     val context: Context = this
+    var avatar: String? = ""
+    var nome = ""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide()
         setContentView(R.layout.activity_listar_questoes)
+
 
         btn_voltar_5.setOnClickListener {
             finish()
@@ -35,8 +40,67 @@ class ListarQuestoesActivity : AppCompatActivity() {
 
         for (i in usuariosList) {
             if (i.email == logado) {
-                txt_nome_usuario.text = i.nome
+                avatar = i.avatar
+                nome = i.nome
             }
+        }
+
+
+        if (user != null) {
+            txt_nome_usuario.text = nome
+            if (avatar == "avatar_boy1") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy1)
+            }
+            if (avatar == "avatar_boy2") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy2)
+            }
+            if (avatar == "avatar_boy3") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy3)
+            }
+            if (avatar == "avatar_boy4") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy4)
+            }
+            if (avatar == "avatar_boy5") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy5)
+            }
+            if (avatar == "avatar_boy6") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy6)
+            }
+            if (avatar == "avatar_boy7") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy7)
+            }
+            if (avatar == "avatar_boy8") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy8)
+            }
+            if (avatar == "avatar_boy9") {
+                img_avatar_2.setBackgroundResource(R.drawable.boy9)
+            }
+            if (avatar == "avatar_girl1") {
+                img_avatar_2.setBackgroundResource(R.drawable.girl1)
+            }
+            if (avatar == "avatar_girl2") {
+                img_avatar_2.setBackgroundResource(R.drawable.girl2)
+            }
+            if (avatar == "avatar_girl3") {
+                img_avatar_2.setBackgroundResource(R.drawable.girl3)
+            }
+            if (avatar == "avatar_girl4") {
+                img_avatar_2.setBackgroundResource(R.drawable.girl4)
+            }
+            if (avatar == "avatar_girl5") {
+                img_avatar_2.setBackgroundResource(R.drawable.girl5)
+            }
+            if (avatar == "avatar_girl6") {
+                img_avatar_2.setBackgroundResource(R.drawable.girl6)
+            }
+        } else {
+            finish()
+        }
+
+        if (avatar == "") {
+            val intent = Intent(this, ListarQuestoesActivity::class.java)
+            finish()
+            startActivity(intent)
         }
 
         val respostaAdapter = RespostasAdapter(this)

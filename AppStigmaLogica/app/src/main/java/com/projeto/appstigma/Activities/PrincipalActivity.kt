@@ -49,7 +49,6 @@ class PrincipalActivity : AppCompatActivity() {
         supportActionBar!!.hide()
         setContentView(R.layout.activity_principal)
 
-        val date = getCurrentDateTime()
 
         val user = FirebaseAuth.getInstance().currentUser
         emailLogado = user!!.email.toString()
@@ -249,9 +248,10 @@ class PrincipalActivity : AppCompatActivity() {
         val dataSet = PieDataSet(yVals, "")
         dataSet.valueTextSize = 0f
         val colors = java.util.ArrayList<Int>()
-        colors.add(Color.rgb(182, 182, 182))
-        colors.add(Color.rgb(91, 176, 196))
         colors.add(Color.rgb(189, 120, 121))
+        colors.add(Color.rgb(91, 176, 196))
+        colors.add(Color.rgb(182, 182, 182))
+
 
         dataSet.setColors(colors)
         val data = PieData(dataSet)

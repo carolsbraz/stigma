@@ -77,13 +77,13 @@
                 android:id="@+id/grafico"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
-                android:layout_marginLeft="75dp"
+                android:layout_marginLeft="70dp"
                 android:layout_marginTop="165dp" />
 
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="240dp"
+                android:layout_marginLeft="220dp"
                 android:layout_marginTop="200dp">
 
 
