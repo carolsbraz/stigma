@@ -231,8 +231,8 @@ class PrincipalActivity : AppCompatActivity() {
             val dec = DecimalFormat("##.0")
 
             pctg_alegre.text = if(felizpc>0) dec.format(felizpc)+"%" else "0%"
-            pctg_cansado.text = if(cansadopc>0)dec.format(cansadopc)+"%" else "0%"
-            pctg_triste.text = if(tristepc>0)dec.format(tristepc)+"%" else "0%"
+            pctg_cansado.text = if(cansadopc>0) dec.format(cansadopc)+"%" else "0%"
+            pctg_triste.text = if(tristepc>0) dec.format(tristepc)+"%" else "0%"
         }
 
 
