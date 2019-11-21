@@ -50,6 +50,8 @@ class DesafioAdapter(contexto: Context) : ArrayAdapter<Desafio>(contexto, 0) {
                     DesafioConcluido(item?.desafio.toString(), emailLogado, item?.valor.toString())
                 desafiosConcluido.push().setValue(desafio)
                 st_concluido.isClickable = false
+
+
             } else {
                 st_concluido.isChecked = false
                 st_concluido.isClickable = true

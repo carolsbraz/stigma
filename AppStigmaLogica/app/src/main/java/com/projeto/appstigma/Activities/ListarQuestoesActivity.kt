@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Toast
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
 import com.projeto.appstigma.Adapters.RespostasAdapter
@@ -32,6 +33,8 @@ class ListarQuestoesActivity : AppCompatActivity() {
 
 
         btn_voltar_5.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
@@ -123,22 +126,22 @@ class ListarQuestoesActivity : AppCompatActivity() {
             var emocaoRelato = ""
             emocaoRelato = item!!.emocao
             if (emocaoRelato == "muitofeliz") {
-                view.img_emocao_resposta.setImageResource(R.drawable.happy2)
+                view.img_emocao_resposta.setImageResource(R.drawable.happy2_2)
             }
             if (emocaoRelato == "feliz") {
-                view.img_emocao_resposta.setImageResource(R.drawable.happy)
+                view.img_emocao_resposta.setImageResource(R.drawable.happy_2)
             }
             if (emocaoRelato == "neutro") {
-                view.img_emocao_resposta.setImageResource(R.drawable.shocked)
+                view.img_emocao_resposta.setImageResource(R.drawable.shocked_2)
             }
             if (emocaoRelato == "triste") {
-                view.img_emocao_resposta.setImageResource(R.drawable.sad)
+                view.img_emocao_resposta.setImageResource(R.drawable.sad_2)
             }
             if (emocaoRelato == "muitotriste") {
-                view.img_emocao_resposta.setImageResource(R.drawable.sad2)
+                view.img_emocao_resposta.setImageResource(R.drawable.sad2_2)
             }
             if (emocaoRelato == "cansado") {
-                view.img_emocao_resposta.setImageResource(R.drawable.bad)
+                view.img_emocao_resposta.setImageResource(R.drawable.bad_2)
             }
             dialog.show()
         }

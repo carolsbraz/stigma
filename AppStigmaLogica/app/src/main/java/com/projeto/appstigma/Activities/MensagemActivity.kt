@@ -2,9 +2,11 @@ package com.projeto.appstigma.Activities
 
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.projeto.appstigma.Utils.mensagensList
 import kotlinx.android.synthetic.main.activity_mensagem.*
@@ -97,22 +99,22 @@ class MensagemActivity : AppCompatActivity() {
                 view.txt_mensagem_modal.text = mensagemSort
                 view.txt_autor_modal.text = autorSort
                 if (emocao == "muitofeliz") {
-                    view.img_emocao.setImageResource(R.drawable.happy2)
+                    view.img_emocao.setImageResource(R.drawable.happy2_2)
                 }
                 if (emocao == "feliz") {
-                    view.img_emocao.setImageResource(R.drawable.happy)
+                    view.img_emocao.setImageResource(R.drawable.happy_2)
                 }
                 if (emocao == "neutro") {
-                    view.img_emocao.setImageResource(R.drawable.shocked)
+                    view.img_emocao.setImageResource(R.drawable.shocked_2)
                 }
                 if (emocao == "triste") {
-                    view.img_emocao.setImageResource(R.drawable.sad)
+                    view.img_emocao.setImageResource(R.drawable.sad_2)
                 }
                 if (emocao == "muitotriste") {
-                    view.img_emocao.setImageResource(R.drawable.sad2)
+                    view.img_emocao.setImageResource(R.drawable.sad2_2)
                 }
                 if (emocao == "cansado") {
-                    view.img_emocao.setImageResource(R.drawable.bad)
+                    view.img_emocao.setImageResource(R.drawable.bad_2)
                 }
                 dialog.show()
                 lastSort = mensagemSort
@@ -142,6 +144,8 @@ class MensagemActivity : AppCompatActivity() {
         }
 
         btn_voltar_2.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }

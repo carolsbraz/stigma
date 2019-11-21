@@ -37,7 +37,6 @@ class RelatoActivity : AppCompatActivity() {
             emocao = "muitofeliz"
         }
 
-
         btn_feliz.setOnClickListener() {
             btn_muitofeliz.setBackgroundResource(R.drawable.happy2)
             btn_feliz.setBackgroundResource(R.drawable.happy_2)//trocar background
@@ -115,12 +114,15 @@ class RelatoActivity : AppCompatActivity() {
         }
 
         btn_voltar_1.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
         btn_listar_relatos.setOnClickListener {
             val intent = Intent(this, ListarRelatosActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

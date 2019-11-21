@@ -15,6 +15,7 @@ import com.github.mikephil.charting.data.PieEntry
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.projeto.appstigma.Activities.*
+import com.projeto.appstigma.Utils.exibiuMensagem
 import com.projeto.appstigma.Utils.relatosList
 import com.projeto.appstigma.Utils.relatosListReverse
 import com.projeto.appstigma.Utils.usuariosList
@@ -50,6 +51,8 @@ class PrincipalActivity : AppCompatActivity() {
     var felizpc :Float = 0.0f
     var tristepc :Float = 0.0f
     var cansadopc :Float = 0.0f
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -137,7 +140,7 @@ class PrincipalActivity : AppCompatActivity() {
                 val date = getCurrentDateTime()
                 val dateInString = date.toString("MM/dd")
 
-                if(niverMesDia == dateInString){
+                if(niverMesDia == dateInString && exibiuMensagem == false){
 
                     val dialog: Dialog = Dialog(context)
                     val view = layoutInflater.inflate(R.layout.custom_modal_surpresa, null)
@@ -146,29 +149,44 @@ class PrincipalActivity : AppCompatActivity() {
 
                     dialog.show()
 
+                    exibiuMensagem = true
+
                 }
 
             }
         }
 
+        val dataHoraAtual = Date()
+        val hora = SimpleDateFormat("HH:mm").format(dataHoraAtual)
+
+        if(hora == "00:00"){
+            exibiuMensagem = false
+        }
+
+
+
         btn_tela_relato.setOnClickListener {
             val intent = Intent(this, RelatoActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btn_tela_mensagem.setOnClickListener {
             val intent = Intent(this, MensagemActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btn_tela_questao.setOnClickListener {
             val intent = Intent(this, QuestoesMotivadorasActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btn_tela_desafio.setOnClickListener {
             val intent = Intent(this, DesafioActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btn_config.setOnClickListener {
@@ -190,6 +208,7 @@ class PrincipalActivity : AppCompatActivity() {
             view.btn_cancelar_modal.setOnClickListener {
                 dialog.dismiss()
             }
+            exibiuMensagem = false
         }
 
         btn_config.setOnClickListener {
@@ -206,6 +225,7 @@ class PrincipalActivity : AppCompatActivity() {
                 if (dateInString == date2) {
                     var intent = Intent(this, MaquinaDoTempoActivity::class.java)
                     startActivity(intent)
+                    finish()
                 } else {
                     Toast.makeText(
                         baseContext,
@@ -214,6 +234,7 @@ class PrincipalActivity : AppCompatActivity() {
                     ).show()
                 }
             }
+
         }
     }
 

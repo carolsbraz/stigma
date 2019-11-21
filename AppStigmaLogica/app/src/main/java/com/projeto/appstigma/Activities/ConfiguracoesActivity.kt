@@ -1,5 +1,7 @@
 package com.projeto.appstigma.Activities
 
+import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,9 +10,11 @@ import com.example.stigma.MainActivity
 import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
+import com.projeto.appstigma.Utils.exibiuMensagem
 import com.projeto.appstigma.Utils.usuarios
 import com.projeto.appstigma.Utils.usuariosList
 import kotlinx.android.synthetic.main.activity_configuracoes.*
+import kotlinx.android.synthetic.main.custom_modal_apagar_conta.view.*
 
 class ConfiguracoesActivity : AppCompatActivity() {
 
@@ -18,6 +22,8 @@ class ConfiguracoesActivity : AppCompatActivity() {
     var idLogado = ""
     var senhaLogado = ""
     var avataruser = ""
+
+    val context: Context = this
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -93,6 +99,7 @@ class ConfiguracoesActivity : AppCompatActivity() {
         btn_voltar_6.setOnClickListener {
             val intent = Intent(this, PrincipalActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         btn_avatar_conf.setOnClickListener {
@@ -144,28 +151,43 @@ class ConfiguracoesActivity : AppCompatActivity() {
             }
         }
 
+
+
         btn_apagar_conf.setOnClickListener {
-            user.delete().addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    for (i in usuariosList) {
-                        if (i.email == emailLogado) {
-                            usuarios.child(i.id).removeValue()
+
+            val dialog: Dialog = Dialog(context)
+            val view = layoutInflater.inflate(R.layout.custom_modal_apagar_conta, null)
+            dialog.setContentView(view)
+            dialog.show()
+            view.btn_apagar_conta_modal.setOnClickListener {
+                user.delete().addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        for (i in usuariosList) {
+                            if (i.email == emailLogado) {
+                                usuarios.child(i.id).removeValue()
+                            }
                         }
+                        Toast.makeText(
+                            baseContext, "Conta apagada com sucesso.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        val intent = Intent(this, MainActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Toast.makeText(
+                            baseContext, "Erro ao apagar conta.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
-                    Toast.makeText(
-                        baseContext, "Conta apagada com sucesso.",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    val intent = Intent(this, MainActivity::class.java)
-                    startActivity(intent)
-                    finish()
-                } else {
-                    Toast.makeText(
-                        baseContext, "Erro ao apagar conta.",
-                        Toast.LENGTH_SHORT
-                    ).show()
                 }
+                exibiuMensagem = false
             }
+            view.btn_cancelar_apagar_conta_modal.setOnClickListener {
+                dialog.dismiss()
+            }
+
+
         }
     }
 }

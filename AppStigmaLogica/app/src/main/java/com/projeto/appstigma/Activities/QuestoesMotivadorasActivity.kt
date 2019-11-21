@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.example.stigma.Resposta
 import com.google.firebase.auth.FirebaseAuth
@@ -119,6 +120,8 @@ class QuestoesMotivadorasActivity : AppCompatActivity() {
         }
 
         btn_voltar_6.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }

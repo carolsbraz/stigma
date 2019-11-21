@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
 import com.projeto.appstigma.Adapters.DesafioAdapter
@@ -121,6 +122,8 @@ class DesafioActivity : AppCompatActivity() {
         }
 
         btn_voltar_4.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
     }

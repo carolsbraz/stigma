@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.example.stigma.toString
 import com.google.firebase.auth.FirebaseAuth
@@ -31,6 +32,8 @@ class MaquinaDoTempoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_maquina_do_tempo)
 
         btn_voltar_maquina.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
@@ -92,6 +95,8 @@ class MaquinaDoTempoActivity : AppCompatActivity() {
                 img_avatar_5.setBackgroundResource(R.drawable.girl6)
             }
         } else {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
 

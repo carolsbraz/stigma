@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Toast
+import com.example.stigma.PrincipalActivity
 import com.example.stigma.R
 import com.google.firebase.auth.FirebaseAuth
 import com.projeto.appstigma.Adapters.RelatoAdapter
@@ -29,6 +30,8 @@ class ListarRelatosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_relatos_diarios)
 
         btn_voltar_3.setOnClickListener {
+            val intent = Intent(this, PrincipalActivity::class.java)
+            startActivity(intent)
             finish()
         }
 
