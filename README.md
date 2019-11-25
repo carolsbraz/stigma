@@ -1,2 +1,3 @@
 # Stigma
-Stigma - Diário Pessoal (android)
+Stigma - Diário Pessoal 
+
