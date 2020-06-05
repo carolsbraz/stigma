@@ -13,7 +13,7 @@
  <img src="https://github.com/carolsbraz/Stigma/blob/master/StigmaAdm/src/Stigma.gif" alt="demo-app" width="300">
 </p>
 
-## Administração
+### Administração
 
 <p> Foi desenvolvido um site simples utilizando HTML, CSS, JavaScript, Bootstrap e Firebase. Nele o administrador autorizado pode adicionar peguntas, desafios e frases que serão enviadas para os usuários pelo aplicativo. </p>
 
