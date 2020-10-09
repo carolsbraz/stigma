@@ -33,7 +33,7 @@ Firebase - uma plataforma digital da Google utilizada para facilitar o desenvolv
 ### Desenvolvedores
 
 - Anna Estephany Machado: front-end <br>
-- Caroline Soares Braz: designer, back-end <br>
+- Caroline Soares Braz: designer, front-end, back-end <br>
 - Clara Beatriz Lima: front-end, analista <br>
 - Fátima Aparecida: back-end
 
