@@ -22,11 +22,13 @@
 </p>
 
 ### Construído com
+
 <blockquote>
-✔️ Kotlin - linguagem de programação.<br>
-✔️ XML - usado para projetar rapidamente layouts de IU e os elementos de tela intrínsecos.<br>
-✔️ Firebase - uma plataforma digital da Google utilizada para facilitar o desenvolvimento de aplicativos web ou móveis.<br>
+Kotlin - linguagem de programação.<br>
+XML - usado para projetar rapidamente layouts de IU e os elementos de tela intrínsecos.<br>
+Firebase - uma plataforma digital da Google utilizada para facilitar o desenvolvimento de aplicativos web ou móveis.<br>
 </blockquote>
+
 
 ### Desenvolvedores
 
