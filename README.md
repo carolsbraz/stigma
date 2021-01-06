@@ -1,5 +1,5 @@
 <h1 align="center">
- <img src="https://github.com/carolsbraz/Stigma/blob/master/administracao/src/logo.png" alt="logo" width="200">
+ <img src="https://github.com/carolsbraz/stigma/blob/master/administracao/src/logo.png" alt="logo" width="200">
 </h1>
 
 <h3 align="center">Stigma</h3>
@@ -10,7 +10,7 @@
 <p> O projeto foi desenvolvido no terceiro ano do Ensino Médio Técnico. O Stigma é um diário pessoal onde o usuário pode escrever sobre seu dia, responder questões motivadoras, realizar desafios e ler mensagens levando em conta suas emoções. Suas ações tem reflexo no seu gráfico de emoções, que é alterado conforme as emoções informadas pelo usuário.</p>
 
 <p align="center">
- <img src="https://github.com/carolsbraz/Stigma/blob/master/administracao/src/Stigma.gif" alt="demo-app" width="300">
+ <img src="https://github.com/carolsbraz/stigma/blob/master/administracao/src/Stigma.gif" alt="demo-app" width="300">
 </p>
 
 ### Administração
@@ -18,7 +18,7 @@
 <p> Foi desenvolvido um site simples utilizando HTML, CSS, JavaScript, Bootstrap e Firebase. Nele o administrador autorizado pode adicionar perguntas, desafios e frases que serão enviadas para os usuários pelo aplicativo. </p>
 
 <p align="center">
- <img src="https://github.com/carolsbraz/Stigma/blob/master/administracao/src/StigmaAdm.gif" alt="demo-web" width="800">
+ <img src="https://github.com/carolsbraz/stigma/blob/master/administracao/src/StigmaAdm.gif" alt="demo-web" width="800">
 </p>
 
 ### Construído com
