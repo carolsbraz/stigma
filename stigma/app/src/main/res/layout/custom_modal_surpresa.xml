@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/base_modal"
+        android:layout_width="500dp"
+        android:layout_height="254dp"
+        android:layout_gravity="center"
+        android:background="#FCFEFB" />
+
+    <ImageView
+        android:id="@+id/img_surpresa"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/balloons" />
+
+    <TextView
+        android:id="@+id/txt_mensagem_surpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:text="Feliz Aniversário,"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_nome_surpresa"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="46dp"
+        android:padding="10dp"
+        android:text="nome_do_usuário"
+        android:textColor="@color/rosa"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_idade_surpresa"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="85dp"
+        android:padding="10dp"
+        android:text="Desejamos muitas felicidades nesta data tão especial!"
+        android:textColor="#505050"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txt_mensagem_1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:padding="10dp"
+        android:textColor="@color/azul"
+        android:text="Esperamos que continue com a família Stigma e escreva suas marcas!"
+        android:textSize="14sp"/>
+
+</FrameLayout>
+

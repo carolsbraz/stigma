@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Stigma</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html"><img alt="logo" src="src/logo-topo.png" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastro</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <img src="src/esq.png" alt="foto" class="foto-esq">
+
+    <img src="src/dir.png" alt="foto" class="foto-dir">
+    <br>
+
+    <div class="baixo">
+        <img src="src/logo.png" alt="logotipo" class="logotipo">
+        <br>
+        <h3 class="bem-vindo">Bem vindo à sessão administrativa do Stigma!</h3>
+        <br>
+        <form class="login" action="javascript:cadastro();">
+            <div class="form-group">
+
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Insira seu email">
+                        <small id="emailHelp" class="form-text text-muted">Exemplo: stigmaapp@gmail.com</small>
+                    </div>
+                    <div class="col">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="senha" placeholder="Insira uma senha">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="form-group">
+                <label for="exampleNome1">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
+            </div>
+
+            <input type="submit" class="btn-cadastro" value="Cadastro">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/cadastro.js"></script>
+
+</body>
+
+</html>

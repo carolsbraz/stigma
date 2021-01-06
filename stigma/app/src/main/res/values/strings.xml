@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Stigma</string>
+    <string name="title_activity_main">Stigma</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="txt_esqueceu_senha">Digite seu endereço de e-mail e enviaremos um link para redefinir sua senha.</string>
+    <string name="text_apagar_conta">Se excluir sua conta, isso não poderá ser desfeito.Tenha certeza antes de continuar.</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="frase_mensagem">Diga como está se sentindo e receba uma mensagem motivadora!</string>
+    <string name="menu_maquina">Adicione itens à sua máquina do tempo e veja tudo juntinho no seu aniversário de cadastro!</string>
+    <string name="frase_mensagem_1">Como está se sentindo agora?</string>
+    <string name="titulo_mensagem">Mensagens Diárias</string>
+    <string name="checkbox">Adicionar a máquina do tempo</string>
+
+    //nome para layout dos Passos
+
+    <string name="passo1">Passo1</string>
+    <string name="passo2">Passo2</string>
+    <string name="passo3">Passo3</string>
+</resources>

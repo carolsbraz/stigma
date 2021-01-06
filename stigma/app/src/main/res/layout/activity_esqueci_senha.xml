@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp">
+
+        <ImageView
+            android:id="@+id/logotipo"
+            android:layout_width="322dp"
+            android:layout_height="255dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logotipo" />
+
+        <ImageView
+            android:id="@+id/barrinha"
+            android:layout_width="468dp"
+            android:layout_height="228dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="354dp"
+            android:src="@drawable/base14" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="410dp"
+            android:text="@string/txt_esqueceu_senha"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/StyledTilEditText"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="49dp"
+            android:layout_marginBottom="9dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" />
+
+
+        <ImageButton
+            android:id="@+id/btn_esqueci_senha"
+            android:layout_width="80dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/btn_avancar"
+            android:enabled="false"
+            android:textSize="100px" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stigma">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.projeto.appstigma.ViewPagePassos"></activity>
+        <activity android:name="com.projeto.appstigma.MaquinaDoTempoActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.MaquinaDoTempoActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.QuestoesMotivadorasActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.DesafioActivity" />
+        <activity android:name="com.projeto.appstigma.Utils.EsqueciSenha" />
+        <activity android:name="com.projeto.appstigma.Activities.ListarQuestoesActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.ConfiguracoesActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.ListarRelatosActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.AvatarActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.AvatarActivityMudar" />
+        <activity android:name="com.projeto.appstigma.Activities.Passo3Activity" />
+        <activity android:name="com.projeto.appstigma.Activities.Passo2Activity" />
+        <activity android:name="com.projeto.appstigma.Activities.Passo1Activity" />
+        <activity android:name="com.projeto.appstigma.Activities.RelatoActivity" />
+        <activity android:name="com.projeto.appstigma.Activities.MensagemActivity" />
+        <activity android:name=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CadastroActivity" />
+        </activity>
+        <activity android:name=".PrincipalActivity" />
+        <activity android:name=".CadastroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.projeto.appstigma.Utils.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

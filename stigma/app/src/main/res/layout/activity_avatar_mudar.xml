@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    android:orientation="vertical"
+    tools:context="com.projeto.appstigma.Activities.AvatarActivityMudar">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="208dp"
+        android:layout_height="134dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/logotipo" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Escolha seu avatar!"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="544dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="459dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/base4"
+            android:foregroundGravity="center" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy1"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/boy2"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/boy3"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_girl1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/girl1"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_girl2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/girl2"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_girl3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/girl3"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy4"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="185dp"
+            android:background="@drawable/boy5"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="185dp"
+            android:background="@drawable/boy6"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_girl4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/girl4"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_girl5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/girl5"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_girl6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/girl6"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy7"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="130dp"
+            android:background="@drawable/boy8"
+            android:enabled="false"
+            android:textSize="100px" />
+
+        <ImageButton
+            android:id="@+id/avatar_boy9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/boy9"
+            android:enabled="false"
+            android:textSize="100px" />
+
+    </FrameLayout>
+</LinearLayout>

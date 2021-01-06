@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.projeto.appstigma.Activities.QuestoesMotivadorasActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_voltar_6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/voltar" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="114dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logorosa" />
+
+        <ImageButton
+            android:id="@+id/btn_listar_respostas"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/listar" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="300dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Diga como está se sentindo e receba uma questão motivadora!"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:layout_width="400dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/caixaviewmenu" />
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="85dp"
+                android:background="@drawable/btn_color_menu_2" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/frase_mensagem_1"
+                android:textColor="#357989"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/btn_muitofeliz1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/happy2" />
+
+                <ImageButton
+                    android:id="@+id/btn_feliz1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/happy" />
+
+                <ImageButton
+                    android:id="@+id/btn_neutro1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/shocked" />
+
+                <ImageButton
+                    android:id="@+id/btn_triste1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sad" />
+
+                <ImageButton
+                    android:id="@+id/btn_muitotriste1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/sad2" />
+
+                <ImageButton
+                    android:id="@+id/btn_cansado1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/bad" />
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/txt_resposta"
+            android:layout_width="389dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/caixatext"
+            android:gravity="top"
+            android:hint="Escreva aqui..."
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:maxLength="400"/>
+
+        <Button
+            android:id="@+id/btn_responder"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="380dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_color"
+            android:text="Responder"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_gerar_questao"
+            android:layout_width="133dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/btn_color"
+            android:text="Gerar questão"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_pergunta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="230dp"
+            android:text="Gere uma pergunta acima!"
+            android:textColor="@color/rosa"
+            android:textSize="15dp" />
+
+
+    </FrameLayout>
+</LinearLayout>
+
+
+
