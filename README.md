@@ -3,41 +3,32 @@
 </h1>
 
 <h3 align="center">Stigma</h3>
-<p align="center">Escreva suas marcas com Stigma.</p>
+<p align="center">Write your marks with Stigma.</p>
 
-### Sobre o projeto
+### About the project
 
-<p> O projeto foi desenvolvido no terceiro ano do Ensino Médio Técnico. O Stigma é um diário pessoal onde o usuário pode escrever sobre seu dia, responder questões motivadoras, realizar desafios e ler mensagens levando em conta suas emoções. Suas ações tem reflexo no seu gráfico de emoções, que é alterado conforme as emoções informadas pelo usuário.</p>
+<p> Developed during the third year of Technical High School, Stigma is a personal diary app where users can write about their day, respond to motivational prompts, take on challenges, and read messages tailored to their emotions. User actions reflect in the emotional graph, dynamically changing based on the emotions shared.</p>
 
-<p align="center">
- <img src="https://github.com/carolsbraz/stigma/blob/master/administracao/src/Stigma.gif" alt="demo-app" width="300">
-</p>
+### Administration
 
-### Administração
+<p> A simple website was created using HTML, CSS, JavaScript, Bootstrap, and Firebase. Authorized administrators can add questions, challenges, and phrases that will be sent to users through the app.</p>
 
-<p> Foi desenvolvido um site simples utilizando HTML, CSS, JavaScript, Bootstrap e Firebase. Nele o administrador autorizado pode adicionar perguntas, desafios e frases que serão enviadas para os usuários pelo aplicativo. </p>
-
-<p align="center">
- <img src="https://github.com/carolsbraz/stigma/blob/master/administracao/src/StigmaAdm.gif" alt="demo-web" width="800">
-</p>
-
-### Construído com
+### Built with
 
 <blockquote>
-Kotlin - linguagem de programação.<br>
-XML - usado para projetar rapidamente layouts de IU e os elementos de tela intrínsecos.<br>
-Firebase - uma plataforma digital da Google utilizada para facilitar o desenvolvimento de aplicativos web ou móveis.<br>
+Kotlin - programming language.<br>
+XML - used to quickly design UI layouts and intrinsic screen elements.<br>
+Firebase - a Google digital platform used to facilitate the development of web or mobile applications.<br>
 </blockquote>
 
-
-### Desenvolvedores
+### Developers
 
 - Anna Estephany Machado: front-end <br>
 - Caroline Soares Braz: designer, front-end, back-end <br>
-- Clara Beatriz Lima: front-end, analista <br>
+- Clara Beatriz Lima: front-end, analyst <br>
 - Fátima Aparecida: back-end
 
-### Agradecimentos
+### Acknowledgments
 
-<p> Queremos agradecer aos nossos professores Emmerson Santa Rita (Linguagem de Programação II) e Márcia Pimenta (Projeto Interação Homem-Máquina) pelas orientações para a finalização do projeto. </p>
+<p> We want to thank our teachers Emmerson Santa Rita (Programming Language II) and Márcia Pimenta (Human-Computer Interaction Project) for their guidance in completing the project. </p>
 
